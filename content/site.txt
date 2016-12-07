@@ -1,0 +1,9 @@
+Title: wine•art
+
+----
+
+Author: L Daniel Swakman, http://www.ldaniel.eu/
+
+----
+
+Description: Website for wine-art.co
