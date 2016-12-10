@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<? snippet('header') ?>
 
-  <head>
+<? foreach ($page->children()->visible() as $section): ?>
+  <section id="<?= $section->slug() ?>">
+    <div class="row">
 
-    <title><?= $site->title() ?></title>
+      <? if($image = $section->image()): ?>
+        <div class="col-xs-10 col-sm-5 u-minheight20 u-relative" style="background-image: url('<?= $image->url() ?>');"></div>
+      <? endif ?>
 
-    <?= css('assets/css/style.css') ?>
+      <div class=" col-xs-12 col-sm-7 u-pl3">
+        <h4><?= $section->title() ?></h4>
 
-  </head>
+        <?= kirbytext($section->text()) ?>
+      </div>
 
-  <body>
-    <p><?= $page->text()->html() ?></p>
-  </body>
+    </div>
+  </section>
+<? endforeach; ?>
 
-</html>
+<? snippet('footer') ?>
