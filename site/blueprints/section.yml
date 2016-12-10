@@ -1,0 +1,20 @@
+title: Section
+
+pages: false
+files: true
+options: 
+  status: true
+  preview: parent
+
+fields:
+  title:
+    label: Title
+    type:  text
+    
+  image:
+    label: Image
+    type:  image
+
+  text:
+    label: Text
+    type:  markdown

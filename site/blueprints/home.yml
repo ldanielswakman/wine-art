@@ -1,0 +1,22 @@
+title: Page
+
+pages:
+  template: section
+files: false
+options: 
+  status: false
+  url: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+    
+  info:
+    type: info
+    text: >
+      <i>The sections on the homepage can be determined via arranging the items in the sidebar on the left.</i>
+
+  text:
+    label: Text
+    type:  textarea
