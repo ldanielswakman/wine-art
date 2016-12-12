@@ -84,11 +84,30 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.c-dark {
+  color: #431220; }
+
+.bg-dark {
+  background-color: #431220; }
+
+.c-softred {
+  color: #e01b3d; }
+
+.bg-softred {
+  background-color: #e01b3d; }
+
 @font-face {
   font-family: 'Apercu';
   src: url("../fonts/apercu_regular.eot");
   src: url("../fonts/apercu_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_regular.woff2") format("woff2"), url("../fonts/apercu_regular.woff") format("woff"), url("../fonts/apercu_regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/apercu_bold.eot");
+  src: url("../fonts/apercu_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_bold.woff2") format("woff2"), url("../fonts/apercu_bold.woff") format("woff"), url("../fonts/apercu_bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {

@@ -1,3 +1,21 @@
 
 // Theme colours
-$dark:  #431220;
+$theme: (
+  dark:     #431220,
+  softred:  #e01b3d
+);
+
+// Generate classes from colours
+@each $name, $value in $theme {
+  .c-#{$name} {
+    color: $value;
+  }
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+// Easy name lookup
+@function color($name) {
+  @return map-get($theme, $name);
+}

@@ -10,6 +10,17 @@
 }
 
 @font-face {
+  font-family: 'Apercu';
+  src: url('../fonts/apercu_bold.eot');
+  src: url('../fonts/apercu_bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/apercu_bold.woff2') format('woff2'),
+       url('../fonts/apercu_bold.woff') format('woff'),
+       url('../fonts/apercu_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'iABC';
   src: url('../fonts/iabc-7-webfont.eot');
   src: url('../fonts/iabc-7-webfont.eot?#iefix') format('embedded-opentype'),
@@ -28,3 +39,6 @@
   font-weight: normal;
   font-style: italic;
 }
+
+$sans_serif: "Apercu", Arial, sans-serif;
+$serif: "iABC", "Times New Roman", Times, serif;
