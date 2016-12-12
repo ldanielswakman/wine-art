@@ -13,7 +13,8 @@ gulp.task('sass', function() {
 // Clean & minify CSS (after Sass)
 gulp.task('clean_css', ['sass'], function() {
   gulp.src('assets/css/style.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
+    // Uncomment line below to enable minified CSS
+    // .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./assets/css/'));
 });
 

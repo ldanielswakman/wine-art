@@ -110,13 +110,14 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Apercu', Arial, sans-serif;
-  color: #333;
+  font-family: "Apercu", Arial, sans-serif;
+  font-size: 100%;
+  color: #431220;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 blockquote {
-  font-family: "iABC";
+  font-family: "iABC", "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 2.5rem; }
