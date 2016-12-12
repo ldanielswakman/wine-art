@@ -1,5 +1,4 @@
 /* --- Reset --- */
-
 html,
 body,
 div,
@@ -50,8 +49,8 @@ th,
 td {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 article,
 aside,
 figure,
@@ -64,92 +63,60 @@ nav,
 section,
 video,
 object {
-  display: block;
-}
+  display: block; }
+
 a img {
-  border: 0;
-}
+  border: 0; }
+
 figure {
   position: relative;
-  margin: 0;
-}
+  margin: 0; }
+
 figure img {
-  width: 100%;
-}
+  width: 100%; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
-  padding: 0;
-}
-
-
-
-
-
-
-
+  padding: 0; }
 
 @font-face {
   font-family: 'Apercu';
-  src: url('../fonts/apercu_regular.eot');
-  src: url('../fonts/apercu_regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/apercu_regular.woff2') format('woff2'),
-       url('../fonts/apercu_regular.woff') format('woff'),
-       url('../fonts/apercu_regular.ttf') format('truetype');
+  src: url("../fonts/apercu_regular.eot");
+  src: url("../fonts/apercu_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_regular.woff2") format("woff2"), url("../fonts/apercu_regular.woff") format("woff"), url("../fonts/apercu_regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'iABC';
-  src: url('../fonts/iabc-7-webfont.eot');
-  src: url('../fonts/iabc-7-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/iabc-7-webfont.woff') format('woff'),
-       url('../fonts/iabc-7-webfont.ttf') format('truetype');
+  src: url("../fonts/iabc-7-webfont.eot");
+  src: url("../fonts/iabc-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iabc-7-webfont.woff") format("woff"), url("../fonts/iabc-7-webfont.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'iABC';
-  src: url('../fonts/iabci-7-webfont.eot');
-  src: url('../fonts/iabci-7-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/iabci-7-webfont.woff') format('woff'),
-       url('../fonts/iabci-7-webfont.ttf') format('truetype');
+  src: url("../fonts/iabci-7-webfont.eot");
+  src: url("../fonts/iabci-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iabci-7-webfont.woff") format("woff"), url("../fonts/iabci-7-webfont.ttf") format("truetype");
   font-weight: normal;
-  font-style: italic;
-}
-
-
-
-
-
-
+  font-style: italic; }
 
 body, html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-
   font-family: 'Apercu', Arial, sans-serif;
   color: #333;
-
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-
+  -moz-osx-font-smoothing: grayscale; }
 
 blockquote {
   font-family: "iABC";
   font-style: italic;
-  font-size: 2.5rem;
-}
+  font-size: 2.5rem; }
