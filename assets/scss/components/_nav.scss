@@ -1,0 +1,29 @@
+nav, .nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
+  padding: 2rem;
+
+  @include prefix(transform, rotate(-90deg) translateX(100%));
+  @include prefix(transform-origin, bottom right);
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      color: getColour(dullblue);
+      opacity: 0.2;
+      text-decoration: none;
+
+      @media screen and (max-width: $vw_mobile) {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+      }
+    }
+  }
+}

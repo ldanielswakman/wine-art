@@ -1,6 +1,4 @@
 /* --- Utilities --- */
-$u: 1rem;
-
 @for $i from 1 through 40 {
   $n: 4;
   $value: ($i * $u / $n);
@@ -49,11 +47,11 @@ $u: 1rem;
 // Interactions
 .i-appearFromRight {
   position: relative;
-  @include transform(translateX(6rem));
-  @include transition(all 1.5s cubic-bezier(0, 0, 0.2, 1));
   opacity: 0;
+  @include prefix(transform, translateX(6rem));
+  @include prefix(transition, all 1.5s cubic-bezier(0, 0, 0.2, 1));
 }
 body.isLoaded .i-appearFromRight {
-  @include transform(translateX(0));
   opacity: 1;
+  @include prefix(transform, translateX(0));
 }

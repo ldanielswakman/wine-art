@@ -13,6 +13,9 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+// Blockquote
 blockquote {
   font-family: $serif;
   font-style: italic;
@@ -31,6 +34,8 @@ blockquote {
   }
 }
 
+
+// Paragraph
 p {
   font-family: $serif;
   line-height: 1.8em;
@@ -43,4 +48,10 @@ p {
   & + p {
     margin-top: 1.5rem;
   }
+}
+
+
+// Grid
+.row {
+  margin: auto;
 }
