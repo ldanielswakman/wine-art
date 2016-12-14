@@ -1,7 +1,15 @@
+// base
 @import 'base/reset';
+@import 'base/mixins';
 @import 'base/colours';
 @import 'base/utilities';
 @import 'base/typography';
 @import 'base/generic';
+
+// elements
+
+// components
+@import 'components/header';
+@import 'components/section';
 
 // NB. do not add any styles here

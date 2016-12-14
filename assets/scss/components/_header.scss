@@ -1,0 +1,11 @@
+header, .header {
+  
+  .header__logo {
+    height: 2rem;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

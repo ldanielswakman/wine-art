@@ -1,0 +1,18 @@
+// TMP:
+section, .section {
+
+  .section__bg-image {
+    background-color: getColour(softred);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local;
+    opacity: 0;
+    @include transition(all 0.3s ease);
+  }
+
+}
+body.isLoaded section {
+  .section__bg-image {
+    opacity: 1;
+  }
+}

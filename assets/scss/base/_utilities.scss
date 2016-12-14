@@ -1,0 +1,59 @@
+/* --- Utilities --- */
+$u: 1rem;
+
+@for $i from 1 through 40 {
+  $n: 4;
+  $value: ($i * $u / $n);
+
+  // setting the right names for the classes
+  $name: $i/4;
+  @if($i%2 != 0)     {  $name: $name * 100;           }
+  @if(($i+2)%4 == 0) {  $name: $name * 10;            }
+  @if ($i/4 < 1)     {  $name: unquote("0") + $name;  }
+
+  // margins
+  .u-mt#{$name} { margin-top: $value !important; }
+  .u-mr#{$name} { margin-right: $value !important; }
+  .u-mb#{$name} { margin-bottom: $value !important; }
+  .u-ml#{$name} { margin-left: $value !important; }
+  .u-mv#{$name} { margin-top: $value !important; margin-bottom: $value !important; }
+  .u-mh#{$name} { margin-left: $value !important; margin-right: $value !important; }
+  .u-ma#{$name} { margin: $value !important; }
+
+  // paddings
+  .u-pt#{$name} { padding-top: $value !important; }
+  .u-pr#{$name} { padding-right: $value !important; }
+  .u-pb#{$name} { padding-bottom: $value !important; }
+  .u-pl#{$name} { padding-left: $value !important; }
+  .u-pv#{$name} { padding-top: $value !important; padding-bottom: $value !important;}
+  .u-ph#{$name} { padding-left: $value !important; padding-right: $value !important;}
+  .u-pa#{$name} { padding: $value !important; }
+
+  // line-heights
+  .u-lineheight#{$name} { line-height: $value !important; }
+}
+
+
+// Alignment
+.u-alignleft {
+  text-align: left;
+}
+.u-aligncenter {
+  text-align: center;
+}
+.u-alignright {
+  text-align: right;
+}
+
+
+// Interactions
+.i-appearFromRight {
+  position: relative;
+  @include transform(translateX(6rem));
+  @include transition(all 1.5s cubic-bezier(0, 0, 0.2, 1));
+  opacity: 0;
+}
+body.isLoaded .i-appearFromRight {
+  @include transform(translateX(0));
+  opacity: 1;
+}

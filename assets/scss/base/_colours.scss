@@ -16,6 +16,6 @@ $theme: (
 }
 
 // Easy name lookup
-@function color($name) {
+@function getColour($name) {
   @return map-get($theme, $name);
 }
