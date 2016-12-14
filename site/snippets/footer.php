@@ -1,4 +1,4 @@
-    <footer class="bg-softred u-pv10">
+    <footer class="bg-dullblue" style="height: 400px;">
     </footer>
 
   </body>

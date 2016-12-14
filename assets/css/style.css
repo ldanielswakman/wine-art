@@ -2212,19 +2212,19 @@ nav, .nav {
   right: 0;
   z-index: 2;
   padding: 2rem;
-  -webkit-transform: rotate(-90deg) translateX(100%);
-  -moz-transform: rotate(-90deg) translateX(100%);
-  transform: rotate(-90deg) translateX(100%);
+  opacity: 0.2;
+  -webkit-transform: rotate(-90deg) translate(100%, 0);
+  -moz-transform: rotate(-90deg) translate(100%, 0);
+  transform: rotate(-90deg) translate(100%, 0);
   -webkit-transform-origin: bottom right;
   -moz-transform-origin: bottom right;
   transform-origin: bottom right; }
+  nav:hover, .nav:hover {
+    opacity: 1; }
   nav ul, .nav ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-    opacity: 0.2; }
-    nav ul:hover, .nav ul:hover {
-      opacity: 1; }
+    list-style: none; }
     nav ul a, .nav ul a {
       font-size: 2rem;
       line-height: 3rem;
@@ -2252,3 +2252,4 @@ section .section__bg-image, .section .section__bg-image {
 
 body.isLoaded section .section__bg-image {
   opacity: 1; }
+ty: 1; }
