@@ -1,5 +1,5 @@
-<header class="u-pv6 u-aligncenter">
-  <a href="<?= $site->url() ?>">
+<header class="u-pv3 u-aligncenter">
+  <a href="<?= $site->url() ?>" class="u-inlineblock u-pa3">
     <? if($logo = $site->logo()): ?>
       <img src="<?= $site->image($logo)->url() ?>" class="header__logo" />
     <? else : ?>

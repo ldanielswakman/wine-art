@@ -2069,6 +2069,18 @@ html, body {
 .u-lineheight10 {
   line-height: 10rem !important; }
 
+.u-minheight20 {
+  min-height: 20rem !important; }
+
+.u-block {
+  display: block !important; }
+
+.u-inlineblock {
+  display: inline-block !important; }
+
+.u-inline {
+  display: inline !important; }
+
 .u-alignleft {
   text-align: left; }
 
@@ -2252,4 +2264,3 @@ section .section__bg-image, .section .section__bg-image {
 
 body.isLoaded section .section__bg-image {
   opacity: 1; }
-ty: 1; }
