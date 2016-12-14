@@ -7,10 +7,6 @@ fields:
     label: Title
     type:  text
 
-  author:
-    label: Author
-    type:  text
-
   description:
     label: Description
     type:  textarea
@@ -19,3 +15,8 @@ fields:
     label: Logo
     type: image
     help: Should be in SVG format
+
+  keywords:
+    label: Keywords
+    type: tags
+    help: This list of keywords is used for SEO purposes

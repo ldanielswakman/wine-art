@@ -16,7 +16,4 @@ fields:
     type: info
     text: >
       <i>The sections on the homepage can be determined via arranging the items in the sidebar on the left.</i>
-
-  text:
-    label: Text
-    type:  textarea
+      

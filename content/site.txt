@@ -2,7 +2,7 @@ Title: wine•art
 
 ----
 
-Author: L Daniel Swakman, http://www.ldaniel.eu/
+Author: 
 
 ----
 
@@ -11,3 +11,7 @@ Description: Website for wine-art.co
 ----
 
 Logo: logo.svg
+
+----
+
+Keywords: 

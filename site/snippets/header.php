@@ -4,6 +4,8 @@
 
   <head>
 
+    <? snippet('header-meta') ?>
+
     <title><?= $site->title() ?></title>
 
     <?= css('assets/css/flexboxgrid.min.css') ?>
@@ -15,6 +17,8 @@
   </head>
 
   <body>
+
+    <? snippet('nav') ?>
 
     <header class="u-aligncenter u-pv6">
 
