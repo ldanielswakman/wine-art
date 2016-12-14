@@ -4,9 +4,10 @@ Title: intro
 
 Text: 
 
-<span class="c-softred">wine•art • /wʌɪn-ɑːt/, ~s n.</span> educates, consults and<br> inspires viticulture to whomever is interested.
-
 > We bring a dash of flavour<br> you bring the taste for tasting
+<br>
+
+<p class="definition"><span class="c-softred">wine•art • /wʌɪn-ɑːt/, ~s n.</span> educates, consults and<br> inspires viticulture to whomever is interested.</p>
 
 ----
 

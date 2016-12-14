@@ -7,3 +7,7 @@ Author: L Daniel Swakman, http://www.ldaniel.eu/
 ----
 
 Description: Website for wine-art.co
+
+----
+
+Logo: logo.svg

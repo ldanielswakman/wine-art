@@ -14,3 +14,8 @@ fields:
   description:
     label: Description
     type:  textarea
+
+  logo:
+    label: Logo
+    type: image
+    help: Should be in SVG format
