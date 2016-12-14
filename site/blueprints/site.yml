@@ -20,3 +20,8 @@ fields:
     label: Keywords
     type: tags
     help: This list of keywords is used for SEO purposes
+
+  meta_image:
+    label: Meta image
+    type: image
+    help: This image will be used as a default image when posting a link on social media
