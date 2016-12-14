@@ -4,6 +4,8 @@ body, html {
   margin: 0;
   padding: 0;
 
+  background-color: #fafbfc;
+
   font-family: $sans_serif;
   font-size: 100%; // 1rem = 16px (at 100% zoom)
   color: getColour(dark);
@@ -41,7 +43,7 @@ p {
   line-height: 1.8em;
   max-width: 50rem;
 
-  &.definition {
+  &.short {
     font-family: $sans_serif;
     line-height: 1.5rem;
   }
@@ -51,7 +53,61 @@ p {
 }
 
 
+// Link
+a {
+  text-decoration: none;
+}
+.link {
+  display: inline-block;
+  color: getColour(softred);
+  font-size: 1rem;
+
+  &:after {
+    content: "\2192";
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    @include prefix(transform, translateY(0.05rem));
+  }
+  &:hover {
+    @include underline();
+  }
+}
+
+
+
+//
+figure {
+  &.figure--3by2 {
+    position: relative;
+    padding-bottom: (2/3 * 100%);
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+
 // Grid
 .row {
   margin: auto;
+
+  &.row--nopadding > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  &.row--internalpadding {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+
+    @media screen and (max-width: $vw_mobile) {
+      margin: 0 auto !important;
+    }
+  }
 }

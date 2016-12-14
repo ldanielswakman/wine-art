@@ -19,13 +19,3 @@
   <body>
 
     <? snippet('nav') ?>
-
-    <header class="u-aligncenter u-pv6">
-
-      <? if($logo = $site->logo()): ?>
-        <img src="<?= $site->image($logo)->url() ?>" class="header__logo" />
-      <? else : ?>
-        <?= $site->title() ?>
-      <? endif ?>
-
-    </header>

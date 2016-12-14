@@ -1,6 +1,11 @@
 title: Site
 
-pages: default
+pages:
+  template:
+    - list
+    - default
+    - other
+
 
 fields:
   title:

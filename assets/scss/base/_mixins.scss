@@ -5,3 +5,7 @@
   -moz-#{$property}: $arguments;
   #{$property}: $arguments;
 }
+
+@mixin underline($color: getColour(softred), $weight: 0.1em, $offset: 0) {
+  background-image: linear-gradient(to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight));
+}

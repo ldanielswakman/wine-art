@@ -102,6 +102,12 @@ html, body {
 .bg-dullblue {
   background-color: #4c6d8f; }
 
+.c-grey {
+  color: #999999; }
+
+.bg-grey {
+  background-color: #999999; }
+
 /* --- Utilities --- */
 .u-mt025 {
   margin-top: 0.25rem !important; }
@@ -2121,6 +2127,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #fafbfc;
   font-family: "Apercu", Arial, sans-serif;
   font-size: 100%;
   color: #431220;
@@ -2146,14 +2153,52 @@ p {
   font-family: "iABC", "Times New Roman", Times, serif;
   line-height: 1.8em;
   max-width: 50rem; }
-  p.definition {
+  p.short {
     font-family: "Apercu", Arial, sans-serif;
     line-height: 1.5rem; }
   p + p {
     margin-top: 1.5rem; }
 
+a {
+  text-decoration: none; }
+
+.link {
+  display: inline-block;
+  color: #e01b3d;
+  font-size: 1rem; }
+  .link:after {
+    content: "\2192";
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    -webkit-transform: translateY(0.05rem);
+    -moz-transform: translateY(0.05rem);
+    transform: translateY(0.05rem); }
+  .link:hover {
+    background-image: linear-gradient(to top, transparent, transparent 0, #e01b3d 0, #e01b3d 0.1em, transparent 0.1em); }
+
+figure.figure--3by2 {
+  position: relative;
+  padding-bottom: 66.66667%;
+  overflow: hidden; }
+  figure.figure--3by2 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; }
+
 .row {
   margin: auto; }
+  .row.row--nopadding > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .row.row--internalpadding {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important; }
+    @media screen and (max-width: 30rem) {
+      .row.row--internalpadding {
+        margin: 0 auto !important; } }
 
 header .header__logo, .header .header__logo {
   height: 2rem;
@@ -2176,17 +2221,24 @@ nav, .nav {
   nav ul, .nav ul {
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    opacity: 0.2; }
+    nav ul:hover, .nav ul:hover {
+      opacity: 1; }
     nav ul a, .nav ul a {
-      font-size: 3rem;
-      line-height: 4.5rem;
+      font-size: 2rem;
+      line-height: 3rem;
       color: #4c6d8f;
-      opacity: 0.2;
       text-decoration: none; }
       @media screen and (max-width: 30rem) {
         nav ul a, .nav ul a {
           font-size: 1.5rem;
           line-height: 2.25rem; } }
+      nav ul a.isActive, .nav ul a.isActive {
+        background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
+      nav ul a:hover, .nav ul a:hover {
+        color: #e01b3d;
+        background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
 
 section .section__bg-image, .section .section__bg-image {
   background-color: #e01b3d;

@@ -13,16 +13,27 @@ nav, .nav {
     margin: 0;
     padding: 0;
     list-style: none;
+    opacity: 0.2;
+
+    &:hover {
+      opacity: 1;
+    }
     a {
-      font-size: 3rem;
-      line-height: 4.5rem;
+      font-size: 2rem;
+      line-height: 3rem;
       color: getColour(dullblue);
-      opacity: 0.2;
       text-decoration: none;
 
       @media screen and (max-width: $vw_mobile) {
         font-size: 1.5rem;
         line-height: 2.25rem;
+      }
+      &.isActive {
+        @include underline(currentColor);
+      }
+      &:hover {
+        color: getColour(softred);
+        @include underline(currentColor);
       }
     }
   }

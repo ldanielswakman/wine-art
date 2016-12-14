@@ -1,5 +1,7 @@
 <? snippet('header') ?>
 
+<? snippet('logo'); ?>
+
 <? $i = 0; ?>
 <? foreach ($page->children()->visible() as $section): ?>
 
@@ -16,7 +18,7 @@
       <div class="col-xs-12 <?= $text_class ?> u-pl3 u-pb6">
         <!-- <h4><?= $section->title() ?></h4> -->
 
-        <?= kirbytext($section->text()) ?>
+        <?= $section->text()->kirbytext() ?>
       </div>
 
     </div>
