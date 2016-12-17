@@ -73,11 +73,14 @@ a {
   &:hover {
     @include underline();
   }
+  &.link--secondary {
+    &:after { display: none !important; }
+  }
 }
 
 
 
-//
+// Figure
 figure {
   &.figure--3by2 {
     position: relative;

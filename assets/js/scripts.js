@@ -33,16 +33,16 @@ function scrollActions() {
     degrees = (1 - trackValue) * 90;
     percent = trackValue * 100;
 
-    $('nav').css('-webkit-transform','rotate(-' + degrees + 'deg) translate(' + (100 - percent) + '%, -' + (percent/5) + '%) scale(' + (1 + trackValue/2) + ')')
-    .css('-moz-transform','rotate(-' + degrees + 'deg) translate(' + (100 - percent) + '%, -' + (percent/5) + '%) scale(' + (1 + trackValue/2) + ')')
-    .css('transform','rotate(-' + degrees + 'deg) translate(' + (100 - percent) + '%, -' + (percent/5) + '%) scale(' + (1 + trackValue/2) + ')')
+    $('nav').css('-webkit-transform','rotate(-' + degrees + 'deg) translate(' + (100 - percent) + '%, -' + (percent/20) + '%) scale(' + (1 + trackValue/2) + ')')
+    .css('-moz-transform','rotate(-' + degrees + 'deg) translate(' + (100 - percent) + '%, -' + (percent/20) + '%) scale(' + (1 + trackValue/2) + ')')
+    .css('transform','rotate(-' + degrees + 'deg) translate(' + (100 - percent) + '%, -' + (percent/20) + '%) scale(' + (1 + trackValue/2) + ')')
     .css('opacity', trackValue)
     .css('right', (trackValue * 20) + '%');
     $('nav a').css('color', 'rgb(' + (76 + percent*3) + ', ' + (109 + percent*3) + ', ' + (143 + percent*3) + ')');
   } else {
-    $('nav').css('-webkit-transform','rotate(0deg) translate(0, -20%) scale(1.5)')
-    .css('-moz-transform','rotate(0deg) translate(0, -20%) scale(1.5)')
-    .css('transform','rotate(0deg) translate(0, -20%) scale(1.5)')
+    $('nav').css('-webkit-transform','rotate(0deg) translate(0, -5%) scale(1.5)')
+    .css('-moz-transform','rotate(0deg) translate(0, -5%) scale(1.5)')
+    .css('transform','rotate(0deg) translate(0, -5%) scale(1.5)')
     .css('opacity', 1)
     .css('right', '20%');
     $('nav a').css('color', '#fff');
