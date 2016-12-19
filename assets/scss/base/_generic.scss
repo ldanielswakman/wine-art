@@ -8,7 +8,7 @@ body, html {
 
   font-family: $sans_serif;
   font-size: 100%; // 1rem = 16px (at 100% zoom)
-  color: getColour(dark);
+  color: $dark;
 
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -29,7 +29,7 @@ blockquote {
     width: 6rem;
     height: 0.25rem;
     margin-bottom: 3rem;
-    background-color: getColour(softred);
+    background-color: $softred;
   }
   p {
     line-height: 2.5rem;
@@ -59,7 +59,7 @@ a {
 }
 .link {
   display: inline-block;
-  color: getColour(softred);
+  color: $softred;
   font-size: 1rem;
 
   &:after {

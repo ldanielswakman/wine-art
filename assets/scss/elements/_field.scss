@@ -2,31 +2,31 @@
   background: none;
   border: none;
   padding: 0.5rem;
-  border-bottom: 2px solid getColour('white');
-  color: getColour('white');
+  border-bottom: 2px solid $white;
+  color: $white;
   font: inherit;
 
   &::-webkit-input-placeholder {
-    color: rgba(getColour('white'), 0.5);
+    color: rgba($white, 0.5);
   }
   &:-moz-placeholder {
-    color: rgba(getColour('white'), 0.5);
+    color: rgba($white, 0.5);
   }
   &::-moz-placeholder {
-    color: rgba(getColour('white'), 0.5);
+    color: rgba($white, 0.5);
   }
   &:-ms-input-placeholder {  
-    color: rgba(getColour('white'), 0.5);
+    color: rgba($white, 0.5);
   }
   &.field--big {
     padding: 1rem;
     font-size: 1.5rem;
   }
   &:hover {
-    background-color: rgba(getColour('white'), 0.05);
+    background-color: rgba($white, 0.05);
   }
   &:focus {
-    background-color: rgba(getColour('white'), 0.1);
+    background-color: rgba($white, 0.1);
     outline: none;
   }
 }

@@ -2,7 +2,7 @@
 section, .section {
 
   .section__bg-image {
-    background-color: getColour(softred);
+    background-color: $softred;
     background-position: center center;
     background-size: cover;
     background-attachment: local;

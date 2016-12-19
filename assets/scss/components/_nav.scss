@@ -21,7 +21,7 @@ nav, .nav {
     a {
       font-size: 2rem;
       line-height: 3rem;
-      color: getColour(dullblue);
+      color: $dullblue;
       text-decoration: none;
 
       @media screen and (max-width: $vw_mobile) {
@@ -32,7 +32,7 @@ nav, .nav {
         @include underline(currentColor);
       }
       &:hover {
-        color: getColour(softred);
+        color: $softred;
         @include underline(currentColor);
       }
     }

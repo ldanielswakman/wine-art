@@ -84,36 +84,6 @@ html, body {
   margin: 0;
   padding: 0; }
 
-.c-dark {
-  color: #431220; }
-
-.bg-dark {
-  background-color: #431220; }
-
-.c-softred {
-  color: #e01b3d; }
-
-.bg-softred {
-  background-color: #e01b3d; }
-
-.c-dullblue {
-  color: #4c6d8f; }
-
-.bg-dullblue {
-  background-color: #4c6d8f; }
-
-.c-grey {
-  color: #999999; }
-
-.bg-grey {
-  background-color: #999999; }
-
-.c-white {
-  color: #fafbfc; }
-
-.bg-white {
-  background-color: #fafbfc; }
-
 /* --- Utilities --- */
 .u-mt025 {
   margin-top: 0.25rem !important; }
