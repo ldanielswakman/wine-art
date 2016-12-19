@@ -1,13 +1,15 @@
 // Theme colours
+$darkwine:  #431220;
+$softred:   #e01b3d;
+$dullblue:  #4c6d8f;
+$darkblue:  #313a42;
 
-$dark:     #431220;
-$softred:  #e01b3d;
-$dullblue: #4c6d8f;
-$grey:     #999999;
-$white:    #fafbfc;
+// Greys
+$white:     #fafbfc;
+$grey:      #999999;
 
 $theme: (
-  $dark, $softred, $dullblue, $grey, $white
+  'darkwine': $darkwine, 'softred': $softred, 'dullblue': $dullblue, 'darkblue': $darkblue, 'white': $white, 'grey': $grey
 );
 
 // Generate classes from colours

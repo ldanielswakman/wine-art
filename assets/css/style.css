@@ -84,6 +84,42 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.c-darkwine {
+  color: #431220; }
+
+.bg-darkwine {
+  background-color: #431220; }
+
+.c-softred {
+  color: #e01b3d; }
+
+.bg-softred {
+  background-color: #e01b3d; }
+
+.c-dullblue {
+  color: #4c6d8f; }
+
+.bg-dullblue {
+  background-color: #4c6d8f; }
+
+.c-darkblue {
+  color: #313a42; }
+
+.bg-darkblue {
+  background-color: #313a42; }
+
+.c-white {
+  color: #fafbfc; }
+
+.bg-white {
+  background-color: #fafbfc; }
+
+.c-grey {
+  color: #999999; }
+
+.bg-grey {
+  background-color: #999999; }
+
 /* --- Utilities --- */
 .u-mt025 {
   margin-top: 0.25rem !important; }
@@ -2069,6 +2105,9 @@ html, body {
 .u-alignright {
   text-align: right; }
 
+.u-underline {
+  background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
+
 .i-appearFromRight {
   position: relative;
   opacity: 0;
@@ -2196,10 +2235,13 @@ figure.figure--3by2 {
 .field {
   background: none;
   border: none;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 2px solid #fafbfc;
   color: #fafbfc;
-  font: inherit; }
+  font: inherit;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .field::-webkit-input-placeholder {
     color: rgba(250, 251, 252, 0.5); }
   .field:-moz-placeholder {
@@ -2209,22 +2251,39 @@ figure.figure--3by2 {
   .field:-ms-input-placeholder {
     color: rgba(250, 251, 252, 0.5); }
   .field.field--big {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size: 1.5rem; }
+    .field.field--big:hover, .field.field--big:focus {
+      padding-left: 1rem; }
   .field:hover {
+    padding-left: 0.5rem;
     background-color: rgba(250, 251, 252, 0.05); }
   .field:focus {
+    padding-left: 0.5rem;
     background-color: rgba(250, 251, 252, 0.1);
     outline: none; }
 
 textarea.field {
   resize: none; }
 
+footer, .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%; }
+
 header .header__logo, .header .header__logo {
   height: 2rem;
   opacity: 0.1; }
   header .header__logo:hover, .header .header__logo:hover {
     opacity: 0.3; }
+
+main, .main {
+  position: relative;
+  z-index: 1;
+  background-color: #fafbfc; }
 
 nav, .nav {
   position: fixed;

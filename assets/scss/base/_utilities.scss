@@ -65,6 +65,12 @@
 }
 
 
+// Underline
+.u-underline {
+  @include underline(currentColor);
+}
+
+
 
 
 

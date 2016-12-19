@@ -4,11 +4,11 @@ body, html {
   margin: 0;
   padding: 0;
 
-  background-color: #fafbfc;
+  background-color: $white;
 
   font-family: $sans_serif;
   font-size: 100%; // 1rem = 16px (at 100% zoom)
-  color: $dark;
+  color: $darkwine;
 
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
