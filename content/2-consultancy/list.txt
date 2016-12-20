@@ -11,37 +11,3 @@ Text:
 We create, plan and manage branding strategies for wineries or wine trade companies to engage them with wine lovers. We believe that each of our clients has an inspiring story. We help them select the right words to communicate their story through online/offline channels and create a memorable experience. 
 
 Within this process, we help in developing all necessary marketing materials in accordance with the brand identity and through our network; we help finding the right design partners. We also provide translation services with a team specialized in wine business.
-
-----
-
-Items: 
-
-- 
-  title: Brand and Marketing Consultancy
-  image: cheese-n-wine.jpg
-  description: |
-    > People love drinking a great glass of wine, but it’s more the story they talk about.
-    
-    We create, plan and manage branding strategies for wineries or wine trade companies to engage them with wine lovers. We believe that each of our clients has an inspiring story. We help them select the right words to communicate their story through online/offline channels and create a memorable experience.
-    
-    Within this process, we help in developing all necessary marketing materials in accordance with the brand identity and through our network; we help finding the right design partners. We also provide translation services with a team specialized in wine business.
-- 
-  title: Wine List Creation
-  image: tasting-paper.jpg
-  description: |
-    > Who is the key trendsetter for wine in your town?
-    
-    We consult restaurants, hotels and private collectors to develop wine lists. By keeping track of international and local trends, we work on best available options to appeal your clients. Contact us and let’s create a selection not only to satisfy your needs but also to trigger curiosity for hidden gems.
-- 
-  title: Professional Wine Education
-  image: multi-colour.jpg
-  description: |
-    > Are you a sommelier, or a professional in the wine trade?
-    
-    Well, let’s admit that you have one of the greatest jobs in the world! However, learning about wine is an endless adventure even for professionals. Therefore, we offer all levels of wine training to wine people including: marketing and sales teams working in the trade, food and beverage managers, sommeliers and bartenders in premium hotels, restaurants and retails chains.
-    
-    Our courses focus on wine regions around the world, spirits, and their production methods as well as the new trends in local and international markets.
-- 
-  title: Wine Tasting Workshops
-  image: white-citrus.jpg
-  description: 'We enjoy getting together with our private or corporate clients in different sorts of tastings.  We discover the secret of blind tastings or creative food and wine pairings. We learn how to select a wine within many options or speak about unknown wine regions.  Our tastings are customized depending on our client’s expectations.'

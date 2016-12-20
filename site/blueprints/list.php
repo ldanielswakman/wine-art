@@ -1,7 +1,7 @@
 title: List page
 
 pages:
-  template: section
+  template: item
 
 fields:
   title:

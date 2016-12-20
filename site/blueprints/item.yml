@@ -1,0 +1,14 @@
+title: Item
+
+pages: false
+
+fields:
+  title: 
+    label: Title
+    type: text
+  image:
+    label: Image
+    type: image
+  description:
+    label: Description
+    type: markdown
