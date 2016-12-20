@@ -114,6 +114,18 @@ html, body {
 .bg-white {
   background-color: #fafbfc; }
 
+.c-greylightest {
+  color: #e8ebed; }
+
+.bg-greylightest {
+  background-color: #e8ebed; }
+
+.c-greylight {
+  color: #cad1d9; }
+
+.bg-greylight {
+  background-color: #cad1d9; }
+
 .c-grey {
   color: #999999; }
 
@@ -2096,6 +2108,17 @@ html, body {
 .u-inline {
   display: inline !important; }
 
+.u-relative {
+  position: relative !important; }
+
+.u-absolute {
+  position: absolute !important; }
+
+.u-pin-topright {
+  position: absolute !important;
+  top: 0;
+  right: 0; }
+
 .u-alignleft {
   text-align: left; }
 
@@ -2178,6 +2201,8 @@ blockquote {
     background-color: #e01b3d; }
   blockquote p {
     line-height: 2.5rem; }
+  blockquote + p {
+    margin-top: 1.5rem; }
 
 p {
   font-family: "iABC", "Times New Roman", Times, serif;
@@ -2186,11 +2211,12 @@ p {
   p.short {
     font-family: "Apercu", Arial, sans-serif;
     line-height: 1.5rem; }
-  p + p {
+  p + p, p + blockquote {
     margin-top: 1.5rem; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 .link {
   display: inline-block;

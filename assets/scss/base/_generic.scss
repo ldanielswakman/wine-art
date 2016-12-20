@@ -34,6 +34,9 @@ blockquote {
   p {
     line-height: 2.5rem;
   }
+  & + p {
+    margin-top: 1.5rem;
+  }
 }
 
 
@@ -47,7 +50,7 @@ p {
     font-family: $sans_serif;
     line-height: 1.5rem;
   }
-  & + p {
+  & + p, & + blockquote {
     margin-top: 1.5rem;
   }
 }
@@ -56,6 +59,7 @@ p {
 // Link
 a {
   text-decoration: none;
+  color: inherit;
 }
 .link {
   display: inline-block;

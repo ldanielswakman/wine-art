@@ -5,11 +5,20 @@ $dullblue:  #4c6d8f;
 $darkblue:  #313a42;
 
 // Greys
-$white:     #fafbfc;
-$grey:      #999999;
+$white:         #fafbfc;
+$greylightest:  #e8ebed;
+$greylight:     #cad1d9;
+$grey:          #999999;
 
 $theme: (
-  'darkwine': $darkwine, 'softred': $softred, 'dullblue': $dullblue, 'darkblue': $darkblue, 'white': $white, 'grey': $grey
+  'darkwine': $darkwine,
+  'softred': $softred,
+  'dullblue': $dullblue,
+  'darkblue': $darkblue,
+  'white': $white,
+  'greylightest': $greylightest,
+  'greylight': $greylight,
+  'grey': $grey
 );
 
 // Generate classes from colours

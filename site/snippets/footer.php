@@ -1,6 +1,4 @@
-    <div class="footer-spacer"></div>
-
-    <footer class="bg-darkblue u-pb4">
+    <footer class="bg-darkblue u-pv4">
 
       <div class="row">
         <div class="col-sm-5 col-sm-offset-1 u-pv4">
@@ -18,10 +16,7 @@
 
     </footer>
 
-    <script>
-      // makes footer tucked under main, minus 2px for buffer
-      $('.footer-spacer').css('height', ($('footer').outerHeight() - 5) );
-    </script>
+    <div class="footer-spacer"></div>
 
   </body>
 

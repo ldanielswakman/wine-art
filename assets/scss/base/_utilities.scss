@@ -53,6 +53,20 @@
 }
 
 
+// Positioning
+.u-relative {
+  position: relative !important;
+}
+.u-absolute {
+  position: absolute !important;
+}
+.u-pin-topright {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+
+
 // Alignment
 .u-alignleft {
   text-align: left;
