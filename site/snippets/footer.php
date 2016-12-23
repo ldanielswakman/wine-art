@@ -16,8 +16,6 @@
 
     </footer>
 
-    <div class="footer-spacer"></div>
-
   </body>
 
 </html>

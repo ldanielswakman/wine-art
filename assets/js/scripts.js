@@ -16,21 +16,37 @@ $(document).ready(function() {
     $(this).addClass('i-appearFromRight');
   });
 
+
+  // add isLoaded class to body
   setTimeout(function() {
     $('body').addClass('isLoaded');
   }, 300);
 
-  matchHeight();
+
+  // set footer spacer
+  $('footer').after('<div class="spacer" style="height: ' + $('footer').outerHeight() + 'px;"></div>')
+
+
+  // grid item click events
+  $('.grid-item__card').click(function() {
+    $('.grid-item').removeClass('isExpanded');
+    $(this).closest('.grid-item').addClass('isExpanded');
+    gridSpacer();
+  });
+  $('.grid-item__detail-close').click(function() {
+    $('.grid-item').removeClass('isExpanded');
+    gridSpacer();
+  });
+
+  gridSpacer();
 
 });
 
-function matchHeight() {
-  $('[class*="-spacer"]').each(function() {
-    target_name = $(this).attr('class').replace('-spacer', '');
-    $target = $(this).parent().find('.' + target_name);
-    if ( $(this).prev().is(target_name) || $(this).attr('id') == target_name) {
-      $target = $(this).prev();
-    }
-    $(this).css('height', $target.outerHeight() );
+function gridSpacer() {
+  // remove old instances
+  $('.grid-item .grid-item__spacer').remove();
+
+  $('.isExpanded .grid-item__detail').each(function() {
+    $(this).after('<div class="grid-item__spacer" style="height: ' + $(this).outerHeight() + 'px;"></div>');
   });
 }
