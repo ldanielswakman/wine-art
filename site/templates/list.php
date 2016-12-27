@@ -17,7 +17,7 @@
       <div class="row row--internalpadding u-mt6">
         <? $i = 1; foreach ($page->children()->visible() as $item) : ?>
 
-          <div class="grid-item col-sm-5<? e($i%2 == 0, ' col-sm-offset-1 u-pb6', ' u-pb6') ?><? e($i == 1, ' isExpanded'); ?>">
+          <div class="grid-item col-sm-5<? e($i%2 == 0, ' col-sm-offset-1 u-pb6', ' u-pb6') ?>">
             <!-- Grid card -->
               <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, 'u-pt4 u-pb3', 'u-pb6') ?>">
                 <? if($image = $item->image()): ?>
