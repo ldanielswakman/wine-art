@@ -1,0 +1,22 @@
+.grid-item {
+
+  &.isExpanded .grid-item__spacer:before {
+    content: "";
+    position: absolute;
+    border: 2rem solid transparent;
+    border-bottom-color: #e8ebed;
+    margin-top: -4rem;
+  }
+  .grid-item__detail {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.isExpanded .grid-item__detail {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+}

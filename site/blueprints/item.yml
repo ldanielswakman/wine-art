@@ -9,6 +9,12 @@ fields:
   image:
     label: Image
     type: image
-  description:
+  date:
+    label: Dates & Times
+    type: date
+  fees:
     label: Description
     type: markdown
+  location:
+    label: Location
+    type: text
