@@ -2,9 +2,10 @@ title: Section
 
 pages: false
 files: true
-options: 
-  status: true
-  preview: parent
+preview: parent
+options:
+  status: false
+  url: false
 
 fields:
   title:
@@ -31,4 +32,3 @@ fields:
     label: Follow up text
     type:  text
     width: 1/2
-    

@@ -19,7 +19,7 @@
         <? endif ?>
 
         <? $text_class = $even ? 'col-sm-5 col-sm-offset-2' : 'col-sm-5'; ?>
-        <div class="col-xs-12 <?= $text_class ?> u-pl3 u-pb6">
+        <div class="col-xs-12 <?= $text_class ?> u-pl3 u-pb3">
           <!-- <h4><?= $section->title() ?></h4> -->
 
           <?= $section->text()->kirbytext() ?>

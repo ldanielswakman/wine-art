@@ -1,8 +1,8 @@
 <? // Menu items ?>
 <ul>
-  <? foreach ($site->pages()->visible() as $page) : ?>
+  <? foreach ($site->pages()->visible() as $p) : ?>
     <li>
-      <a href="<?=$page->url() ?>" class="<? e($page->isOpen(), 'isActive') ?>"><?= strtolower($page->title()->html()) ?></a>
+      <a href="<?=$p->url() ?>" class="<? e($p->isOpen(), 'isActive') ?>"><?= strtolower($p->title()->html()) ?></a>
     </li>
   <? endforeach ?>
 </ul>
