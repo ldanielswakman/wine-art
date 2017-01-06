@@ -2203,19 +2203,31 @@ blockquote {
     margin-bottom: 3rem;
     background-color: #e01b3d; }
   blockquote p {
-    line-height: 2.5rem; }
+    font-size: 2.5rem;
+    line-height: 3rem; }
   blockquote + p {
     margin-top: 1.5rem; }
 
 p {
   font-family: "iABC", "Times New Roman", Times, serif;
-  line-height: 1.8em;
+  font-size: 1.2rem;
+  line-height: 1.7em;
   max-width: 50rem; }
   p.short {
     font-family: "Apercu", Arial, sans-serif;
+    font-size: 1rem;
     line-height: 1.5rem; }
-  p + p, p + blockquote {
+  p + p,
+  p + blockquote {
     margin-top: 1.5rem; }
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4 {
+    margin-top: 2rem; }
+
+h1 + p, h2 + p, h3 + p, h4 + p {
+  margin-top: 1rem; }
 
 a {
   text-decoration: none;
@@ -2399,7 +2411,14 @@ nav, .nav {
           font-size: 1.5rem;
           line-height: 2.25rem; } }
 
-section .section__bg-image, .section .section__bg-image {
+section .section__bg .section__bg-image, .section .section__bg .section__bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 100%;
   background-color: #e01b3d;
   background-position: center center;
   background-size: cover;
@@ -2408,6 +2427,10 @@ section .section__bg-image, .section .section__bg-image {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+section#intro .section__bg-image, .section#intro .section__bg-image {
+  width: calc(100% + 6rem);
+  margin-left: -6rem; }
 
 body.isLoaded section .section__bg-image {
   opacity: 1; }

@@ -1,7 +1,11 @@
 // Section
 section, .section {
 
-  .section__bg-image {
+  .section__bg .section__bg-image {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: block;
+    height: 100%;
     background-color: $softred;
     background-position: center center;
     background-size: cover;
@@ -9,7 +13,12 @@ section, .section {
     opacity: 0;
     @include prefix(transition, all 0.3s ease);
   }
-
+  &#intro .section__bg-image {
+    $extra_left: 6rem;
+    width: calc(100% + #{$extra_left});
+    margin-left: -$extra_left;
+    // margin-right: -$extra_left;
+  }
 }
 body.isLoaded section {
   .section__bg-image {
