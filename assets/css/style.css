@@ -2131,6 +2131,9 @@ html, body {
 .u-underline {
   background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
 
+.u-text-15x {
+  font-size: 1.5rem; }
+
 .i-appearFromRight {
   position: relative;
   opacity: 0;
@@ -2317,6 +2320,31 @@ footer, .footer {
   left: 0;
   z-index: 0;
   width: 100%; }
+  footer .footer__menu ul, .footer .footer__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    footer .footer__menu ul a.isActive, .footer .footer__menu ul a.isActive {
+      background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
+    footer .footer__menu ul a:hover, .footer .footer__menu ul a:hover {
+      color: #e01b3d;
+      background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
+    footer .footer__menu ul.menu-language, .footer .footer__menu ul.menu-language {
+      margin-top: 0.5rem; }
+    footer .footer__menu ul.menu-language li, .footer .footer__menu ul.menu-language li {
+      display: inline-block;
+      float: left;
+      margin-right: 1rem; }
+      footer .footer__menu ul.menu-language li a, .footer .footer__menu ul.menu-language li a {
+        font-size: 1.5rem; }
+    footer .footer__menu ul li, .footer .footer__menu ul li {
+      padding: 0.25rem 0; }
+    footer .footer__menu ul a, .footer .footer__menu ul a {
+      color: #fafbfc; }
+    footer .footer__menu ul.menu-language, .footer .footer__menu ul.menu-language {
+      opacity: 0.75; }
+      footer .footer__menu ul.menu-language li a, .footer .footer__menu ul.menu-language li a {
+        font-size: 1.25rem; }
 
 header .header__logo, .header .header__logo {
   height: 2rem;
@@ -2335,19 +2363,32 @@ nav, .nav {
   right: 0;
   z-index: 2;
   padding: 2rem;
-  opacity: 0.2;
   -webkit-transform: rotate(-90deg) translate(100%, 0);
   -moz-transform: rotate(-90deg) translate(100%, 0);
   transform: rotate(-90deg) translate(100%, 0);
   -webkit-transform-origin: bottom right;
   -moz-transform-origin: bottom right;
   transform-origin: bottom right; }
-  nav:hover, .nav:hover {
-    opacity: 1; }
   nav ul, .nav ul {
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    opacity: 0.2; }
+    nav ul a.isActive, .nav ul a.isActive {
+      background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
+    nav ul a:hover, .nav ul a:hover {
+      color: #e01b3d;
+      background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
+    nav ul.menu-language, .nav ul.menu-language {
+      margin-top: 0.5rem; }
+    nav ul.menu-language li, .nav ul.menu-language li {
+      display: inline-block;
+      float: left;
+      margin-right: 1rem; }
+      nav ul.menu-language li a, .nav ul.menu-language li a {
+        font-size: 1.5rem; }
+    nav ul:hover, .nav ul:hover {
+      opacity: 1; }
     nav ul a, .nav ul a {
       font-size: 2rem;
       line-height: 3rem;
@@ -2357,11 +2398,6 @@ nav, .nav {
         nav ul a, .nav ul a {
           font-size: 1.5rem;
           line-height: 2.25rem; } }
-      nav ul a.isActive, .nav ul a.isActive {
-        background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
-      nav ul a:hover, .nav ul a:hover {
-        color: #e01b3d;
-        background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
 
 section .section__bg-image, .section .section__bg-image {
   background-color: #e01b3d;

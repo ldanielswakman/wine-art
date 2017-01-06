@@ -5,19 +5,18 @@ nav, .nav {
   z-index: 2;
 
   padding: 2rem;
-  opacity: 0.2;
 
   @include prefix(transform, rotate(-90deg) translate(100%, 0));
   @include prefix(transform-origin, bottom right);
 
-  &:hover {
-    opacity: 1;
-  } 
   ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include menu-styles();
+    
+    opacity: 0.2;
 
+    &:hover {
+      opacity: 1;
+    }
     a {
       font-size: 2rem;
       line-height: 3rem;
@@ -27,13 +26,6 @@ nav, .nav {
       @media screen and (max-width: $vw_mobile) {
         font-size: 1.5rem;
         line-height: 2.25rem;
-      }
-      &.isActive {
-        @include underline(currentColor);
-      }
-      &:hover {
-        color: $softred;
-        @include underline(currentColor);
       }
     }
   }

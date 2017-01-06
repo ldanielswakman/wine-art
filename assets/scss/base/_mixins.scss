@@ -9,3 +9,32 @@
 @mixin underline($color: $softred, $weight: 0.1em, $offset: 0) {
   background-image: linear-gradient(to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight));
 }
+
+// for menu <ul>s
+@mixin menu-styles() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    &.isActive {
+      @include underline(currentColor);
+    }
+    &:hover {
+      color: $softred;
+      @include underline(currentColor);
+    }
+  }
+  &.menu-language {
+    margin-top: 0.5rem;
+  }
+  &.menu-language li {
+    display: inline-block;
+    float: left;
+    margin-right: 1rem;
+
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}

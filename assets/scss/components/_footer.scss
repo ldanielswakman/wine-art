@@ -4,4 +4,21 @@ footer, .footer {
   left: 0;
   z-index: 0;
   width: 100%;
+
+  // Footer menu
+  .footer__menu {
+    ul {
+      @include menu-styles();
+
+      li { padding: 0.25rem 0; }
+      a { color: $white; }
+      &.menu-language { 
+        opacity: 0.75; 
+
+        li a {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
 }
