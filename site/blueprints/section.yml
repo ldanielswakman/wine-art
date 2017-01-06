@@ -20,3 +20,15 @@ fields:
     type:  markdown
     header1: h2
     header2: h3
+
+  followup:
+    label: Follow up link
+    help: Start typing to select a page from the list; leave this empty to hide the link
+    type:  page
+    width: 1/2
+
+  followup_text:
+    label: Follow up text
+    type:  text
+    width: 1/2
+    

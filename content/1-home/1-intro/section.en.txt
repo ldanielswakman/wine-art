@@ -7,8 +7,16 @@ Text:
 > We bring a dash of flavour<br> you bring your thirst for tasting
 <br>
 
-<p class="short"><span class="c-softred">wine•art • /wʌɪn-ɑːt/, ~s n.</span> consists of various branches <br>of creative wine activity through inspiration.</p>
+<p class="short"><span class="c-softred">wine•art • /wʌɪn-ɑːt/, ~s n.</span> consists of various <br>branches of creative wine activity through inspiration.</p>
 
 ----
 
 Image: wine-opener.jpg
+
+----
+
+Followup: #first
+
+----
+
+Followup-text: Explore

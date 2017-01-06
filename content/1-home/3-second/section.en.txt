@@ -1,0 +1,13 @@
+Title: second
+
+----
+
+Image: white-wine.jpg
+
+----
+
+Text: > Another section, more content.
+
+----
+
+Followup: services

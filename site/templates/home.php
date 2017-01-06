@@ -23,6 +23,13 @@
           <!-- <h4><?= $section->title() ?></h4> -->
 
           <?= $section->text()->kirbytext() ?>
+
+          <? if($section->followup()->isNotEmpty()) : ?>
+            <? $page_exists = ($section->followup()->url()) ? false : true; ?>
+            <a href="<?= $section->followup()->url() ?>" class="u-mt3 link<?= e($page_exists, ' link--secondary')?>">
+              <? e($section->followup_text()->isNotEmpty(), html($section->followup_text()), html($section->followup()) ) ?>
+            </a>
+          <? endif ?>
         </div>
 
       </div>
