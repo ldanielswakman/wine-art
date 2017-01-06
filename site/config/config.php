@@ -29,4 +29,19 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-c::set('debug', true);
+// Language settings
+c::set('languages', array(
+  array(
+    'code' => 'en',
+    'name' => 'English',
+    'default' => true,
+    'locale' => 'en_US.UTF-8',
+    'url' => '/',
+  ),
+  array(
+    'code' => 'de',
+    'name' => 'Deutsch',
+    'locale' => 'de_DE.UTF-8',
+    'url' => '/de',
+  ),
+));

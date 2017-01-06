@@ -19,4 +19,6 @@
 
   <body>
 
-    <? snippet('nav') ?>
+    <nav>
+      <? snippet('menu') ?>
+    </nav>
