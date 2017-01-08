@@ -1,10 +1,10 @@
-<div class="grid-item col-sm-5<? e($i%2 == 0, ' col-sm-offset-1 u-pb6', ' u-pb6') ?>">
+<div class="grid-item col-sm-5<? e($i%2 == 0, ' col-sm-offset-1 u-pb3') ?>">
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, 'u-pt4 u-pb3', 'u-pb6') ?>">
+  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, 'u-pt10 u-pb3', 'u-pb1') ?>">
     <? if($image = $item->image()): ?>
-      <figure class="figure--3by2"><img src="<?= $image->url() ?>" alt="" /></figure>
+      <figure class="figure--3by2"><img src="<?= thumb($image, ['width' => 600])->url() ?>" alt="" /></figure>
     <? endif ?>
     <h3 class="u-mv1"><?= $item->title()->html() ?></h3>
     <p class="short c-grey"><?= excerpt($item->description(), 90) ?></p>

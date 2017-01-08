@@ -14,7 +14,7 @@
         <? $image_class = $even ? 'col-sm-5 last-sm col-xs-11' : 'col-sm-5'; ?>
         <? if($image = $section->image()): ?>
           <div class="col-xs-10 <?= $image_class ?> u-mb1 u-minheight20 u-relative section__bg">
-            <div class="section__bg-image" style="background-image: url('<?= $image->url() ?>');"></div>
+            <div class="section__bg-image" style="background-image: url('<?= thumb($image, ['width' => 1000])->url() ?>');"></div>
           </div>
         <? endif ?>
 
