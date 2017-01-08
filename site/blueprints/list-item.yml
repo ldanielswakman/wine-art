@@ -1,0 +1,37 @@
+title: Item
+
+pages: false
+
+fields:
+  title: 
+    label: Title
+    type: text
+  image:
+    label: Image
+    type: image
+  start_date:
+    label: Start Date
+    type: date
+    width: 1/2
+  end_date:
+    label: End Date
+    type: date
+    width: 1/2
+  description:
+    label: Description
+    type: markdown
+    header1: h3
+    header2: h4
+  fee:
+    label: Fee (CHF)
+    type: number
+    min: 0
+  location:
+    label: Location
+    type: textarea
+    buttons:
+  show_buy_button:
+    label: 'Add to cart' button
+    type: checkbox
+    text: Show button?
+    
