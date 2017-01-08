@@ -65,6 +65,11 @@ p {
     margin-top: 2rem;
   }
 }
+&.short p {
+  font-family: $sans_serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 
 // Headings

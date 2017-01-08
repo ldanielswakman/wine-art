@@ -29,14 +29,15 @@ $(document).ready(function() {
 
   // grid item click events
   $('.grid-item__card').click(function() {
-    $('.grid-item').removeClass('isExpanded');
-    $(this).closest('.grid-item').addClass('isExpanded');
-    gridSpacer();
+    openCardDetail($(this));
   });
   $('.grid-item__detail-close').click(function() {
-    $('.grid-item').removeClass('isExpanded');
-    gridSpacer();
+    closeCardDetail();
   });
+
+  if(window.location.hash) {
+    openCardDetail(window.location.hash);
+  }
 
   gridSpacer();
 
@@ -49,4 +50,22 @@ function gridSpacer() {
   $('.isExpanded .grid-item__detail').each(function() {
     $(this).after('<div class="grid-item__spacer" style="height: ' + $(this).outerHeight() + 'px;"></div>');
   });
+}
+
+// Open Card Detail
+function openCardDetail(dest) {
+  if($(dest)) {
+    $('.grid-item').removeClass('isExpanded');
+    $(dest).closest('.grid-item').addClass('isExpanded');
+    gridSpacer();
+    $(dest).smoothScroll();
+  } else {
+    console.log('No card found to expand');
+  }
+}
+
+// Close Card Detail
+function closeCardDetail() {
+  $('.grid-item').removeClass('isExpanded');
+  gridSpacer();
 }
