@@ -1,0 +1,29 @@
+Title: Wine Tasting Workshops
+
+----
+
+Image: white-citrus.jpg
+
+----
+
+Description: We enjoy getting together with our private or corporate clients at different sorts of tastings.  We discover the secret of blind tasting or explore creative food and wine pairings. We learn how to select a wine from among many options or talk about little-known wine regions.  Our tastings are tailored to our clients’ requirements.
+
+----
+
+Start-date: 
+
+----
+
+End-date: 
+
+----
+
+Fee: 
+
+----
+
+Location: 
+
+----
+
+Show-buy-button: 0
