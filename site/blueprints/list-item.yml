@@ -9,6 +9,15 @@ fields:
   image:
     label: Image
     type: image
+  description:
+    label: Description
+    type: markdown
+    header1: h3
+    header2: h4
+  headline1:
+    label: Extra options
+    type: headline
+    help: (Leave empty to hide each field)
   start_date:
     label: Start Date
     type: date
@@ -17,11 +26,6 @@ fields:
     label: End Date
     type: date
     width: 1/2
-  description:
-    label: Description
-    type: markdown
-    header1: h3
-    header2: h4
   fee:
     label: Fee (CHF)
     type: number

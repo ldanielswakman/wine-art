@@ -13,3 +13,23 @@ Description:
 We create, plan and manage branding strategies for wineries or wine trade companies to engage them with wine lovers. We believe that each of our clients has an inspiring story. We help them select the right words to communicate their story through online/offline channels and create a memorable experience.
     
 Within this process, we help in developing all necessary marketing materials in accordance with the brand identity and through our network; we help finding the right design partners. We also provide translation services with a team specialized in wine business.
+
+----
+
+Start-date: 2017-01-01
+
+----
+
+End-date: 2017-01-31
+
+----
+
+Fee: 10000
+
+----
+
+Location: Test....
+
+----
+
+Show-buy-button: 1

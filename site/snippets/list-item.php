@@ -22,43 +22,43 @@
         <p class="c-dullblue"><?= $item->description()->kirbytext() ?></p>
 
         <? if($item->start_date()->isNotEmpty() && $item->end_date()->isNotEmpty()) : ?>
-          <div class="row u-pv05">
-            <div class="col-xs-12 col-sm-4 u-pb025 c-dullblue">
+          <div class="row u-pv025">
+            <div class="col-xs-12 col-sm-4 u-pt025 c-dullblue">
               <?= strtoupper(l::get('course_duration')) ?>
             </div>
-            <div class="col-xs-12 col-sm-8 c-darkblue">
-              <strong><?= $item->start_date() ?>  —  <?= $item->end_date() ?></strong>
+            <div class="col-xs-12 col-sm-8 u-pt025 u-pb05 c-darkblue">
+              <strong><?= $item->date('d M Y', 'start_date') ?>  —  <?= $item->date('d M Y', 'end_date') ?></strong>
             </div>
           </div>
         <? endif ?>
 
         <? if($item->fee()->isNotEmpty()) : ?>
-          <div class="row u-pv05">
-            <div class="col-xs-12 col-sm-4 u-pb025 c-dullblue">
+          <div class="row u-pv025">
+            <div class="col-xs-12 col-sm-4 u-pt025 c-dullblue">
               <?= strtoupper(l::get('course_fee')) ?>
             </div>
-            <div class="col-xs-12 col-sm-8 c-darkblue">
-              <strong><?= $item->fee() ?></strong> CHF
+            <div class="col-xs-12 col-sm-8 u-pt025 u-pb05 c-darkblue">
+              <strong><?= number_format($item->fee()->value(), 0, ',', '.') ?></strong> CHF
             </div>
           </div>
         <? endif ?>
         
         <? if($item->location()->isNotEmpty()) : ?>
-          <div class="row u-pv05">
-            <div class="col-xs-12 col-sm-4 u-pb025 c-dullblue">
+          <div class="row u-pv025">
+            <div class="col-xs-12 col-sm-4 u-pt025 c-dullblue">
               <?= strtoupper(l::get('course_location')) ?>
             </div>
-            <div class="col-xs-12 col-sm-8 c-darkblue">
+            <div class="col-xs-12 col-sm-8 u-pt025 u-pb05 c-darkblue short">
               <?= $item->location()->kirbytext() ?>
             </div>
           </div>
         <? endif ?>
         
         <? if($item->show_buy_button() == '1') : ?>
-          <div class="row u-pv05 u-mt2">
-            <div class="col-xs-12 col-sm-4 u-pb025">
+          <div class="row u-pv025 u-mt2">
+            <div class="col-xs-12 col-sm-4 u-pt025">
             </div>
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-sm-8 u-pt025 u-pb05">
               <a href="#" class="link link--secondary">+ Add to cart</a>
             </div>
           </div>
