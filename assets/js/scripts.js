@@ -13,7 +13,7 @@ $(document).ready(function() {
   });
 
   $('blockquote').each(function() {
-    $(this).addClass('i-appearFromRight');
+    $(this).addClass('i-onload-appearFromRight');
   });
 
 
@@ -52,7 +52,9 @@ function gridSpacer() {
   });
 }
 
-// Open Card Detail
+
+
+// UI: Open Card Detail
 function openCardDetail(dest) {
   if($(dest)) {
     $('.grid-item').removeClass('isExpanded');
@@ -64,8 +66,52 @@ function openCardDetail(dest) {
   }
 }
 
-// Close Card Detail
+
+
+// UI: Close Card Detail
 function closeCardDetail() {
   $('.grid-item').removeClass('isExpanded');
   gridSpacer();
+}
+
+
+
+// UI: listen for field-box empty
+$(document).ready(function() {
+  $('.field').bind('keyup change', function() {
+    checkFieldBoxLabel($(this));
+    showNextField($(this));
+    checkFormFields($(this));
+  });
+  $('.field').each(function() {
+    checkFieldBoxLabel($(this));
+  });
+});
+function checkFieldBoxLabel(obj) { 
+  if(obj.val().length > 0) {
+    obj.addClass('field--notempty');
+    obj.removeClass('field--error');
+  } else {
+    obj.removeClass('field--notempty');
+  }
+}
+function showNextField(obj) { 
+  if(obj.val().length > 2 && obj.attr('id') == 'message') {
+    obj.closest('.contact-form').find('.i-onevent-appearFromTop').first().addClass('isFired');
+  }
+}
+function checkFormFields(obj) {
+  $form = obj.closest('.contact-form');
+  completed = true;
+  $form.find('input[required],textarea[required]').each(function() {
+    if($(this).val().length < 1) {
+      completed = false;
+      return false;
+    }
+  });
+  if(completed === true) { 
+    $form.find('button[type="submit"]').removeAttr('disabled');
+  } else {
+    $form.find('button[type="submit"]').attr('disabled', 'disabled');
+  }
 }
