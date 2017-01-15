@@ -89,6 +89,21 @@
 }
 
 
+//
+.u-triangle-topleft {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0.5rem;
+    border: 0.5rem solid transparent;
+    border-bottom-color: $softred;
+  }
+}
+
+
 // Text size
 .u-text-15x {
   font-size: 1.5rem;

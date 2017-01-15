@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
   // set footer spacer
-  $('footer').after('<div class="spacer" style="height: ' + $('footer').outerHeight() + 'px;"></div>')
+  $('footer').after('<div id="below" class="spacer" style="height: ' + $('footer').outerHeight() + 'px;"></div>')
 
 
   // grid item click events
@@ -76,21 +76,26 @@ function closeCardDetail() {
 
 
 
-// UI: listen for field-box empty
+// UI: form field interactions
 $(document).ready(function() {
   $('.field').bind('keyup change', function() {
-    checkFieldBoxLabel($(this));
+    checkFieldContent($(this));
     showNextField($(this));
     checkFormFields($(this));
   });
   $('.field').each(function() {
-    checkFieldBoxLabel($(this));
+    checkFieldContent($(this), false);
   });
+  checkFormFields($(this));
 });
-function checkFieldBoxLabel(obj) { 
+function checkFieldContent(obj, errorcheck) {
+  errorcheck = (typeof errorcheck !== 'undefined' && errorcheck == false) ? false : true;
+  console.log(errorcheck);
   if(obj.val().length > 0) {
     obj.addClass('field--notempty');
-    obj.removeClass('field--error');
+    if (errorcheck == true) {
+      obj.removeClass('field--error');
+    }
   } else {
     obj.removeClass('field--notempty');
   }
@@ -110,6 +115,7 @@ function checkFormFields(obj) {
     }
   });
   if(completed === true) { 
+    $('.i-onevent-appearFromTop').addClass('isFired');
     $form.find('button[type="submit"]').removeAttr('disabled');
   } else {
     $form.find('button[type="submit"]').attr('disabled', 'disabled');

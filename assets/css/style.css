@@ -3114,6 +3114,16 @@ html, body {
 .u-underline {
   background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
 
+.u-triangle-topleft {
+  position: relative; }
+  .u-triangle-topleft:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0.5rem;
+    border: 0.5rem solid transparent;
+    border-bottom-color: #e01b3d; }
+
 .u-text-15x {
   font-size: 1.5rem; }
 
@@ -3306,7 +3316,7 @@ figure.figure--3by2 {
   .button[disabled] {
     background-color: rgba(250, 251, 252, 0.01);
     color: rgba(250, 251, 252, 0.2);
-    border-bottom-color: transparent; }
+    background-image: none; }
 
 .field {
   background: none;
@@ -3350,6 +3360,9 @@ figure.figure--3by2 {
     outline: none; }
     .field:focus + .field--label {
       left: 0.5rem; }
+  .field.field--error {
+    color: #e01b3d;
+    border-bottom: 0.125rem solid #e01b3d; }
 
 textarea.field {
   resize: none; }
@@ -3371,6 +3384,10 @@ textarea.field {
   .field-set .field--notempty + .field--label {
     opacity: 1;
     pointer-events: all; }
+
+.uniform__potty {
+  position: absolute;
+  left: -9999px; }
 
 .grid-item.isExpanded .grid-item__spacer:before {
   content: "";
