@@ -32,8 +32,4 @@
     <? snippet('uniform/errors', ['form' => $form]) ?>
   <? endif ?>
 
-  <div class="uniform-errors__item bg-softred c-white u-pv05 u-ph1 u-inlineblock u-triangle-topleft">
-    Please enter an error.
-  </div>
-
 </form>
