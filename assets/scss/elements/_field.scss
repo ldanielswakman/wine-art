@@ -2,9 +2,11 @@
   background: none;
   border: none;
   padding: 0.5rem 0;
-  border-bottom: 2px solid $white;
+  border-top: 0.125rem solid transparent;
+  border-bottom: 0.125rem solid $greylight;
   color: $white;
   font: inherit;
+  line-height: 1.25rem;
 
   @include prefix(transition, all 0.3s ease);
 
@@ -24,19 +26,46 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.5rem;
+    line-height: 2rem;
 
+    & + .field--label { top: 0.4rem; }
     &:hover, &:focus { padding-left: 1rem; }
+    &:hover + .field--label, &:focus + .field--label { left: 1rem; }
   }
   &:hover {
     padding-left: 0.5rem;
     background-color: rgba($white, 0.05);
+
+    & + .field--label { left: 0.5rem; }
   }
   &:focus {
     padding-left: 0.5rem;
     background-color: rgba($white, 0.1);
     outline: none;
+
+    & + .field--label { left: 0.5rem; }
   }
 }
 textarea.field {
   resize: none;
+}
+.field-set {
+  position: relative;
+
+  .field--label {
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    z-index: 2;
+    color: rgba($white, 0.2);
+    font-size: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+
+    @include prefix(transition, all 0.3s ease);
+  }
+  .field--notempty + .field--label {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
