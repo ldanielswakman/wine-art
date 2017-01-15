@@ -15,14 +15,14 @@
   <!-- Detail panel -->
   <div id="<?= $item->uid() ?>" class="grid-item__detail bg-greylightest u-pv3">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 u-relative">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative">
 
         <h3 class="u-mv1 c-softred"><?= $item->title()->html() ?></h3>
 
         <p class="c-dullblue"><?= $item->description()->kirbytext() ?></p>
 
         <? if($item->start_date()->isNotEmpty() && $item->end_date()->isNotEmpty()) : ?>
-          <div class="row u-pv025">
+          <div class="row row--internalpadding u-pv025">
             <div class="col-xs-12 col-sm-4 u-pt025 c-dullblue">
               <?= strtoupper(l::get('course_duration')) ?>
             </div>
@@ -33,7 +33,7 @@
         <? endif ?>
 
         <? if($item->fee()->isNotEmpty()) : ?>
-          <div class="row u-pv025">
+          <div class="row row--internalpadding u-pv025">
             <div class="col-xs-12 col-sm-4 u-pt025 c-dullblue">
               <?= strtoupper(l::get('course_fee')) ?>
             </div>
@@ -44,7 +44,7 @@
         <? endif ?>
         
         <? if($item->location()->isNotEmpty()) : ?>
-          <div class="row u-pv025">
+          <div class="row row--internalpadding u-pv025">
             <div class="col-xs-12 col-sm-4 u-pt025 c-dullblue">
               <?= strtoupper(l::get('course_location')) ?>
             </div>
@@ -55,7 +55,7 @@
         <? endif ?>
         
         <? if($item->show_buy_button() == '1') : ?>
-          <div class="row u-pv025 u-mt2">
+          <div class="row row--internalpadding u-mt2">
             <div class="col-xs-12 col-sm-4 u-pt025">
             </div>
             <div class="col-xs-12 col-sm-8 u-pt025 u-pb05">
@@ -64,7 +64,7 @@
                 <input type="hidden" name="hosted_button_id" value="MTC2H5W38ZHGJ">
                 <button type="submit" class="link" name="submit">Purchase now</button>
               </form>
-              <small class="c-grey"><em>This will direct you to the PayPal payment page</em></small>
+              <small class="c-grey"><em>This will direct you to the <span style="color: #1c3687;">Pay</span><span style="color: #009edd;">Pal</span> payment page</em></small>
             </div>
           </div>
         <? endif ?>
