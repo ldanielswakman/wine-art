@@ -1,0 +1,19 @@
+.button {
+  @extend .link;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  font: inherit;
+  line-height: 1.5rem;
+  background-color: $greylightest;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+  }
+  &[disabled] {
+    background-color: rgba($white, 0.01);
+    color: rgba($white, 0.2);
+    background-image: none;
+  }
+}

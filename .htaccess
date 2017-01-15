@@ -46,3 +46,7 @@ RewriteRule ^(.*) index.php [L]
 # AddDefaultCharset UTF-8
 #
 # php_flag short_open_tag on
+
+
+# Cache Control
+Header set Cache-Control "max-age=2628000, public"

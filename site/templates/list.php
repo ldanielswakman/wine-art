@@ -10,7 +10,7 @@
 
     </div>
 
-    <div class="col-sm-8 u-pv6">
+    <div class="col-xs-12 col-sm-8 u-pv6">
 
       <?= $page->text()->kirbytext() ?>
 

@@ -8,6 +8,7 @@
   @if($i%2 != 0)     {  $name: $name * 100;           }
   @if(($i+2)%4 == 0) {  $name: $name * 10;            }
   @if ($i/4 < 1)     {  $name: unquote("0") + $name;  }
+  @if ($i == 60)     {  $name: $name + unquote("0");  }
 
   // margins
   .u-mt#{$name} { margin-top: $value !important; }
@@ -51,6 +52,9 @@
 .u-inline {
   display: inline !important;
 }
+.u-hide {
+  display: none !important;
+}
 
 
 // Positioning
@@ -85,6 +89,21 @@
 }
 
 
+//
+.u-triangle-topleft {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0.5rem;
+    border: 0.5rem solid transparent;
+    border-bottom-color: $softred;
+  }
+}
+
+
 // Text size
 .u-text-15x {
   font-size: 1.5rem;
@@ -94,13 +113,24 @@
 
 
 // Interactions
-.i-appearFromRight {
+.i-onload-appearFromRight {
   position: relative;
   opacity: 0;
   @include prefix(transform, translateX(6rem));
   @include prefix(transition, all 1.5s cubic-bezier(0, 0, 0.2, 1));
 }
-body.isLoaded .i-appearFromRight {
+body.isLoaded .i-onload-appearFromRight {
   opacity: 1;
   @include prefix(transform, translateX(0));
+}
+.i-onevent-appearFromTop {
+  position: relative;
+  opacity: 0;
+  @include prefix(transform, translateY(-3rem));
+  @include prefix(transition, all 1.5s cubic-bezier(0, 0, 0.2, 1));
+  
+  &.isFired {
+    opacity: 1;
+    @include prefix(transform, translateY(0));
+  }
 }
