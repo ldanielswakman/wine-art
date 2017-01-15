@@ -6,15 +6,15 @@
     <textarea name="message" id="message" required class="field field--big<? e($form->error('message'), ' field--error') ?> u-widthfull u-mb1" placeholder="<?= l::get('form_message_placeholder') ?>"><?= $form->old('message') ?></textarea>
   </div>
 
-  <div class="row row--internalpadding i-onevent-appearFromTop">
+  <div class="row row--internalpadding<? e((count($form->errors()) > 0), '', ' i-onevent-appearFromTop') ?>">
     <div class="col-xs-12 col-sm-5">
       <div class="field-set">
-        <input name="email" type="email" class="field<? e($form->error('email'), ' field--error') ?> u-mb1 u-widthfull" placeholder="<?= l::get('form_email_placeholder') ?>" value="<?= $form->old('email') ?>">
+        <input name="email" type="email" required class="field<? e($form->error('email'), ' field--error') ?> u-mb1 u-widthfull" placeholder="<?= l::get('form_email_placeholder') ?>" value="<?= $form->old('email') ?>">
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
       <div class="field-set">
-        <input name="name" type="text" required class="field<? e($form->error('name'), ' field--error') ?> u-mb1 u-widthfull" placeholder="<?= l::get('form_name_placeholder') ?>" value="<?= $form->old('name') ?>">
+        <input name="name" type="text" class="field<? e($form->error('name'), ' field--error') ?> u-mb1 u-widthfull" placeholder="<?= l::get('form_name_placeholder') ?>" value="<?= $form->old('name') ?>">
       </div>
     </div>
 

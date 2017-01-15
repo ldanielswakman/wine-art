@@ -90,7 +90,6 @@ $(document).ready(function() {
 });
 function checkFieldContent(obj, errorcheck) {
   errorcheck = (typeof errorcheck !== 'undefined' && errorcheck == false) ? false : true;
-  console.log(errorcheck);
   if(obj.val().length > 0) {
     obj.addClass('field--notempty');
     if (errorcheck == true) {
@@ -100,13 +99,27 @@ function checkFieldContent(obj, errorcheck) {
     obj.removeClass('field--notempty');
   }
 }
-function showNextField(obj) { 
+function showNextField(obj) {
   if(obj.val().length > 2 && obj.attr('id') == 'message') {
     obj.closest('.contact-form').find('.i-onevent-appearFromTop').first().addClass('isFired');
   }
 }
 function checkFormFields(obj) {
   $form = obj.closest('.contact-form');
+
+  // Check if form is started
+  started = false;
+  $form.find('input,textarea').each(function() {
+    if($(this).val().length > 0) {
+      started = true;
+      return false;
+    }
+  });
+  if(started === true) {
+    $('.i-onevent-appearFromTop').addClass('isFired');
+  }
+
+  // Check if form is completed
   completed = true;
   $form.find('input[required],textarea[required]').each(function() {
     if($(this).val().length < 1) {
@@ -114,10 +127,11 @@ function checkFormFields(obj) {
       return false;
     }
   });
-  if(completed === true) { 
-    $('.i-onevent-appearFromTop').addClass('isFired');
+  if(completed === true) {
     $form.find('button[type="submit"]').removeAttr('disabled');
   } else {
     $form.find('button[type="submit"]').attr('disabled', 'disabled');
   }
+
+  console.log('start: ' + started + ', completed: ' + completed);
 }
