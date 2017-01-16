@@ -85,8 +85,8 @@ c::set('routes', [
 
         // If validation and guards passed, execute the action.
         $form->emailAction([
-          'to' => 'me@example.com',
-          'from' => 'info@example.com',
+          'to' => 'd.swakman@gmail.com',
+          'from' => 'contactform@wine-art.co',
         ]);
 
         if (!$form->success()) { $code = 500; }
