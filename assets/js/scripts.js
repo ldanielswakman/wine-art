@@ -76,7 +76,7 @@ function closeCardDetail() {
 
 
 
-// UI: form field interactions
+// UI: contact form interactions
 $(document).ready(function() {
   $('.field').bind('keyup change', function() {
     checkFieldContent($(this));
@@ -87,7 +87,20 @@ $(document).ready(function() {
     checkFieldContent($(this), false);
   });
   checkFormFields($(this));
+
+  // Async form submit
+  $form = $('.contact-form');
+  $errors_container = $form.find('.contact-form-errors');
+  fields = [];
+  $form.find('[name]').each(function(i) { fields[$(this).attr('name')] = i; });
+
+  $form.on('submit', function(e) {
+    e.preventDefault();
+    postContactForm( $(this).attr('action'), $(this).serialize() );
+  });
+
 });
+
 function checkFieldContent(obj, errorcheck) {
   errorcheck = (typeof errorcheck !== 'undefined' && errorcheck == false) ? false : true;
   if(obj.val().length > 0) {
@@ -132,6 +145,36 @@ function checkFormFields(obj) {
   } else {
     $form.find('button[type="submit"]').attr('disabled', 'disabled');
   }
+}
+function formatError(msg) {
+  if(msg) { return '<div class="bg-softred c-white u-pv05 u-ph1 u-inlineblock u-triangle-topleft u-mb075">' + msg + '</div>'; }
+}
+function postContactForm(url, form_data) {
 
-  console.log('start: ' + started + ', completed: ' + completed);
+  $errors_container.html('');
+  $form.find('input, textarea').removeClass('field--error');
+  $form.find('#cover_progress').removeClass('u-hide');
+
+  $.post(url, form_data, function(data) {
+    console.log(data);
+    $form.find('#cover_progress').addClass('u-hide');
+    if(data.success === true) {
+      
+      $form.find('#cover_progress').addClass('u-hide');
+      $form.find('#cover_success').removeClass('u-hide');
+
+    } else {
+
+      $html = '';
+      $.each(data.errors, function(i, j) {
+        $form.find('[name="'+i+'"]').addClass('field--error');
+        $html += formatError(data.errors[i]);
+      });
+      if(data.code === 500) {
+        $html += formatError('Something went wrong — please try again later.')
+      }
+      $errors_container.html($html);
+
+    }
+  });
 }

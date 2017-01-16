@@ -40,6 +40,9 @@
 .u-widthfull {
   width: 100% !important;
 }
+.u-w20 {
+  width: 240px !important;
+}
 
 
 // Display modes
@@ -68,6 +71,30 @@
   position: absolute !important;
   top: 0;
   right: 0;
+}
+.u-pin-cover {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.u-z1 { z-index: 1; }
+.u-z2 { z-index: 2; }
+.u-z3 { z-index: 3; }
+.u-z4 { z-index: 4; }
+.u-z5 { z-index: 5; }
+
+
+// Flex
+.u-flex-center {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 

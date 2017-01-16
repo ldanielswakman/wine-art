@@ -7,9 +7,13 @@
   line-height: 1.5rem;
   background-color: $greylightest;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     background-color: $white;
+  }
+  &:focus, &:active {
+    outline: none;
   }
   &[disabled] {
     background-color: rgba($white, 0.01);

@@ -45,3 +45,56 @@ c::set('languages', array(
     'url' => '/de',
   ),
 ));
+
+
+// Contact form Ajax
+c::set('routes', [
+  [
+    'pattern' => 'contactform_post',
+    'method' => 'POST',
+    'action'  => function() {
+      
+      // Set detected language
+      site()->visit('home', get('lang'));
+      site()->kirby->localize();
+
+      $form = new \Uniform\Form([
+        'email' => [
+          'rules' => ['required', 'email'],
+          'message' => l::get('form_email_error'),
+        ],
+        'name' => [],
+        'message' => [
+          'rules' => ['required'],
+          'message' => 'Please enter a message',
+        ],
+      ]);
+
+      // Perform validation and execute guards.
+      $form->withoutFlashing()
+        ->withoutRedirect()
+        ->guard();
+
+      $code = 200;
+
+      if (!$form->success()) { 
+
+        $code = 400;
+
+      } else {
+
+        // If validation and guards passed, execute the action.
+        $form->emailAction([
+          'to' => 'me@example.com',
+          'from' => 'info@example.com',
+        ]);
+
+        if (!$form->success()) { $code = 500; }
+
+      }
+
+      // Return code 200 on success.
+      return response::json(['success' => $form->success(), 'errors' => $form->errors(), 'code' => $code]);
+    }
+  ]
+]);
