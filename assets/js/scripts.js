@@ -3,12 +3,7 @@ $(document).ready(function() {
   // initiating smooth scroll
   $('a[href^="#"]').smoothScroll({
     afterScroll: function() {
-      if(history.pushState) {
-        history.pushState(null, null, $(this).attr('href'));
-      }
-      else {
-        location.hash = $(this).attr('href');
-      }
+      updateHash($(this).attr('href'));
     }
   });
 
@@ -52,6 +47,15 @@ function gridSpacer() {
   });
 }
 
+function updateHash(href) {
+  if(history.pushState) {
+    history.pushState(null, null, href);
+  }
+  else {
+    location.hash = href;
+  }
+}
+
 
 
 // UI: Open Card Detail
@@ -71,6 +75,7 @@ function openCardDetail(dest) {
 // UI: Close Card Detail
 function closeCardDetail() {
   $('.grid-item').removeClass('isExpanded');
+  updateHash('#');
   gridSpacer();
 }
 
