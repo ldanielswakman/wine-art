@@ -51,7 +51,8 @@ fields:
     type: textarea
     buttons:
   show_buy_button:
-    label: 'Add to cart' button
+    label: 'Purchase Now' button
+    help: will direct to PayPal payment gateway
     type: checkbox
     text: Show button?
     
