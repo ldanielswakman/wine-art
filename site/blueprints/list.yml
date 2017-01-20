@@ -1,0 +1,19 @@
+title: List page
+
+pages:
+  template: list-item
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  text: text
+
+  list_type:
+    label: List type
+    type: select
+    width: 1/4
+    options:
+      small: Small
+      large: Large

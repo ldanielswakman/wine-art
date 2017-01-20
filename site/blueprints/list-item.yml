@@ -6,12 +6,28 @@ fields:
   title: 
     label: Title
     type: text
-  image:
+  cover_image:
     label: Image
     type: image
+    width: 3/5
+  symbol:
+    label: >
+      <span style="color: #999;">or</span> Symbol
+    type: select
+    width: 2/5
+    help: Leave image blank to show symbol
+    options:
+      ʆ: ʆ
+      ø: ø
+      ¶: ¶
+      µ: µ
+      ¿: ¿
+      ǂ: ǂ
+      ƺ: ƺ
+      ¤: ¤
+      ¢: ¢
   description:
-    label: Description
-    type: markdown
+    extends: text
     header1: h3
     header2: h4
   headline1:

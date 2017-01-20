@@ -67,6 +67,11 @@
 .u-absolute {
   position: absolute !important;
 }
+.u-pin-topleft {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
 .u-pin-topright {
   position: absolute !important;
   top: 0;
@@ -134,6 +139,9 @@
 // Text size
 .u-text-15x {
   font-size: 1.5rem;
+}
+.u-text-5x {
+  font-size: 5rem;
 }
 
 

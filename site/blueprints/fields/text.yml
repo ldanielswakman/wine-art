@@ -1,0 +1,6 @@
+label: >
+  Text<br>
+  <a href="https://getkirby.com/docs/content/text" target="_blank" style="font-weight: normal; font-style: italic; color: #999; text-decoration: underline;">Click here to see how to format text <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
+type: markdown
+header1: h2
+header2: h3

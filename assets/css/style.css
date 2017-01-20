@@ -3100,6 +3100,11 @@ html, body {
 .u-absolute {
   position: absolute !important; }
 
+.u-pin-topleft {
+  position: absolute !important;
+  top: 0;
+  left: 0; }
+
 .u-pin-topright {
   position: absolute !important;
   top: 0;
@@ -3159,6 +3164,9 @@ html, body {
 
 .u-text-15x {
   font-size: 1.5rem; }
+
+.u-text-5x {
+  font-size: 5rem; }
 
 .i-onload-appearFromRight {
   position: relative;
@@ -3502,7 +3510,7 @@ nav, .nav {
     margin: 0;
     padding: 0;
     list-style: none;
-    opacity: 0.2; }
+    opacity: 0.5; }
     nav ul a.isActive, .nav ul a.isActive {
       background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
     nav ul a:hover, .nav ul a:hover {

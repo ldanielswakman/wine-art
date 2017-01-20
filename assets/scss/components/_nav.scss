@@ -12,7 +12,7 @@ nav, .nav {
   ul {
     @include menu-styles();
     
-    opacity: 0.2;
+    opacity: 0.5;
 
     &:hover {
       opacity: 1;

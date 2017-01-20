@@ -1,13 +1,18 @@
-<div class="grid-item col-sm-5<? e($i%2 == 0, ' col-sm-offset-1 u-pb3') ?>">
+
+<div class="grid-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, ' col-sm-offset-1 u-pb3') ?>">
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, 'u-pt10 u-pb3', 'u-pb1') ?>">
-    <? if($image = $item->image()): ?>
-      <figure class="figure--3by2"><img src="<?= thumb($image, ['width' => 600])->url() ?>" alt="" /></figure>
+  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb3', 'u-pb1') ?>">
+    <? if($item->cover_image()->isNotEmpty()): ?>
+      <figure class="figure--3by2"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
+    <? elseif($item->symbol()->isNotEmpty()): ?>
+      <div class="c-softred u-text-5x">
+        <?= $item->symbol()->html() ?>
+      </div>
     <? endif ?>
     <h3 class="u-mv1"><?= $item->title()->html() ?></h3>
-    <p class="short c-grey"><?= excerpt($item->description(), 90) ?></p>
+    <p class="short c-grey"><?= excerpt($item->description(), $list_options['snippet_size']) ?></p>
     <object><a href="#" class="link u-mt1"><?= l::get('read_more') ?></a></object>
   </a>
 

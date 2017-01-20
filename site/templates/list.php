@@ -14,10 +14,22 @@
 
       <?= $page->text()->kirbytext() ?>
 
+      <?
+      $list_options = ($page->list_type()->isNotEmpty() && $page->list_type()->value() == 'large') ? array(
+        'snippet_size' => 300,
+        'item_size_class' => 'col-sm-12',
+        'item_ptop' => 'u-pt1'
+      ) : array(
+        'snippet_size' => 90,
+        'item_size_class' => 'col-sm-5',
+        'item_ptop' => 'u-pt10'
+      );
+      ?>
+
       <div class="row row--internalpadding u-mt6">
         <? $i = 1; foreach ($page->children()->visible() as $item) : ?>
 
-          <? snippet('list-item', ['i' => $i, 'item' => $item]) ?>
+          <? snippet('list-item', ['i' => $i, 'item' => $item, 'list_options' => $list_options]) ?>
           
         <? $i++; endforeach ?>
       </div>
