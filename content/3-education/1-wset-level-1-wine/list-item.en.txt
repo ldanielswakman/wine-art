@@ -15,3 +15,31 @@ This interactive introduction course is perfect you to develop knowledge in majo
 The class consists of 6 hours of learning and tasting. For those who pass the multiple-choice exam at the end of the course, will receive a WSET certificate and a label pin.
 
 For further details, please see the course specifications
+
+----
+
+Cover-image: 
+
+----
+
+Symbol: 
+
+----
+
+Start-date: 
+
+----
+
+End-date: 
+
+----
+
+Fee: 2000
+
+----
+
+Location: 
+
+----
+
+Show-buy-button: 1

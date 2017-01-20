@@ -32,3 +32,11 @@ Location:
 ----
 
 Show-buy-button: 0
+
+----
+
+Cover-image: 
+
+----
+
+Symbol: ¤

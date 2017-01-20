@@ -2,12 +2,36 @@ Title: Wine List Creation
 
 ----
 
-Image: 
-
-----
-
 Description: 
 
 > Who is the key trendsetter for wine in your town?
     
 We consult restaurants, hotels and private collectors to develop wine lists. By keeping track of international and local trends, we work on the best available options to appeal to your clients.  Contact us and let’s create a wine selection that not only satisfies your needs, but also triggers your customers’ curiosity for hidden gems.
+
+----
+
+Cover-image: 
+
+----
+
+Start-date: 
+
+----
+
+End-date: 
+
+----
+
+Fee: 
+
+----
+
+Location: 
+
+----
+
+Show-buy-button: 0
+
+----
+
+Symbol: ¶

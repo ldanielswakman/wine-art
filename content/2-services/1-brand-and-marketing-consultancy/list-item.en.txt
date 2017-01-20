@@ -2,10 +2,6 @@ Title: Brand and Marketing Consultancy
 
 ----
 
-Image: 
-
-----
-
 Description: 
 
 > People love drinking a great glass of wine, but it’s more the story they talk about.
@@ -33,3 +29,11 @@ Location: Test....
 ----
 
 Show-buy-button: 1
+
+----
+
+Cover-image: 
+
+----
+
+Symbol: ʆ
