@@ -8,8 +8,6 @@ fields:
     label: Title
     type:  text
 
-  text: text
-
   list_type:
     label: List type
     type: select
@@ -17,3 +15,10 @@ fields:
     options:
       small: Small
       large: Large
+      
+  cover_image:
+    label: Cover image
+    type: image
+    width: 3/4
+
+  text: text

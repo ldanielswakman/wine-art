@@ -10,7 +10,13 @@
 
     </div>
 
-    <div class="col-xs-12 col-sm-8 u-pv6">
+    <? if($page->cover_image()->isNotEmpty()): ?>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2" style="margin-bottom: -15rem;">
+        <img src="<?= thumb($page->image($page->cover_image()), ['width' => 600])->url() ?>" alt="" />
+      </div>
+    <? endif ?>
+
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-pv6">
 
       <?= $page->text()->kirbytext() ?>
 
