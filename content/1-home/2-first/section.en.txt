@@ -2,7 +2,7 @@ Title: first
 
 ----
 
-Image: wine-paper-strawberries.jpg
+Cover-image: wine-paper-strawberries.jpg
 
 ----
 

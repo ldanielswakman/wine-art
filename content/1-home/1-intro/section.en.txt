@@ -4,14 +4,15 @@ Title: intro
 
 Text: 
 
-> <span class="c-softred">{{</span> We bring a dash of flavour, you bring your thirst for tasting
+<p class="short"><span class="c-softred">wine•art • /wʌɪn-ɑːt/, ~s n.</span> consists of various <br>branches of creative wine activity through inspiration.</p>
+
 <br>
 
-<p class="short"><span class="c-softred">wine•art • /wʌɪn-ɑːt/, ~s n.</span> consists of various <br>branches of creative wine activity through inspiration.</p>
+> <span class="c-softred">{{</span> We bring a dash of flavour,<br> you bring your thirst for tasting
 
 ----
 
-Image: wine-opener.jpg
+Cover-image: wine-opener-left.jpg
 
 ----
 

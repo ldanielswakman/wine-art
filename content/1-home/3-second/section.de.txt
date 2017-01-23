@@ -2,7 +2,7 @@ Title: second
 
 ----
 
-Image: white-wine.jpg
+Cover-image: white-wine.jpg
 
 ----
 

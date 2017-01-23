@@ -5,9 +5,7 @@
   <div class="row">
 
     <div class="col-xs-12 col-sm-2">
-
       <? snippet('logo') ?>
-
     </div>
 
     <? if($page->cover_image()->isNotEmpty()): ?>
