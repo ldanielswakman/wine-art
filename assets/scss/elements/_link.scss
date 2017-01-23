@@ -1,0 +1,52 @@
+// Link
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+.link {
+  position: relative;
+  background: inherit;
+  font: inherit;
+  border: none;
+  margin-right: 3rem;
+  padding: 0;
+  display: inline-block;
+  color: $softred;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: 100%;
+    width: 4rem;
+    height: 1rem;
+    margin-left: 1rem;
+    background-image: url('../images/arrow.svg');
+    background-size: cover;
+    @include prefix(transition, all 0.3s ease);
+  }
+  &:hover {
+    @include underline();
+
+    &:after {
+      @include prefix(transform, translateX(0.5rem));
+    }
+  }
+  &.link--down {
+    &:after {
+      @include prefix(transform, rotate(90deg));
+    }
+    &:hover:after {
+      @include prefix(transform, rotate(90deg) translateX(0.5rem));
+    }
+  }
+  &.link--secondary {
+    &:after { display: none !important; }
+  }
+}

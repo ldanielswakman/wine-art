@@ -91,38 +91,6 @@ h1, h2, h3, h4 {
 }
 
 
-// Link
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.link {
-  background: inherit;
-  font: inherit;
-  border: none;
-  padding: inherit;
-  display: inline-block;
-  color: $softred;
-  font-size: 1.2rem;
-  cursor: pointer;
-
-  &:after {
-    content: "\2192";
-    display: inline-block;
-    margin-left: 1rem;
-    font-size: 1.5rem;
-    line-height: 1rem;
-    @include prefix(transform, translateY(0.05rem));
-  }
-  &:hover {
-    @include underline();
-  }
-  &.link--secondary {
-    &:after { display: none !important; }
-  }
-}
-
-
 
 // Figure
 figure {

@@ -14,10 +14,15 @@ section, .section {
     @include prefix(transition, all 0.3s ease);
   }
   &#intro .section__bg-image {
-    $extra_left: 6rem;
-    width: calc(100% + #{$extra_left});
-    margin-left: -$extra_left;
+    // $extra_left: 6rem;
+    // width: calc(100% + #{$extra_left});
+    // margin-left: -$extra_left;
     // margin-right: -$extra_left;
+  }
+  &#intro blockquote,
+  &#intro .link {
+    margin-left: 5rem;
+    margin-right: -10rem;
   }
 }
 body.isLoaded section {

@@ -43,6 +43,9 @@
 .u-w20 {
   width: 240px !important;
 }
+.u-pb8vh {
+  padding-bottom: 20vw !important;
+}
 
 
 // Display modes
@@ -57,6 +60,12 @@
 }
 .u-hide {
   display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .u-sm-hide { display: none !important; }
+}
+@media screen and (max-width: 480px) {
+  .u-xs-hide { display: none !important; }
 }
 
 

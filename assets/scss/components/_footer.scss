@@ -21,4 +21,11 @@ footer, .footer {
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    position: relative;
+
+    & + .spacer {
+      display: none !important;
+    }
+  }
 }
