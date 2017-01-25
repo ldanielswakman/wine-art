@@ -1,5 +1,5 @@
 
-<div class="grid-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, ' col-sm-offset-1 u-pb3') ?>">
+<div class="grid-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, ' u-pb3') ?>">
 
 
   <!-- Grid card -->

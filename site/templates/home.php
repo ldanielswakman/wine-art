@@ -5,7 +5,7 @@
   <? snippet('logo'); ?>
 
   <? $i = 0; ?>
-  <? foreach ($page->children()->visible() as $section): ?>
+  <? foreach ($page->children() as $section): ?>
 
     <? $even = ($i%2 != 0) ? false : true; ?>
 
