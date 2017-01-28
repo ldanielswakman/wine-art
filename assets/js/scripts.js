@@ -161,7 +161,6 @@ function postContactForm(url, form_data) {
   $form.find('#cover_progress').removeClass('u-hide');
 
   $.post(url, form_data, function(data) {
-    console.log(data);
     $form.find('#cover_progress').addClass('u-hide');
     if(data.success === true) {
       

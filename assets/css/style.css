@@ -3338,7 +3338,11 @@ figure.figure--3by2 {
   cursor: pointer;
   white-space: nowrap; }
   .button:hover {
-    background-color: #fafbfc; }
+    background-color: #fafbfc;
+    background-image: linear-gradient(to top, transparent, transparent 0, #e01b3d 0, #e01b3d 0.1em, transparent 0.1em); }
+  .button:active {
+    background-color: #e01b3d;
+    color: #fafbfc; }
   .button:focus, .button:active {
     outline: none; }
   .button[disabled] {
@@ -3423,7 +3427,7 @@ a {
   a:focus, a:active {
     outline: none; }
 
-.link, .button {
+.link {
   position: relative;
   background: inherit;
   font: inherit;
@@ -3434,7 +3438,7 @@ a {
   color: #e01b3d;
   font-size: 1.2rem;
   cursor: pointer; }
-  .link:after, .button:after {
+  .link:after {
     content: "";
     position: absolute;
     top: 0.25rem;
@@ -3447,21 +3451,21 @@ a {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  .link:hover, .button:hover {
+  .link:hover {
     background-image: linear-gradient(to top, transparent, transparent 0, #e01b3d 0, #e01b3d 0.1em, transparent 0.1em); }
-    .link:hover:after, .button:hover:after {
+    .link:hover:after {
       -webkit-transform: translateX(0.5rem);
       -moz-transform: translateX(0.5rem);
       transform: translateX(0.5rem); }
-  .link.link--down:after, .link--down.button:after {
+  .link.link--down:after {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg); }
-  .link.link--down:hover:after, .link--down.button:hover:after {
+  .link.link--down:hover:after {
     -webkit-transform: rotate(90deg) translateX(0.5rem);
     -moz-transform: rotate(90deg) translateX(0.5rem);
     transform: rotate(90deg) translateX(0.5rem); }
-  .link.link--secondary:after, .link--secondary.button:after {
+  .link.link--secondary:after {
     display: none !important; }
 
 .grid-item.isExpanded .grid-item__spacer:before {
@@ -3590,10 +3594,8 @@ section .section__bg .section__bg-image, .section .section__bg .section__bg-imag
   transition: all 0.3s ease; }
 
 section#intro blockquote,
-section#intro .link,
-section#intro .button, .section#intro blockquote,
-.section#intro .link,
-.section#intro .button {
+section#intro .link, .section#intro blockquote,
+.section#intro .link {
   margin-left: 5rem;
   margin-right: -10rem; }
 

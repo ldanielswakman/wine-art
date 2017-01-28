@@ -1,5 +1,4 @@
 .button {
-  @extend .link;
   display: inline-block;
   padding: 0.5rem 1rem;
   border: none;
@@ -11,6 +10,11 @@
 
   &:hover {
     background-color: $white;
+    @include underline();
+  }
+  &:active {
+    background-color: $softred;
+    color: $white;
   }
   &:focus, &:active {
     outline: none;
