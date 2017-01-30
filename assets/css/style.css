@@ -3083,7 +3083,7 @@ html, body {
   width: 240px !important; }
 
 .u-pb8vh {
-  padding-bottom: 20vw !important; }
+  padding-bottom: 25vw !important; }
 
 .u-block {
   display: block !important; }
@@ -3524,10 +3524,10 @@ footer, .footer {
         display: none !important; } }
 
 header .header__logo, .header .header__logo {
-  height: 2rem;
-  opacity: 0.1; }
+  height: 2.5rem;
+  opacity: 0.2; }
   header .header__logo:hover, .header .header__logo:hover {
-    opacity: 0.3; }
+    opacity: 0.4; }
 
 main, .main {
   position: relative;
@@ -3576,6 +3576,9 @@ nav, .nav {
           font-size: 1.5rem;
           line-height: 2.25rem; } }
 
+section .section__bg, .section .section__bg {
+  position: relative; }
+
 section .section__bg .section__bg-image, .section .section__bg .section__bg-image {
   position: absolute;
   top: 0;
@@ -3584,14 +3587,14 @@ section .section__bg .section__bg-image, .section .section__bg .section__bg-imag
   left: 0;
   display: block;
   height: 100%;
-  background-color: #e01b3d;
   background-position: center center;
   background-size: cover;
   background-attachment: local;
+  background-repeat: no-repeat;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  -webkit-opacity: all 0.3s ease;
+  -moz-opacity: all 0.3s ease;
+  opacity: all 0.3s ease; }
 
 section#intro blockquote,
 section#intro .link, .section#intro blockquote,

@@ -22,7 +22,7 @@ $(document).ready(function() {
   $('footer').after('<div id="below" class="spacer" style="height: ' + $('footer').outerHeight() + 'px;"></div>')
 
 
-  // grid item click events
+  // UI: grid item click events
   $('.grid-item__card').click(function() {
     openCardDetail($(this));
   });
@@ -36,8 +36,11 @@ $(document).ready(function() {
 
   gridSpacer();
 
-});
+})
 
+
+
+// UI: set space for grid detail placeholder
 function gridSpacer() {
   // remove old instances
   $('.grid-item .grid-item__spacer').remove();
@@ -47,6 +50,9 @@ function gridSpacer() {
   });
 }
 
+
+
+// Update URL hash
 function updateHash(href) {
   if(history.pushState) {
     history.pushState(null, null, href);
@@ -81,7 +87,33 @@ function closeCardDetail() {
 
 
 
-// UI: contact form interactions
+// Scroll Action
+function scrollActions() {
+  scroll = $(window).scrollTop();
+  windowH = $(window).height();
+
+  allowMobileScroll = ($(window).width() > 767) ? true : false;
+  allowMobileScroll = true;
+
+  if (allowMobileScroll) {
+    $('.section__bg').each(function() {
+
+      thisTop = $(this).offset().top;
+      scrollValue = (scroll - thisTop) / 5 + 20;
+      console.log(scrollValue);
+
+      $(this).find('.section__bg-image')
+        .css('background-position','center ' + scrollValue + 'px');
+
+    });
+  }
+}
+events = 'ready scroll resize scrollstart scrollstop';
+$(document).on(events, function() { scrollActions(); });
+
+
+
+// Contact form: contact form interactions
 $(document).ready(function() {
   $('.field').bind('keyup change', function() {
     checkFieldContent($(this));
@@ -106,6 +138,14 @@ $(document).ready(function() {
 
 });
 
+// Contact form: show next field on start form
+function showNextField(obj) {
+  if(obj.val().length > 2 && obj.attr('id') == 'message') {
+    obj.closest('.contact-form').find('.i-onevent-appearFromTop').first().addClass('isFired');
+  }
+}
+
+// Contact form: evaluate form fields
 function checkFieldContent(obj, errorcheck) {
   errorcheck = (typeof errorcheck !== 'undefined' && errorcheck == false) ? false : true;
   if(obj.val().length > 0) {
@@ -117,11 +157,8 @@ function checkFieldContent(obj, errorcheck) {
     obj.removeClass('field--notempty');
   }
 }
-function showNextField(obj) {
-  if(obj.val().length > 2 && obj.attr('id') == 'message') {
-    obj.closest('.contact-form').find('.i-onevent-appearFromTop').first().addClass('isFired');
-  }
-}
+
+// Contact form: evaluate entire form filled
 function checkFormFields(obj) {
   $form = obj.closest('.contact-form');
 
@@ -151,9 +188,13 @@ function checkFormFields(obj) {
     $form.find('button[type="submit"]').attr('disabled', 'disabled');
   }
 }
+
+// Contact form: format error message
 function formatError(msg) {
   if(msg) { return '<div class="bg-softred c-white u-pv05 u-ph1 u-inlineblock u-triangle-topleft u-mb075">' + msg + '</div>'; }
 }
+
+// Contact form: post form
 function postContactForm(url, form_data) {
 
   $errors_container.html('');

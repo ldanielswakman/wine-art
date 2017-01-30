@@ -1,17 +1,21 @@
 // Section
 section, .section {
 
+  .section__bg {
+    position: relative;
+  }
   .section__bg .section__bg-image {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     display: block;
     height: 100%;
-    background-color: $softred;
+    // background-color: $softred;
     background-position: center center;
     background-size: cover;
     background-attachment: local;
+    background-repeat: no-repeat;
     opacity: 0;
-    @include prefix(transition, all 0.3s ease);
+    @include prefix(opacity, all 0.3s ease);
   }
   &#intro .section__bg-image {
     // $extra_left: 6rem;

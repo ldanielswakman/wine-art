@@ -13,7 +13,7 @@
       <div class="row">
         <? $image_class = $even ? 'col-sm-6 last-sm col-xs-11' : 'col-sm-5'; ?>
         <? if($image = $section->cover_image()): ?>
-          <div class="col-xs-10 <?= $image_class ?> u-mb1 u-minheight20 u-relative section__bg">
+          <div class="col-xs-10 <?= $image_class ?> u-mb1 u-minheight20 u-relative section__bg <? e($i == 1, ' section__bg--scrollable') ?>">
             <div class="section__bg-image" style="background-image: url('<?= thumb($section->image($image), ['width' => 1000])->url() ?>');"></div>
           </div>
         <? endif ?>
