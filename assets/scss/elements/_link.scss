@@ -41,9 +41,21 @@ a {
   &.link--down {
     &:after {
       @include prefix(transform, rotate(90deg));
+      width: 1.5rem;
+      background-position: right bottom;
     }
     &:hover:after {
       @include prefix(transform, rotate(90deg) translateX(0.5rem));
+    }
+  }
+  &.link--up {
+    &:after {
+      @include prefix(transform, rotate(-90deg));
+      width: 1.5rem;
+      background-position: right bottom;
+    }
+    &:hover:after {
+      @include prefix(transform, rotate(-90deg) translateX(0.5rem));
     }
   }
   &.link--secondary {

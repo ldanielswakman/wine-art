@@ -124,13 +124,7 @@
 }
 
 
-// Underline
-.u-underline {
-  @include underline(currentColor);
-}
-
-
-//
+// Box triangle
 .u-triangle-topleft {
   position: relative;
 
@@ -151,6 +145,21 @@
 }
 .u-text-5x {
   font-size: 5rem;
+}
+
+
+// Text style
+.u-text-sans {
+  font-family: $sans_serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+
+
+// Text underline
+.u-underline {
+  @include underline(currentColor);
 }
 
 

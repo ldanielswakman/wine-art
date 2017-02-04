@@ -83,6 +83,16 @@ p {
 }
 
 
+// More block
+section .more {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-bottom: 8rem;
+  transition: max-height 0.5s ease;
+}
+
+
 // Headings
 h1, h2, h3, h4 {
   & + p {
@@ -105,6 +115,11 @@ figure {
       top: 0;
       width: 100%;
     }
+  }
+  &.figure--stuck {
+    position: absolute;
+    left: 0;
+    width: 20vw;
   }
 }
 

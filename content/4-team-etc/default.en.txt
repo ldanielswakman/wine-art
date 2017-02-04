@@ -9,14 +9,32 @@ Text:
 > They never saw it coming.
 <br><br>
 
-# Seyma Bas *— Founder & Consultant*
- 
-Seyma Bas was born in Istanbul, one of the most beautiful and exciting cities in the world. She studied Chemical Engineering at Boğaziçi University and obtained her MBA with an emphasis on Luxury Brand Management, Food and Wine from the INSEEC Business School in Bordeaux. She started her career focusing on international sales and marketing strategies for wineries in different countries. She developed her experience in marketing and brand management in regions such as Tuscany and Burgundy. Meanwhile, she completed WSET (Wine and Spirits Education Trust) Diploma programme in London and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles to obtain in the wine world. She regularly attends international wine competitions around the world as a jury member. Moreover, she writes about wine and the dynamics of the market in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Today, she is based in Zurich, working on various projects for different wine regions, and enjoys discovering new tastes every day. Apart from wine, she enjoys Lindy Hop (an American dance) she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
+(image: seyma.jpg class: figure--stuck)
 
+# Seyma Bas *— Founder & Consultant*
+
+Seyma Bas was born in Istanbul, one of the most beautiful and exciting cities in the world. She studied Chemical Engineering at Boğaziçi University and obtained her MBA with an emphasis on Luxury Brand Management, Food and Wine from the INSEEC Business School in Bordeaux.
+
+<p class="short"> (link: #more text: More class: link link--down u-text-sans)</p>
+<div class="more">
+<p>She started her career focusing on international sales and marketing strategies for wineries in different countries. She developed her experience in marketing and brand management in regions such as Tuscany and Burgundy. Meanwhile, she completed WSET (Wine and Spirits Education Trust) Diploma programme in London and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles to obtain in the wine world. 
+<p>She regularly attends international wine competitions around the world as a jury member. Moreover, she writes about wine and the dynamics of the market in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Today, she is based in Zurich, working on various projects for different wine regions, and enjoys discovering new tastes every day. Apart from wine, she enjoys Lindy Hop (an American dance) she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.</p>
+<p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
+</div>
+
+(image: philipp.jpg class: figure--stuck)
 
 # Philipp Merkt *— Wine Educator & Consultant*
 
-Philipp was born in Zurich and holds a Bachelor’s degree of Science in Business Administration with an emphasis in Marketing. Working for agencies and in different industries for more than 10 years, he has gained valuable expertise in Digital Commerce and Marketing. He studied at the WSET (Wine and Spirits Education Trust) and obtained his Diploma as “Top Student” of Switzerland in March 2015. Through an assignment with Moevenpick Wine, he has professional experience in a wide range of the wine industry such as Product Management, Marketing and Sales. Moreover, he worked as a self-employed entrepreneur on various projects such as the implementation of an All-in-one Management Software for a specialist wine retailer. He keeps up with the newest developments and trends in wine, and regularly attends further trainings. Based in Zurich, he is an extensive traveler: Apart from wine regions all over the world, he enjoys discovering foreign cultures in Africa and Latin America.
+Philipp was born in Zurich and holds a Bachelor’s degree of Science in Business Administration with an emphasis in Marketing. Working for agencies and in different industries for more than 10 years, he has gained valuable expertise in Digital Commerce and Marketing.
+
+<p class="short"> (link: #more text: More class: link link--down)</p>
+<div class="more">
+<p>He studied at the WSET (Wine and Spirits Education Trust) and obtained his Diploma as “Top Student” of Switzerland in March 2015. Through an assignment with Moevenpick Wine, he has professional experience in a wide range of the wine industry such as Product Management, Marketing and Sales. Moreover, he worked as a self-employed entrepreneur on various projects such as the implementation of an All-in-one Management Software for a specialist wine retailer. 
+
+<p>He keeps up with the newest developments and trends in wine, and regularly attends further trainings. Based in Zurich, he is an extensive traveler: Apart from wine regions all over the world, he enjoys discovering foreign cultures in Africa and Latin America.</p>
+<p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
+</div>
 
 
 # Cecile Censy Richards Luisoni *— Wine Educator & Consultant*

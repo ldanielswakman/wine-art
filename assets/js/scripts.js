@@ -34,6 +34,25 @@ $(document).ready(function() {
     openCardDetail(window.location.hash);
   }
 
+
+  // UI: read more click events
+  $('section a[href="#more"]').click(function() {
+    // hide button
+    $(this).hide();
+    // show more section
+    $(this).closest('p').next('.more').css('max-height', 800);
+    // show 'less' button
+    $(this).closest('p').next('.more').find('a[href="#less"]').show();
+  });
+  $('section a[href="#less"]').click(function() {
+    // hide button
+    $(this).hide();
+    // 
+    $(this).closest('.more').css('max-height', 0);
+    $(this).closest('.more').prev('p').find('a[href="#more"]').show();
+  });
+
+
   gridSpacer();
 
 })
