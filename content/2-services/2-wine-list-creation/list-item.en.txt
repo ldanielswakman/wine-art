@@ -10,7 +10,7 @@ We consult restaurants, hotels and private collectors to develop wine lists. By 
 
 ----
 
-Cover-image: 
+Cover-image: illustration3.svg
 
 ----
 
@@ -35,3 +35,7 @@ Show-buy-button: 0
 ----
 
 Symbol: ¶
+
+----
+
+Ratio: 3by1

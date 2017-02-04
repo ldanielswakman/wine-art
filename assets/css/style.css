@@ -155,10 +155,10 @@ html, body {
   background-color: #cad1d9; }
 
 .c-grey {
-  color: #999999; }
+  color: #909599; }
 
 .bg-grey {
-  background-color: #999999; }
+  background-color: #909599; }
 
 /* --- Utilities --- */
 .u-mt025 {
@@ -3314,15 +3314,27 @@ section .more {
 h1 + p, h2 + p, h3 + p, h4 + p {
   margin-top: 1rem; }
 
-figure.figure--3by2 {
+figure, figure.figure--3by1, figure.figure--2by1, figure.figure--3by2, figure.figure--1by1 {
   position: relative;
   padding-bottom: 66.66667%;
   overflow: hidden; }
-  figure.figure--3by2 img {
+  figure img, figure.figure--3by1 img, figure.figure--2by1 img, figure.figure--3by2 img, figure.figure--1by1 img {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%; }
+
+figure.figure--3by1 {
+  padding-bottom: 33.33333%; }
+
+figure.figure--2by1 {
+  padding-bottom: 50%; }
+
+figure.figure--3by2 {
+  padding-bottom: 66.66667%; }
+
+figure.figure--1by1 {
+  padding-bottom: 100%; }
 
 figure.figure--stuck {
   position: absolute;

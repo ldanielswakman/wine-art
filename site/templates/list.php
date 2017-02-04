@@ -4,13 +4,15 @@
 
   <div class="row">
 
-    <div class="col-xs-12 col-md-2">
+    <div class="u-pin-topleft u-">
       <? snippet('logo') ?>
     </div>
 
     <? if($page->cover_image()->isNotEmpty()): ?>
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" style="margin-bottom: -15rem;">
-        <img src="<?= thumb($page->image($page->cover_image()), ['width' => 600])->url() ?>" alt="" />
+      <div class="col-xs-9 col-xs-offset-3 col-sm-8 col-sm-offset-4 col-md-6 col-md-offset-6" style="margin-bottom: -10rem;">
+        <figure class="figure--3by2">
+          <img src="<?= thumb($page->image($page->cover_image()), ['width' => 800])->url() ?>" alt="" />
+        </figure>
       </div>
     <? endif ?>
 

@@ -32,8 +32,12 @@ Show-buy-button: 1
 
 ----
 
-Cover-image: 
+Cover-image: illustration1.svg
 
 ----
 
 Symbol: µ
+
+----
+
+Ratio: 3by1

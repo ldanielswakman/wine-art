@@ -103,8 +103,11 @@ h1, h2, h3, h4 {
 
 
 // Figure
-figure {
-  &.figure--3by2 {
+figure {, 
+  &.figure--3by1, 
+  &.figure--2by1,
+  &.figure--3by2,
+  &.figure--1by1 {
     position: relative;
     padding-bottom: (2/3 * 100%);
     overflow: hidden;
@@ -116,6 +119,11 @@ figure {
       width: 100%;
     }
   }
+  &.figure--3by1 { padding-bottom: (1/3 * 100%); }
+  &.figure--2by1 { padding-bottom: (1/2 * 100%); }
+  &.figure--3by2 { padding-bottom: (2/3 * 100%); }
+  &.figure--1by1 { padding-bottom: (1/1 * 100%); }
+
   &.figure--stuck {
     position: absolute;
     left: 0;

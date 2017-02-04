@@ -43,3 +43,15 @@ Fee: 3000
 ----
 
 Text: 
+
+----
+
+Cover-image: wine-art04.jpg
+
+----
+
+Symbol: 
+
+----
+
+Ratio: 3by2

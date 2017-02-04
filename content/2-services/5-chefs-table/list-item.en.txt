@@ -35,8 +35,12 @@ Show-buy-button: 0
 
 ----
 
-Cover-image: 
+Cover-image: illustration5.svg
 
 ----
 
 Symbol: ¤
+
+----
+
+Ratio: 3by1

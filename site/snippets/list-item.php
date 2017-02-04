@@ -1,11 +1,12 @@
 
-<div class="grid-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, ' u-pb3') ?>">
+<div class="grid-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, '') ?>">
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb3', 'u-pb3') ?>">
+  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
     <? if($item->cover_image()->isNotEmpty()): ?>
-      <figure class="figure--3by2"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
+      <? $ratio = ($item->ratio()->isNotEmpty()) ? $item->ratio()->value() : '3by2'; ?>
+      <figure class="figure--<?= $ratio ?>"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
     <? elseif($item->symbol()->isNotEmpty()): ?>
       <div class="c-softred u-text-5x">
         <?= $item->symbol()->html() ?>
