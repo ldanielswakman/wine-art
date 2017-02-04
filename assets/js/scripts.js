@@ -88,8 +88,14 @@ function openCardDetail(dest) {
   if($(dest)) {
     $('.grid-item').removeClass('isExpanded');
     $(dest).closest('.grid-item').addClass('isExpanded');
+    $(dest).closest('.grid').addClass('hasExpanded');
     gridSpacer();
     $(dest).smoothScroll();
+
+    for (i=1; i < 20; i++) {
+      setTimeout(function() { gridSpacer(); }, i*25);
+    }
+
   } else {
     console.log('No card found to expand');
   }
@@ -100,8 +106,13 @@ function openCardDetail(dest) {
 // UI: Close Card Detail
 function closeCardDetail() {
   $('.grid-item').removeClass('isExpanded');
-  updateHash('#');
+  $('.grid').removeClass('hasExpanded');
+  updateHash(' ');
   gridSpacer();
+
+  for (i=1; i < 20; i++) {
+    setTimeout(function() { gridSpacer(); }, i*25);
+  }
 }
 
 

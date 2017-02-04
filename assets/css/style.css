@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/apercu_regular.eot");
+  src: url("../fonts/apercu_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_regular.woff2") format("woff2"), url("../fonts/apercu_regular.woff") format("woff"), url("../fonts/apercu_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/apercu_bold.eot");
+  src: url("../fonts/apercu_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_bold.woff2") format("woff2"), url("../fonts/apercu_bold.woff") format("woff"), url("../fonts/apercu_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'iABC';
+  src: url("../fonts/iabc-7-webfont.eot");
+  src: url("../fonts/iabc-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iabc-7-webfont.woff") format("woff"), url("../fonts/iabc-7-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'iABC';
+  src: url("../fonts/iabci-7-webfont.eot");
+  src: url("../fonts/iabci-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iabci-7-webfont.woff") format("woff"), url("../fonts/iabci-7-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
 /* --- Reset --- */
 html,
 body,
@@ -3160,9 +3188,6 @@ html, body {
 .u-alignright {
   text-align: right; }
 
-.u-underline {
-  background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
-
 .u-triangle-topleft {
   position: relative; }
   .u-triangle-topleft:before {
@@ -3178,6 +3203,14 @@ html, body {
 
 .u-text-5x {
   font-size: 5rem; }
+
+.u-text-sans {
+  font-family: "Apercu", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+.u-underline {
+  background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 0.1em, transparent 0.1em); }
 
 .i-onload-appearFromRight {
   position: relative;
@@ -3209,34 +3242,6 @@ body.isLoaded .i-onload-appearFromRight {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0); }
-
-@font-face {
-  font-family: 'Apercu';
-  src: url("../fonts/apercu_regular.eot");
-  src: url("../fonts/apercu_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_regular.woff2") format("woff2"), url("../fonts/apercu_regular.woff") format("woff"), url("../fonts/apercu_regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Apercu';
-  src: url("../fonts/apercu_bold.eot");
-  src: url("../fonts/apercu_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_bold.woff2") format("woff2"), url("../fonts/apercu_bold.woff") format("woff"), url("../fonts/apercu_bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'iABC';
-  src: url("../fonts/iabc-7-webfont.eot");
-  src: url("../fonts/iabc-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iabc-7-webfont.woff") format("woff"), url("../fonts/iabc-7-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'iABC';
-  src: url("../fonts/iabci-7-webfont.eot");
-  src: url("../fonts/iabci-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iabci-7-webfont.woff") format("woff"), url("../fonts/iabci-7-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
 
 body, html {
   width: 100%;
@@ -3299,6 +3304,13 @@ p {
   font-size: 1rem;
   line-height: 1.5rem; }
 
+section .more {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-bottom: 8rem;
+  transition: max-height 0.5s ease; }
+
 h1 + p, h2 + p, h3 + p, h4 + p {
   margin-top: 1rem; }
 
@@ -3311,6 +3323,11 @@ figure.figure--3by2 {
     left: 0;
     top: 0;
     width: 100%; }
+
+figure.figure--stuck {
+  position: absolute;
+  left: 0;
+  width: 20vw; }
 
 .row {
   margin: auto; }
@@ -3460,13 +3477,36 @@ a {
   .link.link--down:after {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    width: 1.5rem;
+    background-position: right bottom; }
   .link.link--down:hover:after {
     -webkit-transform: rotate(90deg) translateX(0.5rem);
     -moz-transform: rotate(90deg) translateX(0.5rem);
     transform: rotate(90deg) translateX(0.5rem); }
+  .link.link--up:after {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 1.5rem;
+    background-position: right bottom; }
+  .link.link--up:hover:after {
+    -webkit-transform: rotate(-90deg) translateX(0.5rem);
+    -moz-transform: rotate(-90deg) translateX(0.5rem);
+    transform: rotate(-90deg) translateX(0.5rem); }
   .link.link--secondary:after {
     display: none !important; }
+
+.grid {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  -webkit-transition: padding 0.3s ease;
+  -moz-transition: padding 0.3s ease;
+  transition: padding 0.3s ease; }
+  .grid.hasExpanded {
+    padding-bottom: 0; }
+    .grid.hasExpanded .grid-item:not(.isExpanded) .grid-item__card {
+      opacity: 0.4; }
 
 .grid-item.isExpanded .grid-item__spacer:before {
   content: "";
@@ -3478,12 +3518,14 @@ a {
 .grid-item .grid-item__detail {
   position: absolute;
   left: 0;
+  max-height: 0;
+  overflow: hidden;
   width: 100%;
-  opacity: 0;
-  pointer-events: none; }
+  pointer-events: none;
+  transition: all 0.5s ease; }
 
 .grid-item.isExpanded .grid-item__detail {
-  opacity: 1;
+  max-height: 800px;
   pointer-events: all; }
 
 footer, .footer {

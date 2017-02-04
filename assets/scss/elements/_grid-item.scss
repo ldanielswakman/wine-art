@@ -1,3 +1,17 @@
+.grid {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include prefix(transition, padding 0.3s ease);
+
+  &.hasExpanded {
+    padding-bottom: 0;
+
+    .grid-item:not(.isExpanded) .grid-item__card {
+      opacity: 0.4;
+    }
+  }
+}
+
 .grid-item {
 
   &.isExpanded .grid-item__spacer:before {
@@ -10,12 +24,16 @@
   .grid-item__detail {
     position: absolute;
     left: 0;
+    max-height: 0;
+    overflow: hidden;
     width: 100%;
-    opacity: 0;
+    // opacity: 0;
     pointer-events: none;
+    transition: all 0.5s ease;
   }
   &.isExpanded .grid-item__detail {
-    opacity: 1;
+    // opacity: 1;
+    max-height: 800px;
     pointer-events: all;
   }
 

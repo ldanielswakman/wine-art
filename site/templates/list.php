@@ -14,13 +14,13 @@
       </div>
     <? endif ?>
 
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 u-pv6">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 u-pt6">
 
       <?= $page->text()->kirbytext() ?>
 
       <?
       $list_options = ($page->list_type()->isNotEmpty() && $page->list_type()->value() == 'large') ? array(
-        'snippet_size' => 300,
+        'snippet_size' => 150,
         'item_size_class' => 'col-sm-6',
         'item_ptop' => ''
       ) : array(
@@ -30,7 +30,7 @@
       );
       ?>
 
-      <div class="row row--internalpadding u-mt6">
+      <div class="row row--internalpadding grid">
         <? $i = 1; foreach ($page->children()->visible() as $item) : ?>
 
           <? snippet('list-item', ['i' => $i, 'item' => $item, 'list_options' => $list_options]) ?>

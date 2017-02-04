@@ -3,7 +3,7 @@
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb3', 'u-pb1') ?>">
+  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb3', 'u-pb3') ?>">
     <? if($item->cover_image()->isNotEmpty()): ?>
       <figure class="figure--3by2"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
     <? elseif($item->symbol()->isNotEmpty()): ?>
@@ -12,17 +12,17 @@
       </div>
     <? endif ?>
     <h3 class="u-mv1"><?= $item->title()->html() ?></h3>
-    <p class="short c-grey"><?= excerpt($item->description(), $list_options['snippet_size']) ?></p>
+    <p class="short c-grey"><?= str_replace('{{', '', excerpt($item->description(), $list_options['snippet_size'])) ?></p>
     <object><a href="#" class="link u-mt1"><?= l::get('read_more') ?></a></object>
   </a>
 
 
   <!-- Detail panel -->
-  <div id="<?= $item->uid() ?>" class="grid-item__detail bg-greylightest u-pv3">
-    <div class="row">
+  <div id="<?= $item->uid() ?>" class="grid-item__detail bg-greylightest">
+    <div class="row u-pv3">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative">
 
-        <h3 class="u-mv1 c-softred"><?= $item->title()->html() ?></h3>
+        <a href="<?= $page->slug() . '/' . $item->uid() ?>"><h3 class="u-mv1 c-softred"><?= $item->title()->html() ?></h3></a>
 
         <p class="c-dullblue"><?= $item->description()->kirbytext() ?></p>
 
