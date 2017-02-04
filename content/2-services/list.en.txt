@@ -4,13 +4,13 @@ Title: Services
 
 Text: 
 
-> It's the things we do that show our passion for wine the best.
+> Things we do with passion!
 
-The intro paragraph or sentence can be short and catchy; its main point is to introduce the services wine•art offers, and what the mentality is when interacting with people about wine.
+wine•art develops wine knowledge through interactive workshops and training programs. We also create and manage brand strategies to bring out inspiring stories throughout the wine world.
 
 ----
 
-List-type: large
+List-type: small
 
 ----
 

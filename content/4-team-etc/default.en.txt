@@ -4,43 +4,57 @@ Title: Team etc.
 
 Text: 
 
-[introducing text]
+wine•art is a platform for beautiful people to learn, share and co-create.
 
-> They never saw it coming.
+> We are nourished by collective work and diversity
 <br><br>
 
 (image: seyma.jpg class: figure--stuck)
 
 # Seyma Bas *— Founder & Consultant*
-
-Seyma Bas was born in Istanbul, one of the most beautiful and exciting cities in the world. She studied Chemical Engineering at Boğaziçi University and obtained her MBA with an emphasis on Luxury Brand Management, Food and Wine from the INSEEC Business School in Bordeaux.
+ 
+Seyma Bas studied Chemical Engineering at Boğaziçi University and obtained her MBA with an emphasis on Luxury Brand Management, Food and Wine from the INSEEC Business School in Bordeaux. Between 2012-2016, she worked with Cosimo Maria Masini Winery, Suvla Wines and Chateau de Pommard focusing on international sales and brand management.
 
 <p class="short"> (link: #more text: More class: link link--down u-text-sans)</p>
 <div class="more">
-<p>She started her career focusing on international sales and marketing strategies for wineries in different countries. She developed her experience in marketing and brand management in regions such as Tuscany and Burgundy. Meanwhile, she completed WSET (Wine and Spirits Education Trust) Diploma programme in London and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles to obtain in the wine world. 
-<p>She regularly attends international wine competitions around the world as a jury member. Moreover, she writes about wine and the dynamics of the market in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Today, she is based in Zurich, working on various projects for different wine regions, and enjoys discovering new tastes every day. Apart from wine, she enjoys Lindy Hop (an American dance) she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.</p>
+<p>Currently, she provides brand consultancy and wine education through her company wine•art based in Zürich. She also runs  international sales development projects for wineries throughout the world.</p>
+
+<p>In addition to her professional life, she holds the WSET Diploma and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles in the world of wine.</p>
+
+<p>Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.</p>
 <p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
 </div>
+
 
 (image: philipp.jpg class: figure--stuck)
 
-# Philipp Merkt *— Wine Educator & Consultant*
+# Cecile Censy Richards Luisoni *— Wine Educator & Consultant*
 
-Philipp was born in Zurich and holds a Bachelor’s degree of Science in Business Administration with an emphasis in Marketing. Working for agencies and in different industries for more than 10 years, he has gained valuable expertise in Digital Commerce and Marketing.
+Cécile Richards was born in Basel, one of the most vibrant art cities in the world. Her passion for wine began quite romantically in Napa Valley after she moved back to Zürich, she started her WSET Diploma courses ın Germany, Rheingau and joined many professional tasting panels.
 
 <p class="short"> (link: #more text: More class: link link--down)</p>
 <div class="more">
-<p>He studied at the WSET (Wine and Spirits Education Trust) and obtained his Diploma as “Top Student” of Switzerland in March 2015. Through an assignment with Moevenpick Wine, he has professional experience in a wide range of the wine industry such as Product Management, Marketing and Sales. Moreover, he worked as a self-employed entrepreneur on various projects such as the implementation of an All-in-one Management Software for a specialist wine retailer. 
+<p>Since 2005, she is a Weinakademikerin (equivelent of  WSET Level 5 in German speaking countries). She launched her first press campaig for German Wine Institute (DWI) in Switzerland and today she is working independently for food and wine magazines and she is a wine journalist at VINUM.</p>
 
-<p>He keeps up with the newest developments and trends in wine, and regularly attends further trainings. Based in Zurich, he is an extensive traveler: Apart from wine regions all over the world, he enjoys discovering foreign cultures in Africa and Latin America.</p>
+<p>She has her own wine agency in Zürich Agentur für Wein (www.agenturfuerwein.ch) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.</p>
 <p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
 </div>
 
 
-# Cecile Censy Richards Luisoni *— Wine Educator & Consultant*
+# Jörn Justiz *— Wine Educator*
 
-*[coming soon]*
+Jörn Justiz holds a diploma in physics from the Freie Universität in Berlin and a PhD in science from the Lausanne Institute of Technology (EPFL). He is currently Professor of Biomedical Engineering at the Bern University of Applied Sciences in Biel/Bienne.
 
-# Timothy Magnus
+<p class="short"> (link: #more text: More class: link link--down)</p>
+<div class="more">
+<p>Jörn discovered his love for wine on a cycling tour through Burgundy and has been exploring wine regions and their wine around the world, such as New Zealand, Australia, USA and Canada) ever since. In Europe, he preferably combines two of his favorite hobbies and visits regions like Mosel, Rhine, Alto Adige or the Loire valley by bike.</p>
+<p>To add a more systematic base to his wine knowledge, he successfully completed WSET courses up to level 3 (with distinction). He also regularly organizes private tastings. Besides work and wine Jörn is interested in philosophy, especially theories of justice. On weekends he loves to cook, taking inspiration from his favorite chef, Yotam Ottoleghi.</p>
+<p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
+</div>
 
-*[coming soon]*
+
+# Interested in being a part our team?
+Drop us a line via hello@wine-art.co
+
+# Photo credits
+All the great photos on this website belongs to Ayca Yalcıner (ayca@mutfakmedia.com) and Nuri Şimşek (info@nurisimsek.com)

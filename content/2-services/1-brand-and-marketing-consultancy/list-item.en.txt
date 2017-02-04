@@ -36,4 +36,4 @@ Cover-image:
 
 ----
 
-Symbol: ʆ
+Symbol: µ
