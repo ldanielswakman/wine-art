@@ -2,7 +2,7 @@ Title: first
 
 ----
 
-Cover-image: wine-paper-strawberries.jpg
+Cover-image: rose_wine.jpg
 
 ----
 
@@ -13,3 +13,11 @@ Text:
 <br>
 
 We create, plan and manage branding strategies for wineries or wine trade companies to help them engage with wine lovers. We believe that each of our clients has an inspiring story. We help them select the right words to communicate their story through online/offline channels and to create a memorable experience.
+
+----
+
+Followup: services
+
+----
+
+Followup-text: 

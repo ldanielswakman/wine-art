@@ -2,12 +2,22 @@ Title: second
 
 ----
 
-Cover-image: white-wine.jpg
+Cover-image: sommelier.jpg
 
 ----
 
-Text: > Another section, more content.
+Text: 
+
+> Are you a sommelier, or a professional in the wine trade?
+
+<br>
+
+Well, you have to admit that you have one of the greatest jobs in the world! However, learning about wine is an endless adventure even for professionals. Therefore, we offer all levels of wine training to wine people, including: marketing and sales teams working in the trade, food and beverage managers, sommeliers and bartenders in high-end hotels, restaurants and retail chains.
 
 ----
 
 Followup: services
+
+----
+
+Followup-text: 
