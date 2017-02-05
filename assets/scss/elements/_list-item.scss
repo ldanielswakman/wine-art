@@ -1,4 +1,4 @@
-.grid {
+.list {
   padding-top: 6rem;
   padding-bottom: 6rem;
   @include prefix(transition, padding 0.3s ease);
@@ -6,22 +6,22 @@
   &.hasExpanded {
     padding-bottom: 0;
 
-    .grid-item:not(.isExpanded) .grid-item__card {
+    .list-item:not(.isExpanded) .list-item__card {
       opacity: 0.4;
     }
   }
 }
 
-.grid-item {
+.list-item {
 
-  &.isExpanded .grid-item__spacer:before {
+  &.isExpanded .list-item__spacer:before {
     content: "";
     position: absolute;
     border: 2rem solid transparent;
     border-bottom-color: #e8ebed;
     margin-top: -4rem;
   }
-  .grid-item__detail {
+  .list-item__detail {
     position: absolute;
     left: 0;
     max-height: 0;
@@ -31,7 +31,7 @@
     pointer-events: none;
     transition: all 0.5s ease;
   }
-  &.isExpanded .grid-item__detail {
+  &.isExpanded .list-item__detail {
     // opacity: 1;
     max-height: 800px;
     pointer-events: all;

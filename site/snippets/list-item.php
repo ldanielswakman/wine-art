@@ -1,9 +1,9 @@
 
-<div class="grid-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, '') ?>">
+<div class="list-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, '') ?>">
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block grid-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
+  <a href="#<?= $item->uid() ?>" class="u-block list-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
     <? if($item->cover_image()->isNotEmpty()): ?>
       <? $ratio = ($item->ratio()->isNotEmpty()) ? $item->ratio()->value() : '3by2'; ?>
       <figure class="figure--<?= $ratio ?>"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
@@ -19,7 +19,7 @@
 
 
   <!-- Detail panel -->
-  <div id="<?= $item->uid() ?>" class="grid-item__detail bg-greylightest">
+  <div id="<?= $item->uid() ?>" class="list-item__detail bg-greylightest">
     <div class="row u-pv3">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative">
 
@@ -77,7 +77,7 @@
         <? endif ?>
 
 
-        <a class="grid-item__detail-close u-pin-topright c-greylight" href="javascript:void(0)" style="font-size: 3rem;">&times;</a>
+        <a class="list-item__detail-close u-pin-topright c-greylight" href="javascript:void(0)" style="font-size: 3rem;">&times;</a>
 
       </div>
     </div>

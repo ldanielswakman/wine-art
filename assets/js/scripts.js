@@ -23,10 +23,10 @@ $(document).ready(function() {
 
 
   // UI: grid item click events
-  $('.grid-item__card').click(function() {
+  $('.list-item__card').click(function() {
     openCardDetail($(this));
   });
-  $('.grid-item__detail-close').click(function() {
+  $('.list-item__detail-close').click(function() {
     closeCardDetail();
   });
 
@@ -62,10 +62,10 @@ $(document).ready(function() {
 // UI: set space for grid detail placeholder
 function gridSpacer() {
   // remove old instances
-  $('.grid-item .grid-item__spacer').remove();
+  $('.list-item .list-item__spacer').remove();
 
-  $('.isExpanded .grid-item__detail').each(function() {
-    $(this).after('<div class="grid-item__spacer" style="height: ' + $(this).outerHeight() + 'px;"></div>');
+  $('.isExpanded .list-item__detail').each(function() {
+    $(this).after('<div class="list-item__spacer" style="height: ' + $(this).outerHeight() + 'px;"></div>');
   });
 }
 
@@ -86,9 +86,9 @@ function updateHash(href) {
 // UI: Open Card Detail
 function openCardDetail(dest) {
   if($(dest)) {
-    $('.grid-item').removeClass('isExpanded');
-    $(dest).closest('.grid-item').addClass('isExpanded');
-    $(dest).closest('.grid').addClass('hasExpanded');
+    $('.list-item').removeClass('isExpanded');
+    $(dest).closest('.list-item').addClass('isExpanded');
+    $(dest).closest('.list').addClass('hasExpanded');
     gridSpacer();
     $(dest).smoothScroll();
 
@@ -105,8 +105,8 @@ function openCardDetail(dest) {
 
 // UI: Close Card Detail
 function closeCardDetail() {
-  $('.grid-item').removeClass('isExpanded');
-  $('.grid').removeClass('hasExpanded');
+  $('.list-item').removeClass('isExpanded');
+  $('.list').removeClass('hasExpanded');
   updateHash(' ');
   gridSpacer();
 
