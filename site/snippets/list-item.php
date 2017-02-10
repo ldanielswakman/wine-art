@@ -76,11 +76,11 @@
           </div>
         <? endif ?>
 
-
         <a class="list-item__detail-close u-pin-topright c-greylight" href="javascript:void(0)" style="font-size: 3rem;">&times;</a>
 
       </div>
     </div>
+
   </div>
 
 

@@ -90,7 +90,7 @@ function openCardDetail(dest) {
     $(dest).closest('.list-item').addClass('isExpanded');
     $(dest).closest('.list').addClass('hasExpanded');
     gridSpacer();
-    $(dest).smoothScroll();
+    // $(dest).smoothScroll();
 
     for (i=1; i < 20; i++) {
       setTimeout(function() { gridSpacer(); }, i*25);

@@ -7,6 +7,10 @@ l::set('course_fee', 'Fee');
 l::set('course_location', 'Location');
 
 
+// Team members
+l::set('more', '[DE: More]');
+
+
 // Footer contact form
 l::set('form_intro', 'Say hello');
 l::set('form_submit', 'Send');

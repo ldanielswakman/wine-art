@@ -7,55 +7,72 @@ Text:
 wine•art is a platform for beautiful people to learn, share and co-create.
 
 > We are nourished by collective work and diversity
-<br><br>
 
-(image: seyma.jpg class: figure--stuck)
+----
 
-# Seyma Bas *— Founder & Consultant*
- 
-Seyma Bas studied Chemical Engineering at Boğaziçi University and obtained her MBA with an emphasis on Luxury Brand Management, Food and Wine from the INSEEC Business School in Bordeaux. Between 2012-2016, she worked with Cosimo Maria Masini Winery, Suvla Wines and Chateau de Pommard focusing on international sales and brand management.
+Team-members: 
 
-<p class="short"> (link: #more text: More class: link link--down u-text-sans)</p>
-<div class="more">
-<p>Currently, she provides brand consultancy and wine education through her company wine•art based in Zürich. She also runs  international sales development projects for wineries throughout the world.</p>
+- 
+  name: Seyma Bas
+  role: 'Founder & Consultant'
+  photo: seyma.jpg
+  descr: >
+    Seyma Bas studied Chemical Engineering
+    at Boğaziçi University and obtained
+    her MBA with an emphasis on Luxury Brand
+    Management, Food and Wine from the
+    INSEEC Business School in Bordeaux.
+    Between 2012-2016, she worked with
+    Cosimo Maria Masini Winery, Suvla Wines
+    and Chateau de Pommard focusing on
+    international sales and brand
+    management.
+  descr_ext: |
+    Currently, she provides brand consultancy and wine education through her company wine•art based in Zürich. She also runs  international sales development projects for wineries throughout the world.
+    
+    In addition to her professional life, she holds the WSET Diploma and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles in the world of wine.
+    
+    Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
+- 
+  name: Cecile Censy Richards Luisoni
+  role: 'Wine Educator & Consultant'
+  photo: cecile.jpg
+  descr: >
+    Cécile Richards was born in Basel, one
+    of the most vibrant art cities in the
+    world. Her passion for wine began quite
+    romantically in Napa Valley after she
+    moved back to Zürich, she started her
+    WSET Diploma courses ın Germany,
+    Rheingau and joined many professional
+    tasting panels.
+  descr_ext: |
+    Since 2005, she is a Weinakademikerin (equivelent of  WSET Level 5 in German speaking countries). She launched her first press campaig for German Wine Institute (DWI) in Switzerland and today she is working independently for food and wine magazines and she is a wine journalist at VINUM.
+    
+    She has her own wine agency in Zürich Agentur für Wein (www.agenturfuerwein.ch) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.
+- 
+  name: Jörn Justiz
+  role: Wine Educator
+  photo: joern.jpg
+  descr: >
+    Jörn Justiz holds a diploma in physics
+    from the Freie Universität in Berlin
+    and a PhD in science from the Lausanne
+    Institute of Technology (EPFL). He is
+    currently Professor of Biomedical
+    Engineering at the Bern University of
+    Applied Sciences in Biel/Bienne.
+  descr_ext: |
+    Jörn discovered his love for wine on a cycling tour through Burgundy and has been exploring wine regions and their wine around the world, such as New Zealand, Australia, USA and Canada) ever since. In Europe, he preferably combines two of his favorite hobbies and visits regions like Mosel, Rhine, Alto Adige or the Loire valley by bike.
+    
+    To add a more systematic base to his wine knowledge, he successfully completed WSET courses up to level 3 (with distinction). He also regularly organizes private tastings. Besides work and wine Jörn is interested in philosophy, especially theories of justice. On weekends he loves to cook, taking inspiration from his favorite chef, Yotam Ottolenghi.
 
-<p>In addition to her professional life, she holds the WSET Diploma and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles in the world of wine.</p>
+----
 
-<p>Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.</p>
-<p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
-</div>
-
-
-
-
-
-(image: cecile.jpg class: figure--stuck)
-# Cecile Censy Richards Luisoni *— Wine Educator & Consultant*
-
-Cécile Richards was born in Basel, one of the most vibrant art cities in the world. Her passion for wine began quite romantically in Napa Valley after she moved back to Zürich, she started her WSET Diploma courses ın Germany, Rheingau and joined many professional tasting panels.
-
-<p class="short"> (link: #more text: More class: link link--down)</p>
-<div class="more">
-<p>Since 2005, she is a Weinakademikerin (equivelent of  WSET Level 5 in German speaking countries). She launched her first press campaig for German Wine Institute (DWI) in Switzerland and today she is working independently for food and wine magazines and she is a wine journalist at VINUM.</p>
-
-<p>She has her own wine agency in Zürich Agentur für Wein (www.agenturfuerwein.ch) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.</p>
-<p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
-</div>
-(image: joern.jpg class: figure--stuck)
-
-# Jörn Justiz *— Wine Educator*
-
-Jörn Justiz holds a diploma in physics from the Freie Universität in Berlin and a PhD in science from the Lausanne Institute of Technology (EPFL). He is currently Professor of Biomedical Engineering at the Bern University of Applied Sciences in Biel/Bienne.
-
-<p class="short"> (link: #more text: More class: link link--down)</p>
-<div class="more">
-<p>Jörn discovered his love for wine on a cycling tour through Burgundy and has been exploring wine regions and their wine around the world, such as New Zealand, Australia, USA and Canada) ever since. In Europe, he preferably combines two of his favorite hobbies and visits regions like Mosel, Rhine, Alto Adige or the Loire valley by bike.</p>
-<p>To add a more systematic base to his wine knowledge, he successfully completed WSET courses up to level 3 (with distinction). He also regularly organizes private tastings. Besides work and wine Jörn is interested in philosophy, especially theories of justice. On weekends he loves to cook, taking inspiration from his favorite chef, Yotam Ottoleghi.</p>
-<p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
-</div>
+Text-after: 
 
 # Interested in being a part our team?
-Drop us a line via hello@wine-art.co
+Drop us a line via (email: hello@wine-art.co).
 
 # Photo credits
-All the great photos on this website belongs to Ayca Yalcıner (ayca@mutfakmedia.com) and Nuri Şimşek (info@nurisimsek.com)
+All the great photos on this website belongs to (email: ayca@mutfakmedia.com text: Ayca Yalcıner) and (email: info@nurisimsek.com text: Nuri Şimşek).

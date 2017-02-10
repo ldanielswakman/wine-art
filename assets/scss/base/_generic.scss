@@ -58,7 +58,7 @@ p {
   font-family: $serif;
   font-size: 1.2rem;
   line-height: 1.7em;
-  max-width: 50rem;
+  max-width: 45rem;
 
   &.short {
     font-family: $sans_serif;
@@ -75,6 +75,13 @@ p {
   & + h4 {
     margin-top: 2rem;
   }
+  a {
+    color: $softred;
+
+    &:hover {
+      @include underline();
+    }
+  }
 }
 &.short p {
   font-family: $sans_serif;
@@ -88,7 +95,7 @@ section .more {
   max-height: 0;
   overflow: hidden;
   margin-top: 1.5rem;
-  margin-bottom: 8rem;
+  // margin-bottom: 8rem;
   transition: max-height 0.5s ease;
 }
 
@@ -103,7 +110,7 @@ h1, h2, h3, h4 {
 
 
 // Figure
-figure {, 
+figure { 
   &.figure--3by1, 
   &.figure--2by1,
   &.figure--3by2,
@@ -123,12 +130,6 @@ figure {,
   &.figure--2by1 { padding-bottom: (1/2 * 100%); }
   &.figure--3by2 { padding-bottom: (2/3 * 100%); }
   &.figure--1by1 { padding-bottom: (1/1 * 100%); }
-
-  &.figure--stuck {
-    position: absolute;
-    left: 0;
-    width: 20vw;
-  }
 }
 
 

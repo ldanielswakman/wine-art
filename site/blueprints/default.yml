@@ -10,3 +10,41 @@ fields:
     type:  markdown
     header1: h2
     header2: h3
+
+  team_members:
+    label: Team members
+    type: structure
+    modalsize: large
+    entry: >
+      <div style="margin: 0.5rem 0;"><strong style="font-size: 1.5rem;">{{name}}</strong> - <em>{{role}}</em></div>
+      <span style="color: #666;">{{descr}}</span>
+    fields: 
+      name:
+        label: Name
+        type: text
+      role:
+        label: Title
+        type: text
+        width: 1/2
+      photo:
+        label: Photo
+        type: image
+        width: 1/2
+      descr:
+        label: >
+          Description<br><em style="color: #999;">(2 sentences only)</em>
+        type: textarea
+        buttons: false
+      descr_ext:
+        label: >
+          Full description<br><em style="color: #999;">(continued from short description)</em>
+        type: textarea
+        type: textarea
+        buttons: false
+
+  text_after:
+    label: >
+      Text<br><em style="color: #999;">(text after team members)</em>
+    type:  markdown
+    header1: h2
+    header2: h3

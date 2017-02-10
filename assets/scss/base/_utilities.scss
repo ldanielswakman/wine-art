@@ -61,11 +61,15 @@
 .u-hide {
   display: none !important;
 }
-@media screen and (max-width: 768px) {
+.u-xs-show,
+.u-sm-show { display: none; }
+@media screen and (max-width: $vw_tablet) {
   .u-sm-hide { display: none !important; }
+  .u-sm-show { display: block !important; }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $vw_mobile) {
   .u-xs-hide { display: none !important; }
+  .u-xs-show { display: block !important; }
 }
 
 
@@ -141,7 +145,10 @@
 
 // Text size
 .u-text-15x {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
+}
+.u-text-2x {
+  font-size: 2rem !important;
 }
 .u-text-5x {
   font-size: 5rem;
