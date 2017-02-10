@@ -3113,6 +3113,10 @@ html, body {
 .u-pb8vh {
   padding-bottom: 25vw !important; }
 
+@media only screen and (min-width: 48rem) {
+  .u-pt7-sm {
+    padding-top: 7rem !important; } }
+
 .u-block {
   display: block !important; }
 
@@ -3358,10 +3362,11 @@ figure.figure--1by1 {
   .row.row--internalpadding {
     margin-left: -0.5rem !important;
     margin-right: -0.5rem !important; }
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 48rem) {
       .row.row--internalpadding {
-        margin: 0 auto !important; } }
-  @media screen and (max-width: 30rem) {
+        margin-left: auto !important;
+        margin-right: auto !important; } }
+  @media screen and (max-width: 48rem) {
     .row .row--internalpadding {
       margin-left: -0.5rem !important;
       margin-right: -0.5rem !important; } }
@@ -3586,11 +3591,19 @@ footer, .footer {
       footer + .spacer, .footer + .spacer {
         display: none !important; } }
 
-header .header__logo, .header .header__logo {
-  height: 2.5rem;
-  opacity: 0.2; }
-  header .header__logo:hover, .header .header__logo:hover {
-    opacity: 0.4; }
+header, .header {
+  padding: 3rem 0; }
+  header .header__logo, .header .header__logo {
+    height: 2.5rem;
+    opacity: 0.2; }
+    header .header__logo:hover, .header .header__logo:hover {
+      opacity: 0.4; }
+  @media only screen and (max-width: 48rem) {
+    header, .header {
+      padding: 2rem 0; } }
+  @media only screen and (max-width: 30rem) {
+    header, .header {
+      padding: 1rem 0; } }
 
 main, .main {
   position: relative;
@@ -3664,6 +3677,12 @@ section#intro .link, .section#intro blockquote,
 .section#intro .link {
   margin-left: 5rem;
   margin-right: -10rem; }
+  @media only screen and (max-width: 30rem) {
+    section#intro blockquote,
+    section#intro .link, .section#intro blockquote,
+    .section#intro .link {
+      margin-left: 0;
+      margin-right: 0; } }
 
 body.isLoaded section .section__bg-image {
   opacity: 1; }

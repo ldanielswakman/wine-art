@@ -46,6 +46,11 @@
 .u-pb8vh {
   padding-bottom: 25vw !important;
 }
+@media only screen and (min-width: $vw_tablet) {
+  .u-pt7-sm {
+    padding-top: 7rem !important;
+  }
+}
 
 
 // Display modes

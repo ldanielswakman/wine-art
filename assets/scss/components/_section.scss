@@ -27,6 +27,11 @@ section, .section {
   &#intro .link {
     margin-left: 5rem;
     margin-right: -10rem;
+
+    @media only screen and (max-width: $vw_mobile) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 body.isLoaded section {

@@ -4,13 +4,13 @@
 
   <section>
 
-    <div class="row u-relative u-pt7 u-mb7">
+    <div class="row u-relative u-mb7">
 
-      <div class="u-pin-topleft u-">
+      <div class="col-xs-12 col-sm-2">
         <? snippet('logo') ?>
       </div>
 
-      <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-md-6 u-pt7-sm">
 
         <h1 class="c-greylight u-mb3"><?= $page->title()->html() ?></h1>
         <?= $page->text()->kirbytext() ?>
@@ -33,7 +33,7 @@
       <div class="row row--internalpadding u-mv8">
 
 
-        <? if($even === true): ?>
+        <? if($even === false): ?>
           <div class="col-xs-5 u-sm-show">&nbsp;</div>
         <? endif ?>
 

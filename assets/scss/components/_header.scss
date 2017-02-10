@@ -1,4 +1,5 @@
 header, .header {
+  padding: 3rem 0;
   
   .header__logo {
     height: 2.5rem;
@@ -7,5 +8,11 @@ header, .header {
     &:hover {
       opacity: 0.4;
     }
+  }
+  @media only screen and (max-width: $vw_tablet) {
+   padding: 2rem 0; 
+  }
+  @media only screen and (max-width: $vw_mobile) {
+   padding: 1rem 0; 
   }
 }
