@@ -9,6 +9,7 @@ l::set('course_location', 'Location');
 
 // Team members
 l::set('more', 'More');
+l::set('less', 'Less');
 
 
 // Footer contact form

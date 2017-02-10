@@ -7,24 +7,62 @@ Text:
 [introducing text]
 
 > They never saw it coming.
-<br><br>
 
-# Seyma Bas *— Gründerin & Beraterin*
- 
-Seyma Bas wurde in Istanbul geboren – einer der schönsten und interessantesten Städte der Welt. Sie studierte Verfahrenstechnik an der Boğaziçi-Universität und hat einen MBA im Management von Luxusmarken für die Lebensmittel- und Weinindustrie von der INSEEC Business School in Bordeaux. Zu Beginn ihrer Laufbahn entwickelte sie für Weingüter in verschiedenen Ländern internationale Marketing- und Vertriebskonzepte. Ihre Erfahrung in Marketing und Markenmanagement vertiefte sie in der Toskana, dem Burgund und weiteren Weinregionen. 
-Nach Abschluss des Diploma-Programms des Wine and Spirits Education Trust in London studiert Seyma nun auf einen der schwierigsten Titel in der Welt des Weins: den Master of Wine. Sie ist regelmäßig als Jurorin bei internationalen Weinwettbewerben rund um den Globus tätig. Darüber hinaus schreibt sie über Wein und die Dynamik des Markts in ihrem Blog Dionysian Impulse (www.dionysianimpulse.net), das 2016 mit dem Prädikat Best New Wine Blog ausgezeichnet wurde. Heute lebt sie in Zürich, arbeitet an Projekten für verschiedene Weinregionen, und freut sich jeden Tag über neue Geschmacksentdeckungen. Neben ihrer Passion für den Wein findet sie Spaß am Lindy Hop, ist Fan von Wim Wenders und schaut immer wieder gerne die TV-Serie Seinfeld.
+----
 
+Team-members: 
 
-# Philipp Merkt *— Weinedukator & Berater*
+- 
+  name: Seyma Bas
+  role: 'Gründerin & Beraterin'
+  photo: seyma.jpg
+  descr: 'Seyma Bas wurde in Istanbul geboren – einer der schönsten und interessantesten Städte der Welt. Sie studierte Verfahrenstechnik an der Boğaziçi-Universität und hat einen MBA im Management von Luxusmarken für die Lebensmittel- und Weinindustrie von der INSEEC Business School in Bordeaux.'
+  descr_ext: |
+    Zu Beginn ihrer Laufbahn entwickelte sie für Weingüter in verschiedenen Ländern internationale Marketing- und Vertriebskonzepte. Ihre Erfahrung in Marketing und Markenmanagement vertiefte sie in der Toskana, dem Burgund und weiteren Weinregionen.
+    
+    Nach Abschluss des Diploma-Programms des Wine and Spirits Education Trust in London studiert Seyma nun auf einen der schwierigsten Titel in der Welt des Weins: den Master of Wine. Sie ist regelmäßig als Jurorin bei internationalen Weinwettbewerben rund um den Globus tätig.
+    
+    Darüber hinaus schreibt sie über Wein und die Dynamik des Markts in ihrem Blog Dionysian Impulse (www.dionysianimpulse.net), das 2016 mit dem Prädikat Best New Wine Blog ausgezeichnet wurde. Heute lebt sie in Zürich, arbeitet an Projekten für verschiedene Weinregionen, und freut sich jeden Tag über neue Geschmacksentdeckungen. Neben ihrer Passion für den Wein findet sie Spaß am Lindy Hop, ist Fan von Wim Wenders und schaut immer wieder gerne die TV-Serie Seinfeld.
+- 
+  name: Cecile Censy Richards Luisoni
+  role: 'Wine Educator & Consultant'
+  photo: cecile.jpg
+  descr: >
+    Cécile Richards was born in Basel, one
+    of the most vibrant art cities in the
+    world. Her passion for wine began quite
+    romantically in Napa Valley after she
+    moved back to Zürich, she started her
+    WSET Diploma courses ın Germany,
+    Rheingau and joined many professional
+    tasting panels.
+  descr_ext: |
+    Since 2005, she is a Weinakademikerin (equivelent of  WSET Level 5 in German speaking countries). She launched her first press campaig for German Wine Institute (DWI) in Switzerland and today she is working independently for food and wine magazines and she is a wine journalist at VINUM.
+    
+    She has her own wine agency in Zürich Agentur für Wein (www.agenturfuerwein.ch) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.
+- 
+  name: Jörn Justiz
+  role: Wine Educator
+  photo: joern.jpg
+  descr: >
+    Jörn Justiz holds a diploma in physics
+    from the Freie Universität in Berlin
+    and a PhD in science from the Lausanne
+    Institute of Technology (EPFL). He is
+    currently Professor of Biomedical
+    Engineering at the Bern University of
+    Applied Sciences in Biel/Bienne.
+  descr_ext: |
+    Jörn discovered his love for wine on a cycling tour through Burgundy and has been exploring wine regions and their wine around the world, such as New Zealand, Australia, USA and Canada) ever since. In Europe, he preferably combines two of his favorite hobbies and visits regions like Mosel, Rhine, Alto Adige or the Loire valley by bike.
+    
+    To add a more systematic base to his wine knowledge, he successfully completed WSET courses up to level 3 (with distinction). He also regularly organizes private tastings. Besides work and wine Jörn is interested in philosophy, especially theories of justice. On weekends he loves to cook, taking inspiration from his favorite chef, Yotam Ottolenghi.
 
-Philipp Merkt ist in Zürich geboren und hat ein Studium zum Betriebsökonom FH mit einer Vertiefung in Marketing erfolgreich absolviert. Während über 10 Jahren arbeitete er als Berater und in leitenden Funktionen für Agenturen und in verschiedenen Branchen im Bereich Digital Commerce und Marketing. Die faszinierende Welt der Weine hat ihn unterdessen in ihren Bann gezogen und - für ein Praktikum in den Cape Winelands und eine Ausbildung an der Cape Wine Academy - nach Südafrika geführt. 
-Zurück in der Schweiz hat er im April 2015 die Ausbildung zum Weinakademiker (WSET Diploma in Wines & Spirits) als “Top Student“ abgeschlossen. Während seinem Engagement bei Mövenpick hat er sich ein vertieftes Fachwissen der Weinbranche in den Bereichen Product Management, Marketing und Sales angeeignet. Ausserdem leitete er als selbständiger Berater verschiedene Projekte wie die Implementation einer All-in-one Management Software für einen Weinfachhändler. Reisen ist eine seiner Leidenschaften: Neben Weinregionen auf der ganzen Welt bereist er gerne Afrika und Lateinamerika und lernt neue Kulturen und Sprachen kennen.
+----
 
+Text-after: 
 
-# Cecile Censy Richards Luisoni *— Wine Educator & Consultant*
+# Interested in being a part our team?
+Drop us a line via (email: hello@wine-art.co).
 
-*[coming soon]*
-
-# Timothy Magnus
-
-*[coming soon]*
+# Photo credits
+All the great photos on this website belongs to (email: ayca@mutfakmedia.com text: Ayca Yalcıner) and (email: info@nurisimsek.com text: Nuri Şimşek).
