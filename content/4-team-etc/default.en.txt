@@ -26,8 +26,10 @@ Seyma Bas studied Chemical Engineering at Boğaziçi University and obtained her
 </div>
 
 
-(image: philipp.jpg class: figure--stuck)
 
+
+
+(image: cecile.jpg class: figure--stuck)
 # Cecile Censy Richards Luisoni *— Wine Educator & Consultant*
 
 Cécile Richards was born in Basel, one of the most vibrant art cities in the world. Her passion for wine began quite romantically in Napa Valley after she moved back to Zürich, she started her WSET Diploma courses ın Germany, Rheingau and joined many professional tasting panels.
@@ -39,7 +41,7 @@ Cécile Richards was born in Basel, one of the most vibrant art cities in the wo
 <p>She has her own wine agency in Zürich Agentur für Wein (www.agenturfuerwein.ch) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.</p>
 <p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
 </div>
-
+(image: joern.jpg class: figure--stuck)
 
 # Jörn Justiz *— Wine Educator*
 
@@ -51,7 +53,6 @@ Jörn Justiz holds a diploma in physics from the Freie Universität in Berlin an
 <p>To add a more systematic base to his wine knowledge, he successfully completed WSET courses up to level 3 (with distinction). He also regularly organizes private tastings. Besides work and wine Jörn is interested in philosophy, especially theories of justice. On weekends he loves to cook, taking inspiration from his favorite chef, Yotam Ottoleghi.</p>
 <p class="short"> (link: #less text: Less class: link link--up u-text-sans)</p>
 </div>
-
 
 # Interested in being a part our team?
 Drop us a line via hello@wine-art.co
