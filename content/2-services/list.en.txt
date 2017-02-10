@@ -14,4 +14,4 @@ List-type: small
 
 ----
 
-Cover-image: 
+Cover-image: wine-food-transparent.png
