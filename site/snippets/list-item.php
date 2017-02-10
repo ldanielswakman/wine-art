@@ -3,7 +3,7 @@
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block list-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
+  <a href="#<?= $item->uid() ?>" class="u-block list-item__card u-pr3 <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
     <? if($item->cover_image()->isNotEmpty()): ?>
       <? $ratio = ($item->ratio()->isNotEmpty()) ? $item->ratio()->value() : '3by2'; ?>
       <figure class="figure--<?= $ratio ?>"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
