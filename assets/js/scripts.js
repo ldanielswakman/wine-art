@@ -131,7 +131,6 @@ function scrollActions() {
 
       thisTop = $(this).offset().top;
       scrollValue = (scroll - thisTop) / 5 + startingOffset;
-      console.log(scrollValue);
 
       $(this).find('.section__bg-image')
         .css('-webkit-transform','translateY(' + scrollValue + 'px)')
@@ -139,6 +138,24 @@ function scrollActions() {
         .css('transform','translateY(' + scrollValue + 'px)');
 
     });
+  }
+
+  mainH = $('main').offset().top + $('main').outerHeight();
+  mainFadeOffset = -60;
+  mainFadeDuration = 60;
+  startY = mainH - windowH + mainFadeOffset;
+  endY = startY + mainFadeDuration;
+
+  if(scroll < startY) {
+    // Start state
+    $('nav').removeAttr('style').removeClass('u-hide');
+  } else if(scroll > endY) {
+    // End state
+    $('nav').removeAttr('style').addClass('u-hide');
+  } else {
+    // Transition state
+    mainOpacity = (startY - scroll + mainFadeDuration) / mainFadeDuration;
+    $('nav').css('opacity', mainOpacity);
   }
 }
 events = 'ready scroll resize scrollstart scrollstop';

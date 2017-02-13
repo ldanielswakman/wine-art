@@ -6,6 +6,8 @@ nav, .nav {
 
   padding: 2rem;
 
+  background-image: linear-gradient(60deg, $white 20%, transparent 60%);
+
   @include prefix(transform, rotate(-90deg) translate(100%, 0));
   @include prefix(transform-origin, bottom right);
 
