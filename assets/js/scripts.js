@@ -29,6 +29,17 @@ $(document).ready(function() {
   $('.list-item__detail-close').click(function() {
     closeCardDetail();
   });
+  $('.list-item [href="#item_contact"]').click(function(e) {
+    e.preventDefault();
+    $contactbox = $(this).closest('.list-item').find('.list-item__contact');
+    $contactbox.toggleClass('isExpanded');
+    $contactbox.find('form .field').first().focus();
+    gridSpacer();
+
+    for (i=1; i < 20; i++) {
+      setTimeout(function() { gridSpacer(); }, i*25);
+    }
+  });
 
   if(window.location.hash) {
     openCardDetail(window.location.hash);
@@ -173,18 +184,13 @@ $(document).ready(function() {
   });
   $('.field').each(function() {
     checkFieldContent($(this), false);
+    checkFormFields($(this));
   });
-  checkFormFields($(this));
 
   // Async form submit
-  $form = $('.contact-form');
-  $errors_container = $form.find('.contact-form-errors');
-  fields = [];
-  $form.find('[name]').each(function(i) { fields[$(this).attr('name')] = i; });
-
-  $form.on('submit', function(e) {
+  $('form').on('submit', function(e) {
     e.preventDefault();
-    postContactForm( $(this).attr('action'), $(this).serialize() );
+    postContactForm( $(this) );
   });
 
 });
@@ -246,24 +252,30 @@ function formatError(msg) {
 }
 
 // Contact form: post form
-function postContactForm(url, form_data) {
+function postContactForm(form_obj) {
+  // Defining variables
+  $active_form = form_obj;
+  url = $active_form.attr('action');
+  form_data = $active_form.serialize();
+  $errors_container = form_obj.find('.contact-form-errors');
 
+  // Remove previous states & errors
   $errors_container.html('');
-  $form.find('input, textarea').removeClass('field--error');
-  $form.find('#cover_progress').removeClass('u-hide');
+  $active_form.find('input, textarea').removeClass('field--error');
+  $active_form.find('#cover_progress').removeClass('u-hide');
 
   $.post(url, form_data, function(data) {
-    $form.find('#cover_progress').addClass('u-hide');
+    $active_form.find('#cover_progress').addClass('u-hide');
     if(data.success === true) {
       
-      $form.find('#cover_progress').addClass('u-hide');
-      $form.find('#cover_success').removeClass('u-hide');
+      $active_form.find('#cover_progress').addClass('u-hide');
+      $active_form.find('#cover_success').removeClass('u-hide');
 
     } else {
 
       $html = '';
       $.each(data.errors, function(i, j) {
-        $form.find('[name="'+i+'"]').addClass('field--error');
+        $active_form.find('[name="'+i+'"]').addClass('field--error');
         $html += formatError(data.errors[i]);
       });
       if(data.code === 500) {

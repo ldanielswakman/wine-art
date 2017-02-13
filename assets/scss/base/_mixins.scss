@@ -38,3 +38,10 @@
     }
   }
 }
+
+@mixin triangleTop($color, $size: 2rem) {
+  content: "";
+  position: absolute;
+  border: $size solid transparent;
+  border-bottom-color: $color;
+}

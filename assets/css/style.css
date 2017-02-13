@@ -3230,6 +3230,7 @@ html, body {
 .i-onload-appearFromRight {
   position: relative;
   opacity: 0;
+  pointer-events: none;
   -webkit-transform: translateX(6rem);
   -moz-transform: translateX(6rem);
   transform: translateX(6rem);
@@ -3239,6 +3240,7 @@ html, body {
 
 body.isLoaded .i-onload-appearFromRight {
   opacity: 1;
+  pointer-events: all;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   transform: translateX(0); }
@@ -3246,6 +3248,7 @@ body.isLoaded .i-onload-appearFromRight {
 .i-onevent-appearFromTop {
   position: relative;
   opacity: 0;
+  pointer-events: none;
   -webkit-transform: translateY(-3rem);
   -moz-transform: translateY(-3rem);
   transform: translateY(-3rem);
@@ -3254,6 +3257,7 @@ body.isLoaded .i-onload-appearFromRight {
   transition: all 1.5s cubic-bezier(0, 0, 0.2, 1); }
   .i-onevent-appearFromTop.isFired {
     opacity: 1;
+    pointer-events: all;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0); }
@@ -3522,6 +3526,16 @@ a {
     transform: rotate(-90deg) translateX(0.5rem); }
   .link.link--secondary:after {
     display: none !important; }
+  .link.link--diagonal:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 1.5rem;
+    background-position: right bottom; }
+  .link.link--diagonal:hover:after {
+    -webkit-transform: rotate(90deg) translateX(0.5rem);
+    -moz-transform: rotate(90deg) translateX(0.5rem);
+    transform: rotate(90deg) translateX(0.5rem); }
 
 .list {
   padding-top: 6rem;
@@ -3547,12 +3561,45 @@ a {
   max-height: 0;
   overflow: hidden;
   width: 100%;
+  opacity: 0;
   pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .list-item.isExpanded .list-item__detail {
+  opacity: 1;
   max-height: 1200px;
   pointer-events: all; }
+
+.list-item__contact {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: all;
+  background-color: #431220;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .list-item__contact.isExpanded {
+    opacity: 1;
+    max-height: 600px;
+    overflow: visible;
+    pointer-events: all; }
+  .list-item__contact .list-item__contact-arrow {
+    content: "";
+    position: absolute;
+    border: 2rem solid transparent;
+    border-bottom-color: #431220;
+    bottom: calc(100% - 2rem);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .list-item__contact.isExpanded .list-item__contact-arrow {
+    bottom: 100%; }
+  .list-item__contact form {
+    max-width: 45rem; }
 
 footer, .footer {
   position: fixed;

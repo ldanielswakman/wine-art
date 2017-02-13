@@ -181,21 +181,25 @@
 .i-onload-appearFromRight {
   position: relative;
   opacity: 0;
+  pointer-events: none;
   @include prefix(transform, translateX(6rem));
   @include prefix(transition, all 1.5s cubic-bezier(0, 0, 0.2, 1));
 }
 body.isLoaded .i-onload-appearFromRight {
   opacity: 1;
+  pointer-events: all;
   @include prefix(transform, translateX(0));
 }
 .i-onevent-appearFromTop {
   position: relative;
   opacity: 0;
+  pointer-events: none;
   @include prefix(transform, translateY(-3rem));
   @include prefix(transition, all 1.5s cubic-bezier(0, 0, 0.2, 1));
   
   &.isFired {
     opacity: 1;
+    pointer-events: all;
     @include prefix(transform, translateY(0));
   }
 }

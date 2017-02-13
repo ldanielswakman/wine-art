@@ -29,6 +29,10 @@ fields:
     label: Extra options
     type: headline
     help: (Leave empty to hide each field)
+  contact_button:
+    label: 'Contact us' button
+    default: Inquire further
+    type: text
   start_date:
     label: Start Date
     type: date

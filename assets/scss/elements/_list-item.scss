@@ -15,10 +15,7 @@
 .list-item {
 
   &.isExpanded .list-item__spacer:before {
-    content: "";
-    position: absolute;
-    border: 2rem solid transparent;
-    border-bottom-color: #e8ebed;
+    @include triangleTop($greylightest);
     margin-top: -4rem;
   }
   .list-item__detail {
@@ -27,14 +24,42 @@
     max-height: 0;
     overflow: hidden;
     width: 100%;
-    // opacity: 0;
+    opacity: 0;
     pointer-events: none;
-    transition: all 0.5s ease;
+    @include prefix(transition, all 0.5s ease);
   }
   &.isExpanded .list-item__detail {
-    // opacity: 1;
+    opacity: 1;
     max-height: 1200px;
     pointer-events: all;
   }
+}
 
+.list-item__contact {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: all;
+  background-color: $darkwine;
+
+  @include prefix(transition, all 0.5s ease);
+
+  &.isExpanded {
+    opacity: 1;
+    max-height: 600px;
+    overflow: visible;
+    pointer-events: all;
+  }
+  .list-item__contact-arrow {
+    @include triangleTop($darkwine);
+    bottom: calc(100% - 2rem);
+    @include prefix(transition, all 0.2s ease);
+  }
+  &.isExpanded .list-item__contact-arrow {
+    bottom: 100%;
+  }
+  form {
+    max-width: 45rem;
+  }
 }

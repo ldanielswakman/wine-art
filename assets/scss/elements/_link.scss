@@ -61,4 +61,14 @@ a {
   &.link--secondary {
     &:after { display: none !important; }
   }
+  &.link--diagonal {
+    &:after {
+      @include prefix(transform, rotate(45deg));
+      width: 1.5rem;
+      background-position: right bottom;
+    }
+    &:hover:after {
+      @include prefix(transform, rotate(90deg) translateX(0.5rem));
+    }
+  }
 }
