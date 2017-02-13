@@ -46,8 +46,20 @@ c::set('languages', array(
   ),
 ));
 
+// Caching
+// NB: set this to true before launching site
+c::set('cache', false);
 
-// Contact form Ajax
+
+/*
+
+---------------------------------------
+Routes
+---------------------------------------
+
+Contact form Routing
+
+*/
 c::set('routes', [
   [
     'pattern' => 'contactform_post',
@@ -98,3 +110,4 @@ c::set('routes', [
     }
   ]
 ]);
+
