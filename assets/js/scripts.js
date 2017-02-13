@@ -124,16 +124,19 @@ function scrollActions() {
 
   allowMobileScroll = ($(window).width() > 767) ? true : false;
   allowMobileScroll = true;
+  startingOffset = 20;
 
   if (allowMobileScroll) {
     $('.section__bg').each(function() {
 
       thisTop = $(this).offset().top;
-      scrollValue = (scroll - thisTop) / 5 + 20;
+      scrollValue = (scroll - thisTop) / 5 + startingOffset;
       console.log(scrollValue);
 
       $(this).find('.section__bg-image')
-        .css('background-position','center ' + scrollValue + 'px');
+        .css('-webkit-transform','translateY(' + scrollValue + 'px)')
+        .css('-moz-transform','translateY(' + scrollValue + 'px)')
+        .css('transform','translateY(' + scrollValue + 'px)');
 
     });
   }

@@ -3668,9 +3668,12 @@ section .section__bg .section__bg-image, .section .section__bg .section__bg-imag
   background-attachment: local;
   background-repeat: no-repeat;
   opacity: 0;
-  -webkit-opacity: all 0.3s ease;
-  -moz-opacity: all 0.3s ease;
-  opacity: all 0.3s ease; }
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  -moz-transition: -moz-transform 0.1s ease;
+  transition: transform 0.1s ease; }
 
 section#intro blockquote,
 section#intro .link, .section#intro blockquote,

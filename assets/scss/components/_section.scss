@@ -15,7 +15,10 @@ section, .section {
     background-attachment: local;
     background-repeat: no-repeat;
     opacity: 0;
-    @include prefix(opacity, all 0.3s ease);
+    @include prefix(transition, opacity 0.3s ease);
+    -webkit-transition: -webkit-transform 0.1s ease;
+    -moz-transition: -moz-transform 0.1s ease;
+    transition: transform 0.1s ease;
   }
   &#intro .section__bg-image {
     // $extra_left: 6rem;
