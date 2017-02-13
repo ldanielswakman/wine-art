@@ -154,6 +154,7 @@ function scrollActions() {
     $('nav').removeAttr('style').addClass('u-hide');
   } else {
     // Transition state
+    $('nav').removeClass('u-hide');
     mainOpacity = (startY - scroll + mainFadeDuration) / mainFadeDuration;
     $('nav').css('opacity', mainOpacity);
   }
