@@ -3616,9 +3616,9 @@ nav, .nav {
   right: 0;
   z-index: 2;
   padding: 2rem;
-  -webkit-background: linear-gradient(60deg, #fafbfc 20%, transparent 60%);
-  -moz-background: linear-gradient(60deg, #fafbfc 20%, transparent 60%);
-  background: linear-gradient(60deg, #fafbfc 20%, transparent 60%);
+  -webkit-background: linear-gradient(60deg, #fafbfc 20%, rgba(250, 251, 252, 0) 60%);
+  -moz-background: linear-gradient(60deg, #fafbfc 20%, rgba(250, 251, 252, 0) 60%);
+  background: linear-gradient(60deg, #fafbfc 20%, rgba(250, 251, 252, 0) 60%);
   -webkit-transform: rotate(-90deg) translate(100%, 0);
   -moz-transform: rotate(-90deg) translate(100%, 0);
   transform: rotate(-90deg) translate(100%, 0);
