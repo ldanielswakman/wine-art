@@ -2,8 +2,22 @@ Title: second
 
 ----
 
-Cover-image: white-wine.jpg
+Cover-image: sommelier.jpg
 
 ----
 
-Text: > Another section, more content.
+Text: 
+
+> Sind Sie Sommelier oder im Weinhandel tätig? 
+
+<br>
+
+Geben Sie es zu: Sie haben einen der besten Jobs der Welt! Und dennoch, selbst als Profi lernt man nie aus. Bei uns finden Sie Weinkurse für Experten aus allen Bereichen: Marketing- und Vertriebsteams in der Weinindustrie, Führungskräfte in der Lebensmittel- und Getränkeindustrie, Sommeliers und Barkeeper in Premium-Hotels, Restaurants und Einzelhandel.
+
+----
+
+Followup: services
+
+----
+
+Followup-text: 

@@ -1,0 +1,43 @@
+Title: Aus- und Weiterbildung
+
+----
+
+Description: 
+
+> Sind Sie Sommelier oder im Weinhandel tätig?
+    
+Geben Sie es zu: Sie haben einen der besten Jobs der Welt! Und dennoch, selbst als Profi lernt man nie aus. Bei uns finden Sie Weinkurse für Experten aus allen Bereichen: Marketing- und Vertriebsteams in der Weinindustrie, Führungskräfte in der Lebensmittel- und Getränkeindustrie, Sommeliers und Barkeeper in Premium-Hotels, Restaurants und Einzelhandel.
+ 
+Unsere Kurse behandeln Weingebiete rund um den Globus, Spirituosen, Herstellungsmethoden und neue Trends in nationalen und internationalen Märkten.
+
+----
+
+Start-date: 
+
+----
+
+End-date: 
+
+----
+
+Fee: 
+
+----
+
+Location: 
+
+----
+
+Show-buy-button: 0
+
+----
+
+Cover-image: illustration4.svg
+
+----
+
+Symbol: ƺ
+
+----
+
+Ratio: 3by1

@@ -1,0 +1,41 @@
+Title: Erstellung von Weinportfolien
+
+----
+
+Description: 
+
+> Wer sind in Ihrer Umgebung die Trendsetter in Sachen Wein?
+    
+Um Ihre ganz persönliche Weinauswahl auszuarbeiten, befragen wir Restaurants, Hotels und private Sammler. Unter Berücksichtigung internationaler und lokaler Trends erarbeiten wir dabei eine Strategie, mit der Sie bei Ihren Gästen Eindruck machen. Lassen Sie uns Ihre massgeschneiderte Weinauswahl kreieren, die nicht nur Ihren Bedürfnissen entspricht, sondern auch Lust auf die Suche nach dem versteckten Kleinod macht.
+
+----
+
+Cover-image: illustration3.svg
+
+----
+
+Start-date: 
+
+----
+
+End-date: 
+
+----
+
+Fee: 
+
+----
+
+Location: 
+
+----
+
+Show-buy-button: 0
+
+----
+
+Symbol: ¶
+
+----
+
+Ratio: 3by1

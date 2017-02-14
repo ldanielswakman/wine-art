@@ -12,23 +12,23 @@ Within this process, we help in developing all necessary marketing materials in 
 
 ----
 
-Start-date: 2017-01-01
+Start-date: 
 
 ----
 
-End-date: 2017-01-31
+End-date: 
 
 ----
 
-Fee: 10000
+Fee: 
 
 ----
 
-Location: Test....
+Location: 
 
 ----
 
-Show-buy-button: 1
+Show-buy-button: 0
 
 ----
 
@@ -41,3 +41,7 @@ Symbol: µ
 ----
 
 Ratio: 3by1
+
+----
+
+Contact-button: 

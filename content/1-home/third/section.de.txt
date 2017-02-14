@@ -1,0 +1,23 @@
+Title: third
+
+----
+
+Cover-image: tasting.jpg
+
+----
+
+Text: 
+
+> Weinverkostung in geselliger Runde – ein großartiges Erlebnis!
+
+<br>
+
+Wir freuen uns, mit Ihnen, egal ob privater oder geschäftlicher Kunde, bei Verkostungen neue Weine zu entdecken. Hier ergründen wir die Geheimnisse der Blindverkostung oder, wie Sie Menüs und Weine kreativ kombinieren. Wir bieten Tipps und Tricks zur optimalen Weinauswahl bei jeder Gelegenheit oder lernen kaum bekannte Weingebiete kennen. Unsere Verkostungen werden ganz auf die Wünsche des Kunden zugeschnitten.
+
+----
+
+Followup: services
+
+----
+
+Followup-text: 

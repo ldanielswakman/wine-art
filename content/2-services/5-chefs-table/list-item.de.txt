@@ -16,9 +16,9 @@ End-date:
 
 Description: 
 
-> <span class="c-softred">}}</span>"I am Massimo Bottura. I close my eyes and I want to understand where I am. Cooking is about emotion, it’s about culture, it’s about love, it’s about memory"
+> <span class="c-softred">}}</span> „Ich heiße Massimo Bottura. Ich schließe meine Augen und möchte erfahren, wo ich bin. Beim Kochen geht es um Gefühle, Kultur, Liebe und Erinnerungen.“
 
-Drop us a line when you need someone to organize a gourmet dinner in the hip areas of your city.  We’ll make sure that you and your guests discover the Chef’s secret ingredients!
+Wenn Sie jemand brauchen, der für Sie ein Gourmet-Dinner in einem angesagten Viertel organisiert, sind Sie bei uns richtig. Wir sorgen dafür, dass Sie mit ihren Freunden die Geheimzutaten des Kochs entdecken!
 
 ----
 
@@ -31,3 +31,15 @@ Location:
 ----
 
 Show-buy-button: 0
+
+----
+
+Cover-image: illustration5.svg
+
+----
+
+Symbol: ¤
+
+----
+
+Ratio: 3by1

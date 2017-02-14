@@ -4,9 +4,9 @@ Title: Services
 
 Text: 
 
-> Things we do with passion
+> Was wir tun, tun wir mit Leidenschaft
 
-wine•art develops wine knowledge through interactive workshops and training programs. We also create and manage brand strategies to bring out inspiring stories throughout the wine world.
+wine•art sorgt mit interaktiven Workshops und Schulungsprogrammen für die Verbreitung von Wissen über den Wein. Wir entwickeln und managen außerdem Markenstrategien zur Verbreitung von Storys in der Weinwelt, die etwas bewegen.
 
 ----
 
@@ -14,4 +14,4 @@ List-type: small
 
 ----
 
-Cover-image: 
+Cover-image: wine-food-transparent.png

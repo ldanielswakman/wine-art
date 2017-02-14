@@ -13,11 +13,11 @@ wine•art is a platform for beautiful people to learn, share and co-create.
 Team-members: 
 
 - 
-  name: Seyma Bas
+  name: Şeyma Baş
   role: 'Founder & Consultant'
   photo: seyma.jpg
   descr: >
-    Seyma Bas studied Chemical Engineering
+    Şeyma Baş studied Chemical Engineering
     at Boğaziçi University and obtained
     her MBA with an emphasis on Luxury Brand
     Management, Food and Wine from the
@@ -34,7 +34,7 @@ Team-members:
     
     Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
 - 
-  name: Cecile Censy Richards Luisoni
+  name: Cécile Richards
   role: 'Wine Educator & Consultant'
   photo: cecile.jpg
   descr: >
