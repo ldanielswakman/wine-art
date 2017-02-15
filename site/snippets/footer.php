@@ -34,6 +34,8 @@
 
     </footer>
 
+    <? snippet('google_analytics') ?>
+
   </body>
 
 </html>
