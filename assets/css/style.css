@@ -136,6 +136,12 @@ html, body {
 .bg-darkblue {
   background-color: #313a42; }
 
+.c-darkerblue {
+  color: #2d353c; }
+
+.bg-darkerblue {
+  background-color: #2d353c; }
+
 .c-white {
   color: #fafbfc; }
 
@@ -3209,6 +3215,9 @@ html, body {
     left: 0.5rem;
     border: 0.5rem solid transparent;
     border-bottom-color: #e01b3d; }
+
+.u-text-1x {
+  font-size: 1rem !important; }
 
 .u-text-15x {
   font-size: 1.5rem !important; }

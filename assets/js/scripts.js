@@ -185,7 +185,7 @@ $(document).ready(function() {
   });
   $('.field').each(function() {
     checkFieldContent($(this), false);
-    checkFormFields($(this));
+    // checkFormFields($(this));
   });
 
   // Async form submit

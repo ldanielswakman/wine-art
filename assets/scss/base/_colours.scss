@@ -3,6 +3,7 @@ $darkwine:  #431220;
 $softred:   #e01b3d;
 $dullblue:  #4c6d8f;
 $darkblue:  #313a42;
+$darkerblue:  darken($darkblue, 2%);
 
 // Greys
 $white:         #fafbfc;
@@ -15,6 +16,7 @@ $theme: (
   'softred': $softred,
   'dullblue': $dullblue,
   'darkblue': $darkblue,
+  'darkerblue': $darkerblue,
   'white': $white,
   'greylightest': $greylightest,
   'greylight': $greylight,
