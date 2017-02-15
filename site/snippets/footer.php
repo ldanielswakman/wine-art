@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 u-pv025">
-          <em><a href="http://www.ldaniel.eu" target="_blank" class="link link--secondary u-text-1x">Designed and built by ldaniel.eu</a></em>
+          <em><a href="http://www.ldaniel.eu" target="_blank" class="link link--secondary u-text-1x c-dullblue">Designed and built by ldaniel.eu</a></em>
         </div>
       </div>
 

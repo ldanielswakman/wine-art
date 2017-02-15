@@ -26,7 +26,7 @@ $theme: (
 // Generate classes from colours
 @each $name, $value in $theme {
   .c-#{$name} {
-    color: $value;
+    color: $value !important;
   }
   .bg-#{$name} {
     background-color: $value;
