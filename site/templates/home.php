@@ -4,6 +4,8 @@
 
   <? snippet('logo'); ?>
 
+  <div class="u-pv05"></div>
+
   <? $i = 0; ?>
   <? foreach ($page->children() as $section): ?>
 

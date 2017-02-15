@@ -3642,9 +3642,17 @@ header, .header {
   padding: 3rem 0; }
   header .header__logo, .header .header__logo {
     height: 2.5rem;
-    opacity: 0.2; }
+    opacity: 0.8;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+    transition: transform 0.2s ease; }
     header .header__logo:hover, .header .header__logo:hover {
-      opacity: 0.4; }
+      opacity: 1; }
+    header .header__logo:active, .header .header__logo:active {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2); }
   @media only screen and (max-width: 48rem) {
     header, .header {
       padding: 2rem 0; } }

@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   // initiating smooth scroll
   $('a[href^="#"]').smoothScroll({
+    speed: 800,
     afterScroll: function() {
       updateHash($(this).attr('href'));
     }
