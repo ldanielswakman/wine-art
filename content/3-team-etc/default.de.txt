@@ -14,18 +14,18 @@ Team-members:
 
 - 
   name: Şeyma Baş
-  role: 'Gründerin & Beraterin'
+  role: 'DipWSET, Gründerin & Beraterin'
   photo: seyma.jpg
-  descr: 'Seyma Bas wurde in Istanbul geboren – einer der schönsten und interessantesten Städte der Welt. Sie studierte Verfahrenstechnik an der Boğaziçi-Universität und hat einen MBA im Management von Luxusmarken für die Lebensmittel- und Weinindustrie von der INSEEC Business School in Bordeaux.'
+  descr: 'Şeyma Baş studierte Verfahrenstechnik an der Boğaziçi-Universität und hat einen MBA im Management von Luxusmarken für die Lebensmittel- und Weinindustrie von der INSEEC Business School in Bordeaux.'
   descr_ext: |
-    Zu Beginn ihrer Laufbahn entwickelte sie für Weingüter in verschiedenen Ländern internationale Marketing- und Vertriebskonzepte. Ihre Erfahrung in Marketing und Markenmanagement vertiefte sie in der Toskana, dem Burgund und weiteren Weinregionen.
+    Zwischen 2012 und 2016, arbeitete sie mit dem Cosimo Maria Masini Weingut, Suvla Wines und Chateau de Pommard fokussierend auf den internationalen Vertrieb und das Markenmanagement. Gegenwärtig bietet sie über ihr Unternehmen Wineart mit Sitz in Zürich, Markenberatungen und Weinausbildungen an. Ausserdem betreibt Sie internationale Vertriebsentwicklungsprojekte für Weingüter weltweit.
     
-    Nach Abschluss des Diploma-Programms des Wine and Spirits Education Trust in London studiert Seyma nun auf einen der schwierigsten Titel in der Welt des Weins: den Master of Wine. Sie ist regelmäßig als Jurorin bei internationalen Weinwettbewerben rund um den Globus tätig.
+    Nach Abschluss des Diploma-Programms des Wine and Spirits Education Trust in London studiert Seyma nun auf einen der schwierigsten Titel in der Welt des Weins: den Master of Wine.
     
     Darüber hinaus schreibt sie über Wein und die Dynamik des Markts in ihrem Blog Dionysian Impulse (www.dionysianimpulse.net), das 2016 mit dem Prädikat Best New Wine Blog ausgezeichnet wurde. Heute lebt sie in Zürich, arbeitet an Projekten für verschiedene Weinregionen, und freut sich jeden Tag über neue Geschmacksentdeckungen. Neben ihrer Passion für den Wein findet sie Spaß am Lindy Hop, ist Fan von Wim Wenders und schaut immer wieder gerne die TV-Serie Seinfeld.
 - 
   name: Cécile Richards
-  role: 'Wine Educator & Consultant'
+  role: 'DipWSET, Wine Educator & Consultant'
   photo: cecile.jpg
   descr: >
     Cécile Richards wuchs in der Grenzstadt
@@ -60,7 +60,7 @@ Team-members:
     an der Berner Fachhochschule in
     Biel/Bienne.
   descr_ext: |
-    Jörn entdeckte seine Liebe zum Wein während einer Radtour durch das Burgund und erkundet seitdem Weinregionen und ihre Weine auf der ganzen Welt (so in Neuseeland, Australien, USA und Kanada). In Europa verbindet er gern zwei seiner Leidenschaften und besucht Regionen wie die Mosel, den Rhein, das Südtirol oder das Loiretal per Fahrrad. Um sein Weinwissen systematisch zu erweitern, absolvierte er WSET Kurse bis zum Level 3 (mit Auszeichnung). Er organisiert zudem regelmässig private Degustationen.
+    Jörn entdeckte seine Liebe zum Wein während einer Radtour durch das Burgund und erkundet seitdem Weinregionen und ihre Weine auf der ganzen Welt (so in Neuseeland, Australien, USA und Kanada. In Europa verbindet er gern zwei seiner Leidenschaften und besucht Regionen wie die Mosel, den Rhein, das Südtirol oder das Loiretal per Fahrrad. Um sein Weinwissen systematisch zu erweitern, absolvierte er WSET Kurse bis zum Level 3 (mit Auszeichnung). Er organisiert zudem regelmässig private Degustationen.
     
     Neben seiner Arbeit und Wein interessiert sich Jörn für Ethik, insbesondere für Gerechtigkeitstheorien. An Wochenenden kocht er gern und lässt sich dabei von seinem Lieblingskoch Yotam Ottolenghi inspirieren.
 
@@ -70,9 +70,10 @@ Text-after:
 
 # Möchten Sie mitmachen?
 Melden Sie sich bei uns unter  (email: hello@wine-art.co).
+<br>
 
-# Bildnachweise
-Alle tollen Fotos auf dieser Website gehören  (email: ayca@mutfakmedia.com text: Ayca Yalcıner) und (email: info@nurisimsek.com text: Nuri Şimşek).
+### Bildnachweise
+<p><small>Alle tollen Fotos auf dieser Website gehören (email: brunchonchestnut@gmail.com  text: Ashley Kane),  (email: ayca@mutfakmedia.com text: Ayça Yalçıner) und (email: info@nurisimsek.com text: Nuri Şimşek).</small></p>
 
 ----
 

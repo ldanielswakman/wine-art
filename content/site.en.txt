@@ -6,7 +6,7 @@ Author:
 
 ----
 
-Description: Website for wine-art.co
+Description: wine•art consists of various branches of creative wine activity through inspiration.
 
 ----
 
@@ -15,3 +15,7 @@ Logo: logo.svg
 ----
 
 Keywords: 
+
+----
+
+Meta-image: 
