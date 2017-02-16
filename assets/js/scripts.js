@@ -287,3 +287,29 @@ function postContactForm(form_obj) {
     }
   });
 }
+
+
+
+// Blog Posts: call async
+$(document).ready(function() {
+  // getBlogPosts();
+});
+
+function getBlogPosts() {
+  $url = "http://dionysianimpulse.net/wp-json/wp/v2/posts";
+  // $url = "http://dionysianimpulse.net/wp-json/wp/v2/pages";
+  // $url = "http://dionysianimpulse.net/wp-json/wp/v2/categories";
+  $target = $('#blog_posts_results');
+
+  console.log('making API call...');
+
+  $.getJSON( $url, function(r) {
+
+    console.log('...reply received!');
+
+    $target.html('');
+
+    console.log(r);
+
+  });
+}
