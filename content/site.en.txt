@@ -18,4 +18,4 @@ Keywords:
 
 ----
 
-Meta-image: 
+Meta-image: wine-art-banner.jpg
