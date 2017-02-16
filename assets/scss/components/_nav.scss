@@ -29,6 +29,27 @@ nav, .nav {
         font-size: 1.5rem;
         line-height: 2.25rem;
       }
+      &.external {
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0.25rem;
+          left: 100%;
+          width: 1.5rem;
+          height: 1rem;
+          margin-left: 0.5rem;
+          background-image: url('../images/arrow_blue.svg');
+          background-size: cover;
+          background-position: right bottom;
+          @include prefix(transition, all 0.3s ease);
+          @include prefix(transform, rotate(45deg));
+        }
+        &:hover:after {
+          @include prefix(transform, rotate(90deg) translateX(0.25rem));
+        }
+      }
     }
   }
 }

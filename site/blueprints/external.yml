@@ -1,0 +1,22 @@
+title: External Menu Link
+
+pages: false
+files: false
+options: 
+  preview: false
+  template: false
+  url: false
+
+fields:
+  info:
+    type: info
+    text: >
+      <i>This is not a page, but puts an external link in the menu.</i>
+
+  title:
+    label: Title
+    type:  text
+       
+  forward_url:
+    label: External URL
+    type:  url

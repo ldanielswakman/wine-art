@@ -3718,6 +3718,29 @@ nav, .nav {
         nav ul a, .nav ul a {
           font-size: 1.5rem;
           line-height: 2.25rem; } }
+      nav ul a.external, .nav ul a.external {
+        position: relative; }
+        nav ul a.external:after, .nav ul a.external:after {
+          content: "";
+          position: absolute;
+          bottom: 0.25rem;
+          left: 100%;
+          width: 1.5rem;
+          height: 1rem;
+          margin-left: 0.5rem;
+          background-image: url("../images/arrow_blue.svg");
+          background-size: cover;
+          background-position: right bottom;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        nav ul a.external:hover:after, .nav ul a.external:hover:after {
+          -webkit-transform: rotate(90deg) translateX(0.25rem);
+          -moz-transform: rotate(90deg) translateX(0.25rem);
+          transform: rotate(90deg) translateX(0.25rem); }
 
 section .section__bg, .section .section__bg {
   position: relative; }

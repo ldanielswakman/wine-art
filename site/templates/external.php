@@ -1,0 +1,1 @@
+<? go($page->external_url());

@@ -1,0 +1,5 @@
+Title: Blog
+
+----
+
+Forward-url: http://dionysianimpulse.net/
