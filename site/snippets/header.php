@@ -15,6 +15,8 @@
     <?= js('assets/js/jquery.smooth-scroll.min.js') ?>
     <?= js('assets/js/scripts.js') ?>
 
+    <link rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
+
   </head>
 
   <body>
