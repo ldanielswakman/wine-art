@@ -41,3 +41,7 @@ Symbol: ƺ
 ----
 
 Ratio: 3by1
+
+----
+
+Contact-button: Contact us
