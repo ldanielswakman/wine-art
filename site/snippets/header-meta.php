@@ -9,6 +9,6 @@
 
 <!-- Social share parameters -->
 <meta property="og:image" content="<?= ($site->meta_image()->isNotEmpty()) ? $site->image($site->meta_image())->url() : '' ?>" />
-<meta property="og:title" content="<?= $page->title() ?>" />
-<meta property="og:site_name" content="<?= $site->title() ?>" />
+<meta property="og:title" content="<? e($page->isHomePage(), strtolower($site->title()), strtolower($page->title()) ) ?>" />
+<meta property="og:site_name" content="<?= $site->home_title() ?>" />
 <meta property="og:description" content="<?= $site->description()->html() ?>" />

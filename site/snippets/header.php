@@ -6,7 +6,9 @@
 
     <? snippet('header-meta') ?>
 
-    <title><?= $site->title() ?></title>
+    <title>
+      <? e($page->isHomePage(), $site->title() . ' — ' . $site->home_title(), $page->title() . ' — ' . $site->title() ) ?>
+    </title>
 
     <?= css('assets/css/flexboxgrid.min.css') ?>
     <?= css('assets/css/style.css') ?>

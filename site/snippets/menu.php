@@ -6,7 +6,9 @@
         <a href="<?= $p->forward_url() ?>" target="_blank" class="external"><?= strtolower($p->title()->html()) ?></a></li>
     <? else : ?>
       <li>
-        <a href="<?= $p->url() ?>" class="<? e($p->isOpen(), 'isActive') ?>"><?= strtolower($p->title()->html()) ?></a>
+        <a href="<?= $p->url() ?>" class="<? e($p->isOpen(), 'isActive') ?>">
+          <? e($p->isHomePage(), strtolower($site->title()->html()), strtolower($p->title()->html()) ) ?>  
+        </a>
       </li>
     <? endif ?>
   <? endforeach ?>

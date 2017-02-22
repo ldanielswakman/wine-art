@@ -9,7 +9,7 @@ pages:
 
 fields:
   title:
-    label: Title
+    label: Site Title
     type:  text
 
   description:
@@ -24,7 +24,11 @@ fields:
   keywords:
     label: Keywords
     type: tags
-    help: This list of keywords is used for SEO purposes
+
+  home_title:
+    label: Homepage title
+    type: text
+    help: super brief description
 
   meta_image:
     label: Meta image

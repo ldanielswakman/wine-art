@@ -14,8 +14,8 @@ Logo: logo.svg
 
 ----
 
-Keywords: 
+Home-title: Wine consultancy based in Zurich
 
 ----
 
-Meta-image: 
+Meta-image: wine-art-banner.jpg
