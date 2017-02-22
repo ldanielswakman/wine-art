@@ -33,6 +33,8 @@ Team-members:
     In addition to her professional life, she holds the WSET Diploma and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles in the world of wine.
     
     Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
+    
+    Research interests: Climate Change, Environmental Sustainability in the Wine Industry
 - 
   name: Cécile Richards
   role: 'DipWSET, Wine Educator & Consultant'
