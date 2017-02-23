@@ -15,7 +15,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
   <?php if(in_array($p->uri(), $ignore) || in_array($p->parent(), $ignoreChildren)) continue ?>
   <url>
     <loc><?= html($p->url()) ?></loc>
-    <lastmod><?= $p->modified('%F') ?></lastmod>
+    <lastmod><?= $p->modified('Y-m-d') ?></lastmod>
     <priority><?= ($p->isHomePage()) ? 1 : number_format(0.5/$p->depth(), 1) ?></priority>
   </url>
   <?php endforeach ?>
