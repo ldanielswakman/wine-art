@@ -1,6 +1,6 @@
 <?php
 
-$ignore = array();
+$ignore = array('sitemap', 'error');
 $ignoreChildren = array('home');
 
 // send the right header

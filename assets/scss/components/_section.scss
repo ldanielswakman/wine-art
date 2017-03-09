@@ -4,7 +4,7 @@ section, .section {
   .section__bg {
     position: relative;
   }
-  .section__bg .section__bg-image {
+  .section__bg-image {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     display: block;
@@ -15,16 +15,12 @@ section, .section {
     background-attachment: local;
     background-repeat: no-repeat;
     opacity: 0;
-    @include prefix(transition, opacity 0.3s ease);
-    -webkit-transition: -webkit-transform 0.1s ease;
-    -moz-transition: -moz-transform 0.1s ease;
-    transition: transform 0.1s ease;
-  }
-  &#intro .section__bg-image {
-    // $extra_left: 6rem;
-    // width: calc(100% + #{$extra_left});
-    // margin-left: -$extra_left;
-    // margin-right: -$extra_left;
+    @include prefix(transition, 'opacity 1s ease, ');
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.1s ease, -webkit-filter 1.5s ease;
+    -moz-transition: opacity 0.3s ease, -moz-transform 0.1s ease, -moz-filter 1.5s ease;
+    transition: opacity 0.3s ease, transform 0.1s ease, filter 1.5s ease;
+
+    @include prefix(filter, blur(20px));
   }
   &#intro blockquote,
   &#intro .link {
@@ -37,8 +33,10 @@ section, .section {
     }
   }
 }
-body.isLoaded section {
+body.isLoaded section,
+body.isLoaded .section {
   .section__bg-image {
     opacity: 1;
+    @include prefix(filter, blur(0));
   }
 }

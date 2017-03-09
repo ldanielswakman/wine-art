@@ -3745,7 +3745,7 @@ nav, .nav {
 section .section__bg, .section .section__bg {
   position: relative; }
 
-section .section__bg .section__bg-image, .section .section__bg .section__bg-image {
+section .section__bg-image, .section .section__bg-image {
   position: absolute;
   top: 0;
   right: 0;
@@ -3758,12 +3758,15 @@ section .section__bg .section__bg-image, .section .section__bg .section__bg-imag
   background-attachment: local;
   background-repeat: no-repeat;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s ease;
-  -moz-transition: -moz-transform 0.1s ease;
-  transition: transform 0.1s ease; }
+  -webkit-transition: "opacity 1s ease, ";
+  -moz-transition: "opacity 1s ease, ";
+  transition: "opacity 1s ease, ";
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.1s ease, -webkit-filter 1.5s ease;
+  -moz-transition: opacity 0.3s ease, -moz-transform 0.1s ease, -moz-filter 1.5s ease;
+  transition: opacity 0.3s ease, transform 0.1s ease, filter 1.5s ease;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  filter: blur(20px); }
 
 section#intro blockquote,
 section#intro .link, .section#intro blockquote,
@@ -3777,5 +3780,9 @@ section#intro .link, .section#intro blockquote,
       margin-left: 0;
       margin-right: 0; } }
 
-body.isLoaded section .section__bg-image {
-  opacity: 1; }
+body.isLoaded section .section__bg-image,
+body.isLoaded .section .section__bg-image {
+  opacity: 1;
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  filter: blur(0); }
