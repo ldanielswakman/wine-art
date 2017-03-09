@@ -14,7 +14,7 @@ Logo: logo.svg
 
 ----
 
-Home-title: Wine consultancy based in Zurich
+Home-title: Weinberatung in Zürich
 
 ----
 
@@ -22,4 +22,4 @@ Meta-image: wine-art-banner.jpg
 
 ----
 
-Keywords: wine,wine education,wset,wine courses,wine classes,wine school,sommelier certification,wset level 2,wset in zürich,wine tasting course,sommelier,sommelier courses,red wine,sommelier school,wine education classes,expats in zürich,wset wine,wset in switzerland,expats,brand consultancy,wine marketing,rose wine,white wine,branding,learn about wine,wine classes in zürich,wine blog,wine lessons,wine labels,buy wine
+Keywords: weinausbildung,sommelier ausbildung,sommelier kurs,sommelier,weinseminar in zürich,wein sommelier ausbildung,weinseminar in basel,weiterbildung sommelier,weinkurs,rotwein,weisswein,sommelier werden,weinseminar in bern,ausbildung wein,wie werde ich sommelier,rust,Académie du Vin,academie du vin,weinprobe,weinverkostung,master of wine ausbildung,deutscheweine,weinausbildung in der schweiz,schweizer weine,pinot noir,marketingberatung,weinportfolien,verkostungworkshops,weinhandel

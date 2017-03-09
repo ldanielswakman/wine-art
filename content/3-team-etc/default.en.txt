@@ -35,6 +35,8 @@ Team-members:
     Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
     
     Research interests: Climate Change, Environmental Sustainability in the Wine Industry
+    
+    e-mail: seyma@wine-art.co
 - 
   name: Cécile Richards
   role: 'DipWSET, Wine Educator & Consultant'
@@ -55,7 +57,7 @@ Team-members:
 - 
   name: Jörn Justiz
   role: Wine Educator
-  photo: joern.jpg
+  photo: jorn2.jpg
   descr: >
     Jörn Justiz holds a diploma in physics
     from the Freie Universität in Berlin

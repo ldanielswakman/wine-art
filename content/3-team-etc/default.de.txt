@@ -50,7 +50,7 @@ Team-members:
 - 
   name: Jörn Justiz
   role: Wine Educator
-  photo: joern.jpg
+  photo: jorn2.jpg
   descr: >
     Jörn Justiz diplomierte in Physik an
     der Freien Universität in Berlin und
