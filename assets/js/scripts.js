@@ -292,13 +292,14 @@ function postContactForm(form_obj) {
 
 // Blog Posts: call async
 $(document).ready(function() {
-  // getBlogPosts();
+  if($('body').hasClass('type--blog') && $('#blog_posts_results').length > 0) {
+    getBlogPosts();
+  }
 });
 
 function getBlogPosts() {
-  $url = "http://dionysianimpulse.net/wp-json/wp/v2/posts";
-  // $url = "http://dionysianimpulse.net/wp-json/wp/v2/pages";
-  // $url = "http://dionysianimpulse.net/wp-json/wp/v2/categories";
+  // $url = "http://dionysianimpulse.net/wp-json/wp/v2/posts";
+  $url = "blog-test.json";
   $target = $('#blog_posts_results');
 
   console.log('making API call...');
@@ -309,7 +310,10 @@ function getBlogPosts() {
 
     $target.html('');
 
-    console.log(r);
+    $.each(r['data'], function(i, $post) {
+      // getting a preformatted (Kirby) HMTL string back, and insert directly in page
+      $target.append( $post['html'] );
+    });
 
   });
 }

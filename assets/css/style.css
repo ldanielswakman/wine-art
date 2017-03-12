@@ -3197,6 +3197,12 @@ html, body {
   -webkit-justify-content: center;
   justify-content: center; }
 
+.u-flex-row {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
 .u-alignleft {
   text-align: left; }
 

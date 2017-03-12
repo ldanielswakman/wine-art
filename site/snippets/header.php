@@ -21,7 +21,7 @@
 
   </head>
 
-  <body>
+  <body class="type--<?= $page->template() ?>">
 
     <nav>
       <? snippet('menu') ?>

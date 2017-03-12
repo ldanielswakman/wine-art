@@ -87,6 +87,12 @@ c::set('routes', [
       // Return code 200 on success.
       return response::json(['success' => $form->success(), 'errors' => $form->errors(), 'code' => $code]);
     }
+  ],
+  [
+    'pattern' => 'blogging',
+    'action'  => function() {
+      return page('blog');
+    }
   ]
 ]);
 
