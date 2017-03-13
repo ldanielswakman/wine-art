@@ -28,7 +28,8 @@ foreach($data as $key => $article) {
       'link'    => (string)$article['link'],
       'excerpt' => (string)$article['excerpt']['rendered'],
       'date'    => (string)$article['date'], // only output date, not time
-      'html'    => snippet('article-list-item', array('article' => $article), true)
+      'position'=> (integer)$key,
+      'html'    => snippet('article-list-item', array('article' => $article, 'position' => $key), true)
     );
 
   }
