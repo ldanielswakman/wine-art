@@ -18,7 +18,7 @@ $article = (isset($article)) ? $article : $fallback;
 $even = ($position%2 != 0) ? false : true;
 ?>
 
-<a href="<?= $page->url() . '/' . $article['slug'] ?>" class="row u-relative" data-slug="<?= $article['slug'] ?>">
+<a href="<?= $page->url() . '/' . $article['slug'] ?>" class="article row u-relative" data-slug="<?= $article['slug'] ?>">
 
   <div class="col-xs-8 col-sm-3 u-pb2 <?= ($even) ? 'last-sm col-xs-offset-4 col-sm-offset-1" style="padding-right: 0;' : 'u-pr3" style="padding-left: 0;'; ?>">
     <div class="c-greylight"><? //$article['date'] ?></div>
@@ -32,7 +32,7 @@ $even = ($position%2 != 0) ? false : true;
     <div class="u-mb8">
       <h3 class="u-mb05"><?= $article['title']['rendered'] ?></h3>
       <div class="u-mb1 c-greylight"><?= $article['date'] ?></div>
-      <em class="c-dullblue"><?= $article['excerpt']['rendered'] ?></em>
+      <em class="c-grey"><?= $article['excerpt']['rendered'] ?></em>
       <object><a class="link u-mt05" href="<?= $page->url() . '/' . $article['slug'] ?>">Read all</a></object>
     </div>
 

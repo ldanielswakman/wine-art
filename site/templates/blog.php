@@ -24,7 +24,7 @@
 
     <div id="blog_posts_results" class="u-pt3 u-pb6">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-3 col-md-6">
           <div class="u-flex-row">
             <img src="<?= url('assets/images/spinner.svg') ?>" alt="" />
             <div class="u-mt15 u-ml15 u-text-15x c-greylight">

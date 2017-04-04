@@ -316,7 +316,12 @@ function getBlogPosts() {
     $.each(r['data'], function(i, $post) {
       // getting a preformatted (Kirby) HMTL string back, and insert directly in page
       $target.append( $post['html'] );
+
     });
+
+    setTimeout(function() {
+      $target.find('article, .article').addClass('isLoaded');
+    }, 300);
 
     getFeaturedImages();
 

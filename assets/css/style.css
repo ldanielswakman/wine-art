@@ -3618,6 +3618,20 @@ a {
   .list-item__contact form {
     max-width: 45rem; }
 
+article, .article {
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -webkit-transform: translateY(2rem);
+  -moz-transform: translateY(2rem);
+  transform: translateY(2rem); }
+  article.isLoaded, .article.isLoaded {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+
 footer, .footer {
   position: fixed;
   bottom: 0;
