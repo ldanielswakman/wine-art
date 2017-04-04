@@ -292,7 +292,10 @@ function postContactForm(form_obj) {
 
 // Blog Posts: call async
 $(document).ready(function() {
+
   if($('body').hasClass('type--blog') && $('#blog_posts_results').length > 0) {
+    // re-align menu
+    scrollActions();
     getBlogPosts();
   }
 });
@@ -315,8 +318,35 @@ function getBlogPosts() {
       $target.append( $post['html'] );
     });
 
+    getFeaturedImages();
+
     // re-align menu
     scrollActions();
 
+  });
+}
+
+function getFeaturedImages() {
+  $featured_images = $("img.article-featured-image");
+  asyncrequests = [];
+
+  $.each($featured_images, function(i, $img) {
+    $(this).attr('id', 'feature_img_' + i);
+    $url = $(this).attr('data-url');
+
+    asyncrequests[i] = $.getJSON( $url, null);
+
+  });
+
+  $.each($featured_images, function(i, $img) {
+    asyncrequests[i].done(function(r) {
+      $img_url = r[0]['media_details']['sizes']['thumbnail']['source_url'];
+      if(r[0]['media_details']['sizes']['medium']) {
+        $img_url = r[0]['media_details']['sizes']['medium']['source_url'];
+      }
+      if($img_url) {
+        $('#feature_img_' + i).attr('src', $img_url).removeClass('u-hide');
+      }
+    });
   });
 }

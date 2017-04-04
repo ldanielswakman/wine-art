@@ -31,6 +31,13 @@ foreach($data as $key => $article) {
   // only show articles that are published
   if($article['status'] == 'publish') {
 
+    $feature_media_url = null;
+    if(isset($article['_links']['wp:attachment'][0]['href'])) {
+      $feature_media_url = $article['_links']['wp:attachment'][0]['href'];
+    }
+
+    $article['feature_media_url'] = $feature_media_url;
+
     // list-item if all posts, full post if full post
     $html_snippet = (isset($q_slug)) ? 'article' : 'article-list-item';
 
@@ -39,8 +46,9 @@ foreach($data as $key => $article) {
       'id'      => (integer)$article['id'],
       'title'   => (string)$article['title']['rendered'],
       'slug'    => (string)$article['slug'],
-      'link'    => (string)$article['link'],
+      'remote_url' => (string)$article['link'],
       'excerpt' => (string)$article['excerpt']['rendered'],
+      'feature_media_url' => $feature_media_url,
       'date'    => (string)$article['date'], // only output date, not time
       'position'=> (integer)$key,
       'html'    => snippet($html_snippet, array('article' => $article, 'position' => $key), true)
