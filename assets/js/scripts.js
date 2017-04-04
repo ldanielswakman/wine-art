@@ -298,8 +298,8 @@ $(document).ready(function() {
 });
 
 function getBlogPosts() {
-  // $url = "http://dionysianimpulse.net/wp-json/wp/v2/posts";
-  $url = "blog-test.json";
+
+  $url = ($('#blog_container')) ? $('#blog_container').attr('data-url') : 'blog-test.json';
   $target = $('#blog_posts_results');
 
   console.log('making API call...');
@@ -314,6 +314,9 @@ function getBlogPosts() {
       // getting a preformatted (Kirby) HMTL string back, and insert directly in page
       $target.append( $post['html'] );
     });
+
+    // re-align menu
+    scrollActions();
 
   });
 }

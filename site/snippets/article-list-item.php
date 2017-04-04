@@ -17,7 +17,7 @@ $article = (isset($article)) ? $article : $fallback;
 $even = ($position%2 != 0) ? false : true;
 ?>
 
-<a href="<?= $page->url() . '/' . $article['slug'] ?>" class="row u-relative">
+<a href="<?= $page->url() . '/' . $article['slug'] ?>" class="row u-relative" data-slug="<?= $article['slug'] ?>">
 
   <div class="<?= ($even == false) ? 'u-pin-topleft' : 'u-pin-topright' ?>">
     <img src="http://dionysianimpulse.net/wp-content/uploads/2017/02/a.jpeg" alt=""  style="width: 20vw;" />

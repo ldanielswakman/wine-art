@@ -62,7 +62,7 @@
 
           <div class="more">
             <?= $member->descr_ext()->kirbytext() ?>
-            <p class="short"> <a href="#less" class="link link--up u-text-sans">Less</a></p>
+            <p class="short"> <a href="#less" class="link link--up u-text-sans"><?= l::get('less') ?></a></p>
           </div>
 
         </div>

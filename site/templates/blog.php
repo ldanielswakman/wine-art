@@ -1,6 +1,6 @@
 <? snippet('header') ?>
 
-<main>
+<main id="blog_container" data-url="<?= isset($slug) ? $page->url() . '.json?slug=' . $slug : $page->url() . '.json'; ?>">
 
   <section class="u-mb7">
 
@@ -12,7 +12,11 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-md-6 u-pt7-sm">
 
-        <blockquote>Dionysian Impulse</blockquote>
+        <blockquote><?= $page->blog_name() ?></blockquote>
+
+        <h4 class="c-greylight u-mt2">
+          <?= isset($slug) ? '<a href="' . $page->url() . '">&larr; All articles</a>' : strtoupper($page->title()); ?>
+        </h4>
 
       </div>
 
@@ -23,7 +27,9 @@
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
           <div class="u-flex-row">
             <img src="<?= url('assets/images/spinner.svg') ?>" alt="" />
-            <div class="u-mt15 u-ml15 u-text-15x c-greylight">Loading articles...</div>
+            <div class="u-mt15 u-ml15 u-text-15x c-greylight">
+              <?= isset($slug) ? l::get('loading_article') : l::get('loading_articles'); ?>
+            </div>
           </div>
         </div>
       </div>

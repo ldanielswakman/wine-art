@@ -12,6 +12,17 @@ $data = json_decode($json_data, true);
 $json = array();
 $json['data'] = array();
 
+// check if id parameter is present
+$q_slug = get('slug');
+
+// filter data array to show only matching id
+if(isset($q_slug)) {
+  $data_dup = $data;
+  $key_found = array_search($q_slug, array_column($data, 'slug'));
+  $data = array();
+  $data[] = $data_dup[$key_found];
+}
+
 // build array result data
 foreach($data as $key => $article) {
 
@@ -19,6 +30,9 @@ foreach($data as $key => $article) {
 
   // only show articles that are published
   if($article['status'] == 'publish') {
+
+    // list-item if all posts, full post if full post
+    $html_snippet = (isset($q_slug)) ? 'article' : 'article-list-item';
 
     // add data to json array
     $json['data'][] = array(
@@ -29,7 +43,7 @@ foreach($data as $key => $article) {
       'excerpt' => (string)$article['excerpt']['rendered'],
       'date'    => (string)$article['date'], // only output date, not time
       'position'=> (integer)$key,
-      'html'    => snippet('article-list-item', array('article' => $article, 'position' => $key), true)
+      'html'    => snippet($html_snippet, array('article' => $article, 'position' => $key), true)
     );
 
   }

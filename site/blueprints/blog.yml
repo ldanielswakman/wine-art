@@ -1,0 +1,22 @@
+title: Blog
+
+pages: false
+files: false
+options: 
+  preview: false
+  template: false
+  url: false
+
+fields:
+  info:
+    type: info
+    text: >
+      <i>The blog currently extracts all posts from http://dionysianimpulse.net/.</i>
+
+  title:
+    label: Title
+    type:  text
+
+  blog_name:
+    label: Blog title
+    type:  text

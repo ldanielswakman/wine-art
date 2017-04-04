@@ -20,3 +20,8 @@ l::set('form_email_placeholder', 'Ihre E-Mail-Adresse');
 l::set('form_name_placeholder', 'Ihre E-Mail-Adresse');
 l::set('form_success_msg', 'Danke für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.');
 l::set('form_email_error', 'Geben Sie bitte eine gültige E-Mail-Adresse ein.');
+
+
+// Blog
+l::set('loading_article', 'Loading article');
+l::set('loading_articles', 'Loading articles');
