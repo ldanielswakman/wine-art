@@ -2,10 +2,10 @@ title: External Menu Link
 
 pages: false
 files: false
+icon: external-link
 options: 
   preview: false
   template: false
-  url: false
 
 fields:
   info:

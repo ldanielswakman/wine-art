@@ -89,11 +89,11 @@ c::set('routes', [
     }
   ],
   [
-    'pattern' => 'blog-test/(:any)',
+    'pattern' => 'blog/(:any)',
     'action'  => function($uid) {
       // activate the page and set the language
-      site()->visit('blog-test', 'en');
-      return array('blog-test', array('slug' => $uid));
+      site()->visit('blog', 'en');
+      return array('blog', array('slug' => $uid));
     }
   ]
 ]);

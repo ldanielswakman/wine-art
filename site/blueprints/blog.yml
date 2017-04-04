@@ -2,6 +2,7 @@ title: Blog
 
 pages: false
 files: false
+icon: th-list
 options: 
   preview: false
   template: false
