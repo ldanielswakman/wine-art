@@ -59,6 +59,7 @@ a {
     }
   }
   &.link--secondary {
+    &:hover { @include underline($softred, 0.05em); }
     &:after { display: none !important; }
   }
   &.link--diagonal {

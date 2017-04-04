@@ -23,3 +23,15 @@ Meta-image: wine-art-banner.jpg
 ----
 
 Keywords: wine,wine education,wset,wine courses,wine classes,wine school,sommelier certification,wset level 2,wset in zürich,wine tasting course,sommelier,sommelier courses,red wine,sommelier school,wine education classes,expats in zürich,wset wine,wset in switzerland,expats,brand consultancy,wine marketing,rose wine,white wine,branding,learn about wine,wine classes in zürich,wine blog,wine lessons,wine labels,buy wine
+
+----
+
+Footer-address: 
+
+WineArt Projects GmbH
+Culmannstrasse 46, 8006 Zurich
+(tel:+41799255871 class: link link--secondary u-text-1x u-inlineblock text: +41 79 925 58 71)
+
+----
+
+Logo-alt: logo_alt.svg

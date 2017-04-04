@@ -14,12 +14,20 @@ fields:
 
   description:
     label: Description
-    type:  textarea
+    type: textarea
+    buttons:
 
   logo:
     label: Logo
     type: image
-    help: Should be in SVG format
+    help: Should be in SVG format; used on homepage
+    width: 1/2
+
+  logo_alt:
+    label: Alternative Logo
+    type: image
+    help: Should be in SVG format; used on secondary pages
+    width: 1/2
 
   keywords:
     label: Keywords
@@ -29,6 +37,11 @@ fields:
     label: Homepage title
     type: text
     help: super brief description
+
+  footer_address:
+    label: Footer address
+    type: textarea
+    buttons:
 
   meta_image:
     label: Meta image

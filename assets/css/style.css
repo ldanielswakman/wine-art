@@ -3539,6 +3539,8 @@ a {
     -webkit-transform: rotate(-90deg) translateX(0.5rem);
     -moz-transform: rotate(-90deg) translateX(0.5rem);
     transform: rotate(-90deg) translateX(0.5rem); }
+  .link.link--secondary:hover {
+    background-image: linear-gradient(to top, transparent, transparent 0, #e01b3d 0, #e01b3d 0.05em, transparent 0.05em); }
   .link.link--secondary:after {
     display: none !important; }
   .link.link--diagonal:after {
@@ -3647,6 +3649,19 @@ footer, .footer {
       opacity: 0.75; }
       footer .footer__menu ul.menu-language li a, .footer .footer__menu ul.menu-language li a {
         font-size: 1.25rem; }
+  footer .footer__colophon-link, .footer .footer__colophon-link {
+    display: block;
+    padding: 1rem 0;
+    background: rgba(24, 32, 40, 0.5);
+    color: rgba(144, 149, 153, 0.75);
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    footer .footer__colophon-link:hover, .footer .footer__colophon-link:hover {
+      background: rgba(24, 32, 40, 0.75); }
+    footer .footer__colophon-link:active, .footer .footer__colophon-link:active {
+      background: #182028; }
   @media screen and (max-width: 768px) {
     footer, .footer {
       position: relative; }
@@ -3655,9 +3670,15 @@ footer, .footer {
 
 header, .header {
   padding: 3rem 0; }
+  header .header__link, .header .header__link {
+    display: inline-block; }
+    @media only screen and (max-width: 48rem) {
+      header .header__link, .header .header__link {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
   header .header__logo, .header .header__logo {
+    margin: 3rem 0;
     height: 2.5rem;
-    opacity: 0.8;
     -webkit-transition: transform 0.2s ease;
     -moz-transition: transform 0.2s ease;
     transition: transform 0.2s ease; }
@@ -3668,6 +3689,8 @@ header, .header {
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
       transform: scale(1.2); }
+    header .header__logo.header__logo--alt, .header .header__logo.header__logo--alt {
+      height: 4rem; }
   @media only screen and (max-width: 48rem) {
     header, .header {
       padding: 2rem 0; } }

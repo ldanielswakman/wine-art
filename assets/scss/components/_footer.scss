@@ -21,6 +21,23 @@ footer, .footer {
       }
     }
   }
+  .footer__colophon-link {
+    $bgcolor: saturate(darken($darkblue, 10%), 10%);
+    display: block;
+    padding: 1rem 0;
+    background: rgba($bgcolor, 0.5);
+    color: rgba($grey, 0.75);
+    text-align: center;
+
+    @include prefix(transition, all 0.3s ease);
+
+    &:hover {
+      background: rgba($bgcolor, 0.75);
+    }
+    &:active {
+      background: rgba($bgcolor, 1);
+    }
+  }
   @media screen and (max-width: 768px) {
     position: relative;
 

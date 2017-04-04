@@ -23,3 +23,15 @@ Meta-image: wine-art-banner.jpg
 ----
 
 Keywords: weinausbildung,sommelier ausbildung,sommelier kurs,sommelier,weinseminar in zürich,wein sommelier ausbildung,weinseminar in basel,weiterbildung sommelier,weinkurs,rotwein,weisswein,sommelier werden,weinseminar in bern,ausbildung wein,wie werde ich sommelier,rust,Académie du Vin,academie du vin,weinprobe,weinverkostung,master of wine ausbildung,deutscheweine,weinausbildung in der schweiz,schweizer weine,pinot noir,marketingberatung,weinportfolien,verkostungworkshops,weinhandel
+
+----
+
+Footer-address: 
+
+WineArt Projects GmbH
+Culmannstrasse 46, 8006 Zurich
+(tel:+41799255871 class: link link--secondary u-text-1x u-inlineblock text: +41 79 925 58 71)
+
+----
+
+Logo-alt: logo_alt.svg

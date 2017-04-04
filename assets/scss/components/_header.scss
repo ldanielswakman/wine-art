@@ -1,9 +1,18 @@
 header, .header {
   padding: 3rem 0;
-  
+
+  .header__link {
+    display: inline-block;
+
+    @media only screen and (max-width: $vw_tablet) {
+     padding-left: 2rem;
+     padding-right: 2rem;
+    }
+  }
   .header__logo {
+    margin: 3rem 0;
     height: 2.5rem;
-    opacity: 0.8;
+    // opacity: 0.9;
 
     @include prefix(transition, transform 0.2s ease);
 
@@ -14,6 +23,9 @@ header, .header {
       opacity: 1;
 
       @include prefix(transform, scale(1.2));
+    }
+    &.header__logo--alt {
+      height: 4rem;
     }
   }
   @media only screen and (max-width: $vw_tablet) {

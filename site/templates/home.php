@@ -2,7 +2,16 @@
 
 <main>
 
-  <? snippet('logo'); ?>
+
+  <header class="row row--nopadding">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-6">
+
+      <? if($logo = $site->logo()): ?>
+        <img src="<?= $site->image($logo)->url() ?>" class="header__logo" />
+      <? endif ?>
+
+    </div>
+  </header>
 
   <div class="u-pv05"></div>
 
