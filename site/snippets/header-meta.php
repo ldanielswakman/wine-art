@@ -4,7 +4,7 @@
 <meta name="author" content="L Daniel Swakman, ldaniel.eu" />
 <meta http-equiv="Cache-control" content="public">
 
-<meta name="description" content="<?= $site->description()->html() ?>">
+<meta name="description" content="<?= $site->home_title() ?>">
 <meta name="keywords" content="<?= $site->keywords()->html() ?>">
 
 <!-- Social share parameters -->
