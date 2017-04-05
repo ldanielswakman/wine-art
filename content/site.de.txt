@@ -32,6 +32,8 @@ WineArt Projects GmbH
 Culmannstrasse 46, 8006 Zurich
 (tel:+41799255871 class: link link--secondary u-text-1x u-inlineblock text: +41 79 925 58 71)
 
+(link: https://www.instagram.com/dionysian_impulse/ text: Instagram popup:yes)
+
 ----
 
 Logo-alt: logo_alt.svg

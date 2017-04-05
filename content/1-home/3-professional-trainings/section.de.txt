@@ -1,4 +1,4 @@
-Title: second
+Title: weinkurse
 
 ----
 
@@ -11,6 +11,7 @@ Text:
 > Sind Sie Sommelier oder im Weinhandel tätig? 
 
 <br>
+<h4 class="c-greylight">WEINKURSE</h4>
 
 Geben Sie es zu: Sie haben einen der besten Jobs der Welt! Und dennoch, selbst als Profi lernt man nie aus. Bei uns finden Sie Weinkurse für Experten aus allen Bereichen: Marketing- und Vertriebsteams in der Weinindustrie, Führungskräfte in der Lebensmittel- und Getränkeindustrie, Sommeliers und Barkeeper in Premium-Hotels, Restaurants und Einzelhandel.
 
@@ -20,4 +21,5 @@ Followup: services
 
 ----
 
-Followup-text: Mehr über Weinweiterbildungen
+Followup-text: Mehr über Weinweiterbildunge
+

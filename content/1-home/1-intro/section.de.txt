@@ -15,7 +15,7 @@ Cover-image: wine-opener-left.jpg
 
 ----
 
-Followup: #first
+Followup: #branding-strategies
 
 ----
 
