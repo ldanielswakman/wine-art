@@ -95,6 +95,14 @@ c::set('routes', [
       site()->visit('blog', 'en');
       return array('blog', array('slug' => $uid));
     }
+  ],
+  [
+    'pattern' => 'de/blog/(:any)',
+    'action'  => function($uid) {
+      // activate the page and set the language
+      site()->visit('blog', 'de');
+      return array('blog', array('slug' => $uid));
+    }
   ]
 ]);
 
