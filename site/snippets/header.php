@@ -19,6 +19,10 @@
 
     <link rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
 
+    <?if ($page->template() == 'blog' && isset($slug)) : ?>
+      <link rel="canonical" href="http://dionysianimpulse.net/<?= $slug ?>/" />
+    <? endif ?>
+
   </head>
 
   <body class="type--<?= $page->template() ?>">
