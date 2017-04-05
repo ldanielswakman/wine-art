@@ -25,3 +25,4 @@ l::set('form_email_error', 'Geben Sie bitte eine gültige E-Mail-Adresse ein.');
 // Blog
 l::set('loading_article', 'Loading article');
 l::set('loading_articles', 'Loading articles');
+l::set('read_other_posts', 'Read other blog posts');

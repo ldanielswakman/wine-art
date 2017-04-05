@@ -20,15 +20,21 @@ $article = (isset($article)) ? $article : $fallback;
 
   <div class="row">
 
-    <div class="col-xs-12 col-sm-2"></div>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-3 col-md-6">
 
-    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-md-6">
+      <h1 class="u-text-2x u-mb1"><?= $article['title']['rendered'] ?></h1>
+      <div class="u-mb4 c-greylight"><?= $article['date'] ?></div>
+      <?= $article['content']['rendered'] ?>
 
-      <div class="u-mb8">
-        <h1 class="u-text-2x u-mb1"><?= $article['title']['rendered'] ?></h1>
-        <div class="u-mb4 c-greylight"><?= $article['date'] ?></div>
-        <?= $article['content']['rendered'] ?>
-      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-3 col-md-6 u-pb4">
+
+      <a href="<?= $page->url() ?>" class="link">Read other blog posts</a>
 
     </div>
 
