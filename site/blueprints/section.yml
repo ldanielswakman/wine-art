@@ -5,7 +5,6 @@ files: true
 preview: parent
 options:
   status: false
-  url: false
 
 fields:
   title:
