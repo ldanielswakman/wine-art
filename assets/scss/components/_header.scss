@@ -3,11 +3,6 @@ header, .header {
 
   .header__link {
     display: inline-block;
-
-    @media only screen and (max-width: $vw_tablet) {
-     padding-left: 2rem;
-     padding-right: 2rem;
-    }
   }
   .header__logo {
     margin: 3rem 0;
@@ -20,6 +15,10 @@ header, .header {
     }
     &.header__logo--alt {
       height: 4rem;
+    }
+    @media only screen and (max-width: $vw_tablet) {
+     margin-left: 2rem;
+     margin-right: 2rem;
     }
   }
   @media only screen and (max-width: $vw_tablet) {

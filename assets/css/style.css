@@ -3686,10 +3686,6 @@ header, .header {
   padding: 3rem 0; }
   header .header__link, .header .header__link {
     display: inline-block; }
-    @media only screen and (max-width: 48rem) {
-      header .header__link, .header .header__link {
-        padding-left: 2rem;
-        padding-right: 2rem; } }
   header .header__logo, .header .header__logo {
     margin: 3rem 0;
     height: 2.5rem;
@@ -3702,6 +3698,10 @@ header, .header {
       transform: scale(1.2); }
     header .header__logo.header__logo--alt, .header .header__logo.header__logo--alt {
       height: 4rem; }
+    @media only screen and (max-width: 48rem) {
+      header .header__logo, .header .header__logo {
+        margin-left: 2rem;
+        margin-right: 2rem; } }
   @media only screen and (max-width: 48rem) {
     header, .header {
       padding: 2rem 0; } }
