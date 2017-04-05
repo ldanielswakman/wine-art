@@ -34,7 +34,7 @@ $article = (isset($article)) ? $article : $fallback;
 
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-3 col-md-6 u-pb4">
 
-      <a href="<?= $page->url() ?>" class="link">Read other blog posts</a>
+      <a href="<?= $page->url() ?>" class="link"><?= l::get('read_other_posts') ?></a>
 
     </div>
 

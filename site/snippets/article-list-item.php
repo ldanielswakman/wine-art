@@ -33,7 +33,7 @@ $even = ($position%2 != 0) ? false : true;
       <h3 class="u-mb05"><?= $article['title']['rendered'] ?></h3>
       <div class="u-mb1 c-greylight"><?= $article['date'] ?></div>
       <em class="c-grey"><?= $article['excerpt']['rendered'] ?></em>
-      <object><a class="link u-mt05" href="<?= $page->url() . '/' . $article['slug'] ?>">Read all</a></object>
+      <object><a class="link u-mt05" href="<?= $page->url() . '/' . $article['slug'] ?>"><?= l::get('read_full_article') ?></a></object>
     </div>
 
   </div>

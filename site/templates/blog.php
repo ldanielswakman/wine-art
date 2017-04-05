@@ -15,7 +15,7 @@
         <blockquote><?= $page->blog_name() ?></blockquote>
 
         <h4 class="c-greylight u-mt2">
-          <?= isset($slug) ? '<a href="' . $page->url() . '">&larr; All articles</a>' : strtoupper($page->title()); ?>
+          <?= isset($slug) ? '<a href="' . $page->url() . '">&larr; ' . l::get('all_articles') . '</a>' : strtoupper($page->title()); ?>
         </h4>
 
       </div>
