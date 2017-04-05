@@ -8,7 +8,7 @@ Text:
 
 <br>
 
-> <span class="c-softred">{{</span> We bring a dash of flavour,<br> you bring your thirst for tasting
+> <span class="c-softred">{{</span> We bring a dash of flavour,<br> you bring your thirst for tasting.
 
 ----
 

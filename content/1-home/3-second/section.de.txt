@@ -20,4 +20,4 @@ Followup: services
 
 ----
 
-Followup-text: 
+Followup-text: Mehr über Weinweiterbildungen

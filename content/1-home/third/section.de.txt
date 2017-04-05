@@ -20,4 +20,4 @@ Followup: services
 
 ----
 
-Followup-text: 
+Followup-text: Checken Sie unseren Weinworkshop
