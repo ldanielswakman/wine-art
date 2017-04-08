@@ -152,7 +152,7 @@ function scrollActions() {
     });
   }
 
-  mainH = $('main').offset().top + $('main').outerHeight();
+  mainH = ($('main').length > 0) ? $('main').offset().top + $('main').outerHeight() : 0;
   mainFadeOffset = -60;
   mainFadeDuration = 60;
   startY = mainH - windowH + mainFadeOffset;
@@ -189,7 +189,7 @@ $(document).ready(function() {
   });
 
   // Async form submit
-  $('form').on('submit', function(e) {
+  $('form.contact-form').on('submit', function(e) {
     e.preventDefault();
     postContactForm( $(this) );
   });
