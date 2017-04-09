@@ -38,12 +38,12 @@
   </div>
 
   <!-- State: progress -->
-  <div id="cover_progress" class="u-pin-cover u-z2 u-flex-center u-aligncenter <?= ($type === 'item') ? 'bg-darkwine' : 'bg-darkblue'; ?> u-pb8 u-hide">
+  <div id="cover_progress" class="u-pin-cover u-z2 u-flex-center u-aligncenter <?= ($type === 'item') ? 'bg-greylighter c-dullblue' : 'bg-darkblue'; ?> u-hide">
     <img src="<?= url('assets/images/spinner.svg') ?>" alt="" />
   </div>
 
   <!-- State: success -->
-  <div id="cover_success" class="u-pin-cover u-z2 u-flex-center u-aligncenter u-pb8 <?= ($type === 'item') ? 'bg-darkwine' : 'bg-darkblue'; ?> u-hide">
+  <div id="cover_success" class="u-pin-cover u-z2 u-flex-center u-aligncenter <?= ($type === 'item') ? 'bg-greylighter c-dullblue' : 'bg-darkblue'; ?> u-hide">
     <div>
       <img src="<?= url('assets/images/check.svg') ?>" alt="" />
       <div class="u-w20 u-mt1 c-white"><?= l::get('form_success_msg') ?></div>

@@ -8,6 +8,7 @@ $darkerblue:  darken($darkblue, 2%);
 // Greys
 $white:         #fafbfc;
 $greylightest:  #e8ebed;
+$greylighter:   darken($greylightest, 5%);
 $greylight:     #cad1d9;
 $grey:          #909599;
 
@@ -19,6 +20,7 @@ $theme: (
   'darkerblue': $darkerblue,
   'white': $white,
   'greylightest': $greylightest,
+  'greylighter': $greylighter,
   'greylight': $greylight,
   'grey': $grey
 );

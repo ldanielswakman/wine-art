@@ -59,6 +59,8 @@ c::set('routes', [
           'rules' => ['required'],
           'message' => 'Please enter a message',
         ],
+        'language' => [],
+        'source' => [],
       ]);
 
       // Perform validation and execute guards.

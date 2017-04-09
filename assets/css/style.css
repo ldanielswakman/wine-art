@@ -154,6 +154,12 @@ html, body {
 .bg-greylightest {
   background-color: #e8ebed; }
 
+.c-greylighter {
+  color: #dadfe2 !important; }
+
+.bg-greylighter {
+  background-color: #dadfe2; }
+
 .c-greylight {
   color: #cad1d9 !important; }
 
