@@ -1,5 +1,7 @@
 <? snippet('header') ?>
 
+<? $token = csrf() ?>
+
 <main id="blog_container" data-url="<?= isset($slug) ? $page->url() . '.json?slug=' . $slug : $page->url() . '.json'; ?>">
 
   <section class="u-mb7">
@@ -39,4 +41,4 @@
 
 </main>
 
-<? snippet('footer') ?>
+<? snippet('footer', ['token' => $token]) ?>

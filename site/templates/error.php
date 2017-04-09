@@ -1,5 +1,7 @@
 <? snippet('header') ?>
 
+<? $token = csrf() ?>
+
 <main class="bg-white u-pv8">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
@@ -10,4 +12,4 @@
   </div>
 </main>
 
-<? snippet('footer') ?>
+<? snippet('footer', ['token' => $token]) ?>

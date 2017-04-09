@@ -1,5 +1,7 @@
 <? snippet('header') ?>
 
+<? $token = csrf() ?>
+
 <main>
 
 
@@ -52,4 +54,4 @@
 
 </main>
 
-<? snippet('footer') ?>
+<? snippet('footer', ['token' => $token]) ?>
