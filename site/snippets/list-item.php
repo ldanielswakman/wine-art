@@ -65,7 +65,7 @@
 
             <? // Contact us button ?>
             <? if($item->contact_button()->isNotEmpty()) : ?>
-              <a href="#item_contact" class="link link--diagonal"><?= $item->contact_button() ?></a>
+              <a href="#item__contact" class="link link--diagonal"><?= $item->contact_button() ?></a>
             <? endif ?>
 
           </div>
@@ -73,14 +73,7 @@
 
             <? // Purchase button ?>
             <? if($item->show_buy_button() == '1') : ?>
-            
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="394UA5Q9CV3LS">
-                <button type="submit" class="link" name="submit">Purchase now</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-              <small class="c-grey"><em>This will direct you to the <span style="color: #1c3687;">Pay</span><span style="color: #009edd;">Pal</span> payment page</em></small>
+              <a href="#item__payment" class="link">Purchase</a>
             <? endif ?>
 
           </div>
@@ -91,13 +84,57 @@
       </div>
     </div>
 
+    <div class="u-mt3"></div>
+
     <!-- Contact form -->
     <? if($item->contact_button()->isNotEmpty()) : ?>
-      <div class="list-item__contact u-mt3">
+      <div class="list-item__contact">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-pt3 u-pb2">
             <div class="list-item__contact-arrow"></div>
-            <? snippet('contact_form', ['source' => $page->title() . ': ' . $item->title(), 'type' => 'item']); ?>
+            <? snippet('contact_form', ['source' => $page->title() . ': ' . $item->title(), 'type' => 'item', 'token' => $token]); ?>
+          </div>
+        </div>
+      </div>
+    <? endif ?>
+
+    <!-- Purchase form -->
+    <? if($item->show_buy_button() == '1') : ?>
+      <div class="list-item__payment">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-pt3 u-pb2">
+
+            <h2><span style="font-weight: normal;">You are about to purchase</span> <?= $item->title()->html() ?></h2>
+
+            <em>
+            <? if($item->start_date()->isNotEmpty() && $item->end_date()->isNotEmpty()) : ?>
+              <?= $item->date('d M Y', 'start_date') ?>  —  <?= $item->date('d M Y', 'end_date') ?>
+            <? endif ?>,
+            <? if($item->fee()->isNotEmpty()) : ?>
+              <?= number_format($item->fee()->value(), 0, ',', '.') ?> CHF
+            <? endif ?>
+            </em>
+
+            <div class="u-mv2">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="394UA5Q9CV3LS">
+                <button type="submit" class="link" name="submit">Pay with PayPal/credit card</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+              <small class="c-grey"><em>This will direct you to the <span style="color: #1c3687;">Pay</span><span style="color: #009edd;">Pal</span> payment page</em></small>
+            </div>
+
+            <div class="u-mv2">
+              <a href="#item__bankform" class="link">Pay via Bank transfer</a><br><br>
+            </div>
+
+            <div class="list-item__bankform u-pb3 u-hide">
+              <p>Please fill out your name and email address here, and you will receive the bank account information.</p>
+              <? snippet('contact_form', ['source' => $page->title() . ': ' . $item->title(), 'type' => 'item', 'token' => $token]); ?>
+            </div>
+
+            <div class="list-item__payment-arrow"></div>
           </div>
         </div>
       </div>

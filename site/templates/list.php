@@ -1,5 +1,7 @@
 <? snippet('header') ?>
 
+<? $token = csrf() ?>
+
 <main>
 
   <?
@@ -44,7 +46,7 @@
         <div class="row row--internalpadding list">
           <? $i = 1; foreach ($page->children()->visible() as $item) : ?>
 
-            <? snippet('list-item', ['i' => $i, 'item' => $item, 'list_options' => $list_options]) ?>
+            <? snippet('list-item', ['i' => $i, 'item' => $item, 'list_options' => $list_options, 'token' => $token]) ?>
             
           <? $i++; endforeach ?>
         </div>
@@ -57,4 +59,4 @@
 
 </main>
 
-<? snippet('footer') ?>
+<? snippet('footer', ['token' => $token]) ?>

@@ -32,6 +32,29 @@
     &:hover, &:focus { padding-left: 1rem; }
     &:hover + .field--label, &:focus + .field--label { left: 1rem; }
   }
+  &.field--dark {
+    border-bottom-color: $dullblue;
+    color: $dullblue;
+
+    &::-webkit-input-placeholder {
+      color: rgba($dullblue, 0.5);
+    }
+    &:-moz-placeholder {
+      color: rgba($dullblue, 0.5);
+    }
+    &::-moz-placeholder {
+      color: rgba($dullblue, 0.5);
+    }
+    &:-ms-input-placeholder {  
+      color: rgba($dullblue, 0.5);
+    }
+    &:hover {
+      background-color: rgba($dullblue, 0.05);
+    }
+    &:focus {
+      background-color: rgba($dullblue, 0.1);
+    }
+  }
   &:hover {
     padding-left: 0.5rem;
     background-color: rgba($white, 0.05);

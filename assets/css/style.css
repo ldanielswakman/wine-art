@@ -3443,6 +3443,21 @@ figure.figure--1by1 {
       padding-left: 1rem; }
     .field.field--big:hover + .field--label, .field.field--big:focus + .field--label {
       left: 1rem; }
+  .field.field--dark {
+    border-bottom-color: #4c6d8f;
+    color: #4c6d8f; }
+    .field.field--dark::-webkit-input-placeholder {
+      color: rgba(76, 109, 143, 0.5); }
+    .field.field--dark:-moz-placeholder {
+      color: rgba(76, 109, 143, 0.5); }
+    .field.field--dark::-moz-placeholder {
+      color: rgba(76, 109, 143, 0.5); }
+    .field.field--dark:-ms-input-placeholder {
+      color: rgba(76, 109, 143, 0.5); }
+    .field.field--dark:hover {
+      background-color: rgba(76, 109, 143, 0.05); }
+    .field.field--dark:focus {
+      background-color: rgba(76, 109, 143, 0.1); }
   .field:hover {
     padding-left: 0.5rem;
     background-color: rgba(250, 251, 252, 0.05); }
@@ -3589,33 +3604,45 @@ a {
   max-height: 1200px;
   pointer-events: all; }
 
-.list-item__contact {
+.list-item__contact,
+.list-item__payment {
   position: relative;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   pointer-events: all;
-  background-color: #431220;
+  background-color: #dadfe2;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-  .list-item__contact.isExpanded {
+  .list-item__contact.isExpanded,
+  .list-item__payment.isExpanded {
     opacity: 1;
     max-height: 600px;
     overflow: visible;
     pointer-events: all; }
-  .list-item__contact .list-item__contact-arrow {
+  .list-item__contact .list-item__contact-arrow,
+  .list-item__contact .list-item__payment-arrow,
+  .list-item__payment .list-item__contact-arrow,
+  .list-item__payment .list-item__payment-arrow {
     content: "";
     position: absolute;
     border: 2rem solid transparent;
-    border-bottom-color: #431220;
+    border-bottom-color: #dadfe2;
     bottom: calc(100% - 2rem);
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease; }
-  .list-item__contact.isExpanded .list-item__contact-arrow {
+  .list-item__contact.isExpanded .list-item__contact-arrow,
+  .list-item__contact.isExpanded .list-item__payment-arrow,
+  .list-item__payment.isExpanded .list-item__contact-arrow,
+  .list-item__payment.isExpanded .list-item__payment-arrow {
     bottom: 100%; }
-  .list-item__contact form {
+  .list-item__contact.isExpanded .list-item__payment-arrow,
+  .list-item__payment.isExpanded .list-item__payment-arrow {
+    margin-left: 35%; }
+  .list-item__contact form,
+  .list-item__payment form {
     max-width: 45rem; }
 
 article, .article {

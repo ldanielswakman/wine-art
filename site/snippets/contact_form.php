@@ -1,30 +1,35 @@
 <form class="contact-form u-relative" action="<?= $site->url() ?>/contactform_post" method="POST">
 
-  <? if (isset($type) && $type === 'item') { } else { ?>
+  <?
+  $type = (isset($type)) ? $type : null;
+  $source = (isset($source)) ? $source : null;
+  ?>
+
+  <? if ($type !== 'item') : ?>
     <blockquote class="c-white u-mb1"><?= l::get('form_intro') ?></blockquote>
-  <? } ?>
+  <? endif ?>
 
   <div class="field-set">
-    <textarea name="message" id="message" required class="field field--big u-widthfull u-mb1" placeholder="<?= l::get('form_message_placeholder') ?>"></textarea>
+    <textarea name="message" id="message" required class="field field--big <?= ecco(($type == 'item'), 'field--dark') ?> u-widthfull u-mb1" placeholder="<?= l::get('form_message_placeholder') ?>"></textarea>
   </div>
 
   <div class="row row--internalpadding">
     <div class="col-xs-12 col-sm-5">
       <div class="field-set">
-        <input name="email" type="email" required class="field u-mb1 u-widthfull" placeholder="<?= l::get('form_email_placeholder') ?>">
+        <input name="email" type="email" required class="field <?= ecco(($type == 'item'), 'field--dark') ?> u-mb1 u-widthfull" placeholder="<?= l::get('form_email_placeholder') ?>">
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
       <div class="field-set">
-        <input name="name" type="text" class="field u-mb1 u-widthfull" placeholder="<?= l::get('form_name_placeholder') ?>">
+        <input name="name" type="text" class="field <?= ecco(($type == 'item'), 'field--dark') ?> u-mb1 u-widthfull" placeholder="<?= l::get('form_name_placeholder') ?>">
       </div>
     </div>
 
     <input name="language" class="u-hide" type="text" value="<?= $site->language() ?>">
 
-    <input name="source" class="u-hide" type="text" value="<?= (isset($source) && strlen($source) > 1) ? $source : 'Footer'; ?>">
+    <input name="source" class="u-hide" type="text" value="<?= ecco((strlen($source) > 1), $source, 'Footer') ?>">
 
-    <?= csrf_field() ?>
+    <?= csrf_field($token) ?>
     <?= honeypot_field() ?>
 
     <div class="col-xs-12 col-sm-3">
@@ -33,12 +38,12 @@
   </div>
 
   <!-- State: progress -->
-  <div id="cover_progress" class="u-pin-cover u-z2 u-flex-center u-aligncenter <?= (isset($type) && $type === 'item') ? 'bg-darkwine' : 'bg-darkblue'; ?> u-pb8 u-hide">
+  <div id="cover_progress" class="u-pin-cover u-z2 u-flex-center u-aligncenter <?= ($type === 'item') ? 'bg-darkwine' : 'bg-darkblue'; ?> u-pb8 u-hide">
     <img src="<?= url('assets/images/spinner.svg') ?>" alt="" />
   </div>
 
   <!-- State: success -->
-  <div id="cover_success" class="u-pin-cover u-z2 u-flex-center u-aligncenter u-pb8 <?= (isset($type) && $type === 'item') ? 'bg-darkwine' : 'bg-darkblue'; ?> u-hide">
+  <div id="cover_success" class="u-pin-cover u-z2 u-flex-center u-aligncenter u-pb8 <?= ($type === 'item') ? 'bg-darkwine' : 'bg-darkblue'; ?> u-hide">
     <div>
       <img src="<?= url('assets/images/check.svg') ?>" alt="" />
       <div class="u-w20 u-mt1 c-white"><?= l::get('form_success_msg') ?></div>

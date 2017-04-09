@@ -30,11 +30,35 @@ $(document).ready(function() {
   $('.list-item__detail-close').click(function() {
     closeCardDetail();
   });
-  $('.list-item [href="#item_contact"]').click(function(e) {
+  $('.list-item [href="#item__contact"]').click(function(e) {
     e.preventDefault();
     $contactbox = $(this).closest('.list-item').find('.list-item__contact');
+    $paymentbox = $(this).closest('.list-item').find('.list-item__payment');
+    $paymentbox.removeClass('isExpanded');
     $contactbox.toggleClass('isExpanded');
     $contactbox.find('form .field').first().focus();
+    gridSpacer();
+
+    for (i=1; i < 20; i++) {
+      setTimeout(function() { gridSpacer(); }, i*25);
+    }
+  });
+  $('.list-item [href="#item__payment"]').click(function(e) {
+    e.preventDefault();
+    $contactbox = $(this).closest('.list-item').find('.list-item__contact');
+    $paymentbox = $(this).closest('.list-item').find('.list-item__payment');
+    $contactbox.removeClass('isExpanded');
+    $paymentbox.toggleClass('isExpanded');
+    gridSpacer();
+
+    for (i=1; i < 20; i++) {
+      setTimeout(function() { gridSpacer(); }, i*25);
+    }
+  });
+  $('.list-item [href="#item__bankform"]').click(function(e) {
+    e.preventDefault();
+    $bankformbox = $(this).closest('.list-item').find('.list-item__bankform');
+    $bankformbox.removeClass('u-hide');
     gridSpacer();
 
     for (i=1; i < 20; i++) {

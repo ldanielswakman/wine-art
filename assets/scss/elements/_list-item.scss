@@ -35,13 +35,14 @@
   }
 }
 
-.list-item__contact {
+.list-item__contact,
+.list-item__payment {
   position: relative;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   pointer-events: all;
-  background-color: $darkwine;
+  background-color: darken($greylightest, 5%);
 
   @include prefix(transition, all 0.5s ease);
 
@@ -51,13 +52,18 @@
     overflow: visible;
     pointer-events: all;
   }
-  .list-item__contact-arrow {
-    @include triangleTop($darkwine);
+  .list-item__contact-arrow,
+  .list-item__payment-arrow {
+    @include triangleTop(darken($greylightest, 5%));
     bottom: calc(100% - 2rem);
     @include prefix(transition, all 0.2s ease);
   }
-  &.isExpanded .list-item__contact-arrow {
+  &.isExpanded .list-item__contact-arrow,
+  &.isExpanded .list-item__payment-arrow {
     bottom: 100%;
+  }
+  &.isExpanded .list-item__payment-arrow {
+    margin-left: 35%;
   }
   form {
     max-width: 45rem;
