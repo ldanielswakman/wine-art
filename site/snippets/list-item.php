@@ -73,7 +73,7 @@
 
             <? // Purchase button ?>
             <? if($item->show_buy_button() == '1') : ?>
-              <a href="#item__payment" class="link">Purchase</a>
+              <a href="#item__payment" class="link link--diagonal">Purchase</a>
             <? endif ?>
 
           </div>
