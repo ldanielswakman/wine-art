@@ -20,7 +20,7 @@ End-date:
 
 ----
 
-Fee: 0
+Fee: 
 
 ----
 
