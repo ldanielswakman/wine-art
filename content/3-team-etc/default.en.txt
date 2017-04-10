@@ -32,11 +32,11 @@ Team-members:
     
     In addition to her professional life, she holds the WSET Diploma and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles in the world of wine.
     
-    Moreover, she writes about wine in her blog, Dionysian Impulse (www.dionysianimpulse.net), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
+    Moreover, she writes about wine in her blog, (link: http://www.dionysianimpulse.net text:Dionysian Impulse popup:yes), which was voted the Best New Wine Blog in 2016! Apart from wine, she enjoys Lindy Hop, she is a fan of Wim Wenders, and she never gets bored of watching Seinfeld.
     
     Research interests: Climate Change, Environmental Sustainability in the Wine Industry
     
-    e-mail: seyma@wine-art.co
+    (email: seyma@wine-art.co popup:yes)
 - 
   name: Cécile Richards
   role: 'DipWSET, Wine Educator & Consultant'
@@ -53,7 +53,7 @@ Team-members:
   descr_ext: |
     Since 2005, she is a Weinakademikerin (equivelent of  WSET Level 5). She launched her first press campaign for German Wine Institute (DWI) in Switzerland and today she is working independently for food and wine magazines and she is a wine journalist at VINUM.
     
-    She has her own wine agency in Zürich Agentur für Wein (www.agenturfuerwein.ch) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.
+    She has her own wine agency in Zürich (link: http://www.agenturfuerwein.ch text: Agentur für Wein popup:yes) offering PR and Communication as well as social insurance consultancy for wine and food industry. She also enjoys forests, purring cats and philosophical literature.
 - 
   name: Jörn Justiz
   role: Wine Educator

@@ -22,7 +22,9 @@ Team-members:
     
     Nach Abschluss des Diploma-Programms des Wine and Spirits Education Trust in London studiert Seyma nun auf einen der schwierigsten Titel in der Welt des Weins: den Master of Wine.
     
-    Darüber hinaus schreibt sie über Wein und die Dynamik des Markts in ihrem Blog Dionysian Impulse (www.dionysianimpulse.net), das 2016 mit dem Prädikat Best New Wine Blog ausgezeichnet wurde. Heute lebt sie in Zürich, arbeitet an Projekten für verschiedene Weinregionen, und freut sich jeden Tag über neue Geschmacksentdeckungen. Neben ihrer Passion für den Wein findet sie Spaß am Lindy Hop, ist Fan von Wim Wenders und schaut immer wieder gerne die TV-Serie Seinfeld.
+    Darüber hinaus schreibt sie über Wein und die Dynamik des Markts in ihrem Blog (link: http://www.dionysianimpulse.net text: Dionysian Impulse popup:yes), das 2016 mit dem Prädikat Best New Wine Blog ausgezeichnet wurde. Heute lebt sie in Zürich, arbeitet an Projekten für verschiedene Weinregionen, und freut sich jeden Tag über neue Geschmacksentdeckungen. Neben ihrer Passion für den Wein findet sie Spaß am Lindy Hop, ist Fan von Wim Wenders und schaut immer wieder gerne die TV-Serie Seinfeld.
+    
+    (email: seyma@wine-art.co popup:yes)
 - 
   name: Cécile Richards
   role: 'DipWSET, Wine Educator & Consultant'
@@ -44,7 +46,7 @@ Team-members:
   descr_ext: |
     2005 absolvierte sie erfolgreich das WSET Honours Diploma und erhielt die Auszeichnung Weinakademikerin. Damals noch als berufserfahrene Geschäftsführerin Pensionskasse tätig, begann sie als Redakteurin der Weinzeitschrift VINUM zu arbeiten. Alsbald wurde sie vom Deutschen Weininstitut (DWI) beauftragt, die Pressearbeit in der Schweiz zu lancieren.
     
-    Heute schreibt sie freiberuflich für Weinzeitschriften. Als Weinberaterin ist sie in der Weihnachtszeit für Globus Schweiz tätig. Die Inhaberin der Zürcher Agentur für Wein (www.agenturfuerwein.ch) bietet PR & Kommunikation sowie sozialrechtliche Beratung Gastronomen, Winzer und deren Mitarbeiter an.
+    Heute schreibt sie freiberuflich für Weinzeitschriften. Als Weinberaterin ist sie in der Weihnachtszeit für Globus Schweiz tätig. Die Inhaberin der Zürcher (link: http://www.agenturfuerwein.ch text: Agentur für Wein popup:yes) bietet PR & Kommunikation sowie sozialrechtliche Beratung Gastronomen, Winzer und deren Mitarbeiter an.
     
     Begeistert ist sie zudem vom Lebensraum Wald, von schnurrenden Katzen und philosophischen Schriften.
 - 
