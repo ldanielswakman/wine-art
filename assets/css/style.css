@@ -3408,6 +3408,9 @@ figure.figure--1by1 {
     .row .row--internalpadding {
       margin-left: -0.5rem !important;
       margin-right: -0.5rem !important; } }
+  @media screen and (min-width: 30rem) {
+    .row .col-sm-offset-0 {
+      margin-left: 0; } }
 
 .button {
   display: inline-block;
@@ -3904,6 +3907,10 @@ section.section--listbg, .section.section--listbg {
     section.section--listbg, .section.section--listbg {
       background-position: 150% 0;
       background-size: 75%; } }
+  @media only screen and (max-width: 64rem) {
+    section.section--listbg, .section.section--listbg {
+      background-position: 150% 0;
+      background-size: 30%; } }
 
 body.isLoaded section .section__bg-image,
 body.isLoaded .section .section__bg-image {

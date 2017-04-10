@@ -168,4 +168,9 @@ figure {
       margin-right: -0.5rem !important;
     }
   }
+  @media screen and (min-width: $vw_mobile) {
+    .col-sm-offset-0 {
+      margin-left: 0;
+    }
+  }
 }
