@@ -7,10 +7,10 @@
   <?
   $bg_image_style = '';
   if($page->cover_image()->isNotEmpty()) {
-    $bg_image_style = ' style="background-image: url(\'' . thumb($page->image($page->cover_image()), ['width' => 800])->url() . '\'); background-position: top right; background-repeat: no-repeat; background-size: contain;"';
+    $bg_image_style = ' style="background-image: url(\'' . thumb($page->image($page->cover_image()), ['width' => 800])->url() . '\');"';
   }
   ?>
-  <section<?= $bg_image_style ?>>
+  <section<?= $bg_image_style ?> class="section--listbg">
 
   <div class="row row--internalpadding">
 
@@ -18,7 +18,7 @@
       <? snippet('logo') ?>
     </div>
 
-    <div class="col-xs-12 col-sm-10 col-md-5 u-pt7-sm u-pb2">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-5 u-pt7-sm u-pb2">
       <?= $page->text()->kirbytext() ?>
     </div>
   </div>
@@ -29,7 +29,7 @@
 
     <div class="row row--internalpadding">
 
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 
         <?
         $list_options = ($page->list_type()->isNotEmpty() && $page->list_type()->value() == 'large') ? array(

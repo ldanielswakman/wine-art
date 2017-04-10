@@ -3113,6 +3113,10 @@ html, body {
 .u-lineheight150 {
   line-height: 15rem !important; }
 
+.u-ph0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .u-minheight20 {
   min-height: 20rem !important; }
 
@@ -3320,6 +3324,15 @@ blockquote {
     line-height: 3rem; }
   blockquote + p {
     margin-top: 1.5rem; }
+  @media only screen and (max-width: 47rem) {
+    blockquote {
+      font-size: 1.5rem;
+      line-height: 2rem; }
+      blockquote:before {
+        margin-bottom: 1.5rem; }
+      blockquote p {
+        font-size: 1.5rem;
+        line-height: 2rem; } }
 
 p {
   font-family: "iABC", "Times New Roman", Times, serif;
@@ -3427,6 +3440,9 @@ figure.figure--1by1 {
   color: #fafbfc;
   font: inherit;
   line-height: 1.25rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -3576,8 +3592,8 @@ a {
     transform: rotate(90deg) translateX(0.5rem); }
 
 .list {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   -webkit-transition: padding 0.3s ease;
   -moz-transition: padding 0.3s ease;
   transition: padding 0.3s ease; }
@@ -3585,6 +3601,10 @@ a {
     padding-bottom: 0; }
     .list.hasExpanded .list-item:not(.isExpanded) .list-item__card {
       opacity: 0.4; }
+  @media only screen and (min-width: 48rem) {
+    .list {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
 
 .list-item.isExpanded .list-item__spacer:before {
   content: "";
@@ -3609,6 +3629,10 @@ a {
   opacity: 1;
   max-height: 1200px;
   pointer-events: all; }
+
+@media only screen and (min-width: 48rem) {
+  .list-item .list-item__card {
+    padding-right: 3rem; } }
 
 .list-item__contact,
 .list-item__payment {
@@ -3664,6 +3688,19 @@ article, .article {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0); }
+  @media screen and (max-width: 30rem) {
+    article img, .article img {
+      max-width: 100%;
+      height: auto; } }
+  article .wp-caption, .article .wp-caption {
+    max-width: 100%;
+    color: #cad1d9;
+    font-family: "Apercu", Arial, sans-serif; }
+    article .wp-caption p, .article .wp-caption p {
+      font-family: "Apercu", Arial, sans-serif;
+      font-size: 1em; }
+  article .wp-caption + p, .article .wp-caption + p {
+    margin-top: 1.5rem; }
 
 footer, .footer {
   position: fixed;
@@ -3751,7 +3788,7 @@ nav, .nav {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   padding: 2rem;
   -webkit-background: linear-gradient(60deg, #fafbfc 20%, rgba(250, 251, 252, 0) 60%);
   -moz-background: linear-gradient(60deg, #fafbfc 20%, rgba(250, 251, 252, 0) 60%);
@@ -3831,9 +3868,15 @@ section .section__bg-image, .section .section__bg-image {
   background-attachment: local;
   background-repeat: no-repeat;
   opacity: 0;
-  -webkit-transition: "opacity 1s ease, ";
-  -moz-transition: "opacity 1s ease, ";
-  transition: "opacity 1s ease, ";
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.1s ease, -webkit-filter 1.5s ease;
+  -moz-transition: opacity 0.3s ease, -moz-transform 0.1s ease, -moz-filter 1.5s ease;
+  transition: opacity 0.3s ease, transform 0.1s ease, filter 1.5s ease;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  filter: blur(20px); }
+
+section .section__blur-in-image, .section .section__blur-in-image {
+  opacity: 0;
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.1s ease, -webkit-filter 1.5s ease;
   -moz-transition: opacity 0.3s ease, -moz-transform 0.1s ease, -moz-filter 1.5s ease;
   transition: opacity 0.3s ease, transform 0.1s ease, filter 1.5s ease;
@@ -3853,8 +3896,24 @@ section#intro .link, .section#intro blockquote,
       margin-left: 0;
       margin-right: 0; } }
 
+section.section--listbg, .section.section--listbg {
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media only screen and (max-width: 30rem) {
+    section.section--listbg, .section.section--listbg {
+      background-position: 150% 0;
+      background-size: 75%; } }
+
 body.isLoaded section .section__bg-image,
 body.isLoaded .section .section__bg-image {
+  opacity: 1;
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  filter: blur(0); }
+
+body.isLoaded section .section__blur-in-image,
+body.isLoaded .section .section__blur-in-image {
   opacity: 1;
   -webkit-filter: blur(0);
   -moz-filter: blur(0);

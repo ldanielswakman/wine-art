@@ -31,6 +31,10 @@
   // line-heights
   .u-lineheight#{$name} { line-height: $value !important; }
 }
+.u-ph0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 
 // Width & height

@@ -3,7 +3,7 @@
 
 
   <!-- Grid card -->
-  <a href="#<?= $item->uid() ?>" class="u-block list-item__card u-pr3 <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
+  <a href="#<?= $item->uid() ?>" class="u-block list-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
     <? if($item->cover_image()->isNotEmpty()): ?>
       <? $ratio = ($item->ratio()->isNotEmpty()) ? $item->ratio()->value() : '3by2'; ?>
       <figure class="figure--<?= $ratio ?>"><img src="<?= thumb($item->image($item->cover_image()), ['width' => 600])->url() ?>" alt="" /></figure>
@@ -21,9 +21,9 @@
   <!-- Detail panel -->
   <div id="<?= $item->uid() ?>" class="list-item__detail bg-greylightest">
     <div class="row u-pv3">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative">
 
-        <a href="<?= $page->slug() . '/' . $item->uid() ?>"><h3 class="u-mv1 c-softred"><?= $item->title()->html() ?></h3></a>
+        <a href="<?= $page->slug() . '/' . $item->uid() ?>"><h3 class="u-mv1 u-mr2 c-softred"><?= $item->title()->html() ?></h3></a>
 
         <p class="c-dullblue"><?= $item->description()->kirbytext() ?></p>
 
@@ -90,7 +90,7 @@
     <? if($item->contact_button()->isNotEmpty()) : ?>
       <div class="list-item__contact">
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-pt3 u-pb2">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative u-pt3 u-pb2">
             <div class="list-item__contact-arrow"></div>
             <? snippet('contact_form', ['source' => $page->title() . ': ' . $item->title(), 'type' => 'item', 'token' => $token]); ?>
           </div>

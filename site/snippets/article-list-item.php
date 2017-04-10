@@ -27,7 +27,7 @@ $even = ($position%2 != 0) ? false : true;
     <? endif ?>
   </div>
 
-  <div class="col-xs-10 col-sm-5 <?= ($even) ? 'col-sm-offset-3' : ''; ?>">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-5 <?= ($even) ? 'col-sm-offset-3' : ''; ?>">
 
     <div class="u-mb8">
       <h3 class="u-mb05"><?= $article['title']['rendered'] ?></h3>

@@ -1,6 +1,6 @@
 .list {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   @include prefix(transition, padding 0.3s ease);
 
   &.hasExpanded {
@@ -9,6 +9,10 @@
     .list-item:not(.isExpanded) .list-item__card {
       opacity: 0.4;
     }
+  }
+  @media only screen and (min-width: $vw_tablet) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -32,6 +36,11 @@
     opacity: 1;
     max-height: 1200px;
     pointer-events: all;
+  }
+  @media only screen and (min-width: $vw_tablet) {
+    .list-item__card {
+      padding-right: 3 * $u;
+    }
   }
 }
 

@@ -2,11 +2,11 @@
 
       <div class="row u-pt8 u-pb4">
 
-        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-5">
           <? snippet('contact_form', ['token' => $token]); ?>
         </div>
 
-        <div class="col-xs-12 col-sm-4 col-sm-offset-1 u-text-15x footer__menu">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 u-text-15x footer__menu">
           <? snippet('menu') ?>
 
           <div class="short u-mt6 u-text-1x c-grey">

@@ -8,6 +8,7 @@
   font: inherit;
   line-height: 1.25rem;
 
+  @include prefix(border-radius, 0);
   @include prefix(transition, all 0.3s ease);
 
   &::-webkit-input-placeholder {

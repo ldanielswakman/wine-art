@@ -7,4 +7,23 @@ article, .article {
     opacity: 1;
     @include prefix(transform, translateY(0));
   }
+  @media screen and (max-width: $vw_mobile) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .wp-caption {
+    max-width: 100%;
+    color: $greylight;
+    font-family: $sans_serif;
+
+    p {
+      font-family: $sans_serif;
+      font-size: 1em;
+    }
+  }
+  .wp-caption + p {
+    margin-top: 1.5rem;
+  }
 }
