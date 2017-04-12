@@ -82,7 +82,7 @@ c::set('routes', [
           'from' => 'contactform@wine-art.co',
           'replyTo' => 'info@wine-art.co',
           'subject' => '[wine—art.co] New contact request',
-          'snippet' => 'email/contact-request'
+          'snippet' => 'email-contact-request'
         ]);
 
         if (!$form->success()) { $code = 500; }
