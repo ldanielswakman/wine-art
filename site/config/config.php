@@ -81,7 +81,7 @@ c::set('routes', [
           'to' => 'd.swakman@gmail.com',
           'from' => 'contactform@wine-art.co',
           'replyTo' => 'info@wine-art.co',
-          'subject' => '[wine—art.co] New contact request',
+          'subject' => '[wine-art.co] Contact request',
           'snippet' => 'email-contact-request'
         ]);
 
