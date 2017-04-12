@@ -3,6 +3,9 @@
 <? $token = csrf() ?>
 
 <main class="bg-white u-pv8">
+
+  <? snippet('nav') ?>
+  
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
       <h1 class="c-dullblue u-mb3"><?= $page->title()->html() ?></h1>

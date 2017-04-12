@@ -23,37 +23,20 @@ $(document).ready(function() {
   $('footer').after('<div id="below" class="spacer" style="height: ' + $('footer').outerHeight() + 'px;"></div>')
 
 
-  // UI: grid item click events
+
+  // UI: list item click events
   $('.list-item__card').click(function() {
     openCardDetail($(this));
   });
   $('.list-item__detail-close').click(function() {
     closeCardDetail();
   });
-  $('.list-item [href="#item__contact"]').click(function(e) {
-    e.preventDefault();
-    $contactbox = $(this).closest('.list-item').find('.list-item__contact');
-    $paymentbox = $(this).closest('.list-item').find('.list-item__payment');
-    $paymentbox.removeClass('isExpanded');
-    $contactbox.toggleClass('isExpanded');
-    $contactbox.find('form .field').first().focus();
-    gridSpacer();
-
-    for (i=1; i < 20; i++) {
-      setTimeout(function() { gridSpacer(); }, i*25);
-    }
+  $('.list-item__child-close').click(function() {
+    closeCardSecondaryDetail();
   });
-  $('.list-item [href="#item__payment"]').click(function(e) {
+  $('.list-item [href*="#item__"]').click(function(e) {
     e.preventDefault();
-    $contactbox = $(this).closest('.list-item').find('.list-item__contact');
-    $paymentbox = $(this).closest('.list-item').find('.list-item__payment');
-    $contactbox.removeClass('isExpanded');
-    $paymentbox.toggleClass('isExpanded');
-    gridSpacer();
-
-    for (i=1; i < 20; i++) {
-      setTimeout(function() { gridSpacer(); }, i*25);
-    }
+    openCardSecondaryDetail($(this));
   });
   $('.list-item [href="#item__bankform"]').click(function(e) {
     e.preventDefault();
@@ -87,6 +70,15 @@ $(document).ready(function() {
     $(this).closest('.more').css('max-height', 0);
     $(this).closest('.more').prev('p').find('a[href="#more"]').show();
   });
+
+
+  // UI: Paypal form submit
+  $('form[action*="https://www.paypal"]').on('submit', function() {
+    $(this).find('.link').addClass('isBusy');
+  });
+
+
+  $('.js-stick-in-parent').stick_in_parent();
 
 
   gridSpacer();
@@ -123,6 +115,7 @@ function updateHash(href) {
 function openCardDetail(dest) {
   if($(dest)) {
     $('.list-item').removeClass('isExpanded');
+    $('.list-item__child').removeClass('isExpanded');
     $(dest).closest('.list-item').addClass('isExpanded');
     $(dest).closest('.list').addClass('hasExpanded');
     gridSpacer();
@@ -139,9 +132,31 @@ function openCardDetail(dest) {
 
 
 
+// UI: Open Card Secondary Detail
+function openCardSecondaryDetail(dest) {
+  if($(dest)) {
+    target = '.list-' + $(dest).attr('href').replace('#', '');
+    $parent = $(dest).closest('.list-item');
+    $('.list-item__child').removeClass('isExpanded');
+    $parent.find(target).addClass('isExpanded');
+    $(target).find('form .field').first().focus();
+
+    // re-align grid
+    gridSpacer();
+    for (i=1; i < 20; i++) {
+      setTimeout(function() { gridSpacer(); }, i*25);
+    }
+  } else {
+    console.log('No child card found to expand');
+  }
+}
+
+
+
 // UI: Close Card Detail
 function closeCardDetail() {
   $('.list-item').removeClass('isExpanded');
+  $('.list-item__child').removeClass('isExpanded');
   $('.list').removeClass('hasExpanded');
   updateHash(' ');
   gridSpacer();
@@ -153,7 +168,19 @@ function closeCardDetail() {
 
 
 
-// Scroll Action
+// UI: CLose Card Secondary Detail
+function closeCardSecondaryDetail() {
+  $('.list-item__child').removeClass('isExpanded');
+  gridSpacer();
+
+  for (i=1; i < 20; i++) {
+    setTimeout(function() { gridSpacer(); }, i*25);
+  }
+}
+
+
+
+// Scroll Actions
 function scrollActions() {
   scroll = $(window).scrollTop();
   windowH = $(window).height();
@@ -174,25 +201,6 @@ function scrollActions() {
         .css('transform','translateY(' + scrollValue + 'px)');
 
     });
-  }
-
-  mainH = ($('main').length > 0) ? $('main').offset().top + $('main').outerHeight() : 0;
-  mainFadeOffset = -60;
-  mainFadeDuration = 60;
-  startY = mainH - windowH + mainFadeOffset;
-  endY = startY + mainFadeDuration;
-
-  if(scroll < startY) {
-    // Start state
-    $('nav').removeAttr('style').removeClass('u-hide');
-  } else if(scroll > endY) {
-    // End state
-    $('nav').removeAttr('style').addClass('u-hide');
-  } else {
-    // Transition state
-    $('nav').removeClass('u-hide');
-    mainOpacity = (startY - scroll + mainFadeDuration) / mainFadeDuration;
-    $('nav').css('opacity', mainOpacity);
   }
 }
 events = 'ready scroll resize scrollstart scrollstop';
@@ -350,7 +358,8 @@ function getBlogPosts() {
     getFeaturedImages();
 
     // re-align menu
-    scrollActions();
+    $('.js-stick-in-parent').stick_in_parent();
+    $('.js-stick-in-parent').trigger('sticky_kit:recalc');
 
   });
 }

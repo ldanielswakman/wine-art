@@ -15,6 +15,7 @@
 
     <?= js('assets/js/jquery-2.2.3.min.js') ?>
     <?= js('assets/js/jquery.smooth-scroll.min.js') ?>
+    <?= js('assets/js/sticky-kit.min.js') ?>
     <?= js('assets/js/scripts.js') ?>
 
     <link rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
@@ -26,7 +27,4 @@
   </head>
 
   <body class="type--<?= $page->template() ?>">
-
-    <nav>
-      <? snippet('menu') ?>
-    </nav>
+  

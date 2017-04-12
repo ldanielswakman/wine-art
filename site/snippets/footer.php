@@ -19,7 +19,7 @@
 
       <a href="http://www.ldaniel.eu" target="_blank" class="footer__colophon-link">
           <em>Designed and built by ldaniel.eu</em>
-      </div>
+      </a>
 
     </footer>
 

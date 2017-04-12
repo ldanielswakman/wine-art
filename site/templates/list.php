@@ -4,6 +4,8 @@
 
 <main>
 
+  <? snippet('nav') ?>
+
   <?
   $bg_image_style = '';
   if($page->cover_image()->isNotEmpty()) {

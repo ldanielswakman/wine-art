@@ -4,6 +4,8 @@
 
 <main id="blog_container" data-url="<?= isset($slug) ? $page->url() . '.json?slug=' . $slug : $page->url() . '.json'; ?>">
 
+  <? snippet('nav') ?>
+
   <section class="u-mb7">
 
     <div class="row u-relative">

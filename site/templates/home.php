@@ -4,6 +4,7 @@
 
 <main>
 
+  <? snippet('nav') ?>
 
   <header class="row row--nopadding">
     <div class="col-xs-12 col-sm-6 col-sm-offset-6">

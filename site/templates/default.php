@@ -4,6 +4,8 @@
 
 <main>
 
+  <? snippet('nav') ?>
+
   <section>
 
     <div class="row u-relative u-mb7">
