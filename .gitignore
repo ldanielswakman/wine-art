@@ -12,6 +12,7 @@
 # ------------
 
 error_log
+email.log
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
