@@ -1,0 +1,10 @@
+Title: There was a problem with your purchase
+
+----
+
+Text: 
+
+A problem occurred, and your purchase could not be completed. Please try again, or contact the wine—art team to learn more
+
+(link: education class:u-mt3 link text: Go to education and try again)
+(link: #footer class:u-mt1 link text: Get in touch with us)

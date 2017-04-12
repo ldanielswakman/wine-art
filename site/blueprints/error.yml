@@ -1,6 +1,8 @@
 title: Error
 pages: false
 files: false
+icon: file-archive-o
+
 fields:
   title:
     label: Title

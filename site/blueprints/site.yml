@@ -5,7 +5,7 @@ pages:
     - list
     - default
     - external
-
+    - blog
 
 fields:
   title:

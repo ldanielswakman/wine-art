@@ -1,0 +1,10 @@
+Title: Purchase successful
+
+----
+
+Text: 
+
+Your purchase has been successful! The wine—art team has been informed, and will get in touch with you soon.
+
+(link: / class:u-mt3 link text: See our other services)
+(link: blog class:u-mt1 link text: Explore the blog)
