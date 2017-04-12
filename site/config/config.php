@@ -46,7 +46,7 @@ c::set('routes', [
     'action'  => function() {
       
       // Set detected language
-      site()->visit('home', get('lang'));
+      site()->visit('home', get('language'));
       site()->kirby->localize();
 
       $form = new \Uniform\Form([

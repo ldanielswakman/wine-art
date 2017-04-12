@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <input name="lang" class="u-hide" type="text" value="<?= $site->language() ?>">
+    <input name="language" class="u-hide" type="text" value="<?= $site->language() ?>">
 
     <input name="source" class="u-hide" type="text" value="<?= ecco((strlen($source) > 1), $source, 'Footer') ?>">
 

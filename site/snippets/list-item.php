@@ -93,7 +93,7 @@
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
 
-            <? snippet('contact_form', ['source' => $page->title() . ': ' . $item->title(), 'type' => 'item', 'token' => $token]); ?>
+            <? snippet('contact_form', ['source' => $page->title() . ' / ' . $item->title(), 'type' => 'item', 'token' => $token]); ?>
 
             <div class="list-item__child-arrow"></div>
 
@@ -107,6 +107,7 @@
 
     <!-- Purchase form -->
     <? if($item->show_buy_button() == '1') : ?>
+      <!-- Payment options -->
       <div class="list-item__child list-item__payment">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
@@ -147,6 +148,7 @@
         </div>
       </div>
 
+      <!-- Bank transfer contact form -->
       <div class="list-item__child list-item__bankform">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
@@ -164,7 +166,14 @@
 
             <div class="list-item__bankform u-pb3 u-pt2 u-hide">
               <p>Please fill out your name and email address here, and you will receive the bank account information.</p>
-              <? snippet('contact_form', ['source' => $page->title() . ': ' . $item->title(), 'type' => 'item', 'token' => $token, 'success_msg' => '<div class="short">' . $item->bank_success_msg()->kirbytext() . '</div>']); ?>
+              <? 
+              snippet('contact_form', [
+                'source' => $page->title() . '/ ' . $item->title() . ' (Bank transfer form)', 
+                'type' => 'item', 
+                'token' => $token, 
+                'success_msg' => '<div class="short">' . $item->bank_success_msg()->kirbytext() . '</div>'
+              ]);
+              ?>
             </div>
 
             <div class="list-item__child-arrow"></div>
