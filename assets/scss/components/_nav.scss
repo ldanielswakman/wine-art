@@ -1,17 +1,21 @@
 .nav-wrapper {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%; /* fallback */
-   width: 100vw;
-   height: 100%; /* fallback */
-   height: 100vh;
-   max-height: 100%;
-   z-index: 3;
-   pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* fallback */
+  width: 100vw;
+  height: 100%; /* fallback */
+  height: 100vh;
+  max-height: 100%;
+  z-index: 3;
+  pointer-events: none;
+
+  @media screen and (max-width: $vw_mobile) {
+    position: absolute;
+  }
 }
 .nav-wrapper > * {
-   pointer-events: all;
+  pointer-events: all;
 }
 nav, .nav {
   position: absolute;

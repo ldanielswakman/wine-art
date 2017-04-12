@@ -38,6 +38,9 @@ a {
       @include prefix(transform, translateX(0.5rem));
     }
   }
+  &:focus, &:active {
+    outline: none;
+  }
   &.link--down {
     &:after {
       @include prefix(transform, rotate(90deg));
@@ -70,6 +73,22 @@ a {
     }
     &:hover:after {
       @include prefix(transform, rotate(90deg) translateX(0.5rem));
+    }
+  }
+  &.isBusy {
+    opacity: 0.5;
+    pointer-events: none;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: 50%;
+      height: 3rem;
+      width: 3rem;
+      margin-left: -0.5rem;
+      background: url('../images/spinner.svg');
+      background-size: contain;
     }
   }
 }

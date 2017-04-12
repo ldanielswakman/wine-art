@@ -1,6 +1,7 @@
 
-<div class="list-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, '') ?>">
+<? $price = ($item->fee()->isNotEmpty()) ? number_format($item->fee()->value(), 0, ',', '.') : 0; ?>
 
+<div class="list-item <?= $list_options['item_size_class'] ?><? e($i%2 == 0, '') ?>">
 
   <!-- Grid card -->
   <a href="#<?= $item->uid() ?>" class="u-block list-item__card <? e($i%2 == 0, $list_options['item_ptop'] . ' u-pb5', 'u-pb5') ?>">
@@ -44,7 +45,7 @@
               <?= strtoupper(l::get('course_fee')) ?>
             </div>
             <div class="col-xs-12 col-sm-8 u-pt025 u-pb05 c-darkblue">
-              <strong><?= number_format($item->fee()->value(), 0, ',', '.') ?></strong> CHF
+              <strong><?= $price ?></strong> CHF
             </div>
           </div>
         <? endif ?>
@@ -105,8 +106,6 @@
     <? endif ?>
 
     <!-- Purchase form -->
-    <? $price = number_format($item->fee()->value(), 0, ',', '.') ?>
-
     <? if($item->show_buy_button() == '1') : ?>
       <div class="list-item__child list-item__payment">
         <div class="row">

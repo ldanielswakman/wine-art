@@ -44,8 +44,7 @@
   }
 }
 
-.list-item__contact,
-.list-item__payment {
+.list-item__child {
   position: relative;
   max-height: 0;
   overflow: hidden;
@@ -61,17 +60,16 @@
     overflow: visible;
     pointer-events: all;
   }
-  .list-item__contact-arrow,
-  .list-item__payment-arrow {
+  .list-item__child-arrow {
     @include triangleTop($greylighter);
     bottom: calc(100% - 2rem);
     @include prefix(transition, all 0.2s ease);
   }
-  &.isExpanded .list-item__contact-arrow,
-  &.isExpanded .list-item__payment-arrow {
+  &.isExpanded .list-item__child-arrow {
     bottom: 100%;
   }
-  &.isExpanded .list-item__payment-arrow {
+  &.list-item__payment.isExpanded .list-item__child-arrow,
+  &.list-item__bankform.isExpanded .list-item__child-arrow {
     margin-left: 35%;
   }
   form {
