@@ -1,4 +1,4 @@
-<form class="contact-form u-relative" action="<?= $site->url() ?>/contactform_post" method="POST">
+<form class="contact-form u-relative" action="<?= $site->url() . '/contactform_post' ?>" method="POST">
 
   <?
   $type = (isset($type)) ? $type : null;
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <input name="language" class="u-hide" type="text" value="<?= $site->language() ?>">
+    <input name="lang" class="u-hide" type="text" value="<?= $site->language() ?>">
 
     <input name="source" class="u-hide" type="text" value="<?= ecco((strlen($source) > 1), $source, 'Footer') ?>">
 

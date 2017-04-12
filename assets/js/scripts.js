@@ -297,7 +297,12 @@ function postContactForm(form_obj) {
   $active_form.find('input, textarea').removeClass('field--error');
   $active_form.find('#cover_progress').removeClass('u-hide');
 
+  console.log(form_data);
+
   $.post(url, form_data, function(data) {
+    
+    console.log(data);
+
     $active_form.find('#cover_progress').addClass('u-hide');
     if(data.success === true) {
       
