@@ -51,3 +51,20 @@ Ratio: 3by2
 ----
 
 Contact-button: Inquire further
+
+----
+
+Paypal-button-id: 394UA5Q9CV3LS
+
+----
+
+Bank-success-msg: 
+
+We have received your information.
+Please transfer the amount of **15 CHF** to the following bank account:
+
+Wine Art Project GmbH
+[address], Zürich
+IBAN: NL43ABNA0524664153
+
+*This info has also been sent to your email address*

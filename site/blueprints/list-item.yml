@@ -28,7 +28,7 @@ fields:
   headline1:
     label: Extra options
     type: headline
-    help: (Leave empty to hide each field)
+    help: (Leave empty to hide each field; some fields are only configurable in the default language)
   contact_button:
     label: 'Contact us' button
     default: Inquire further
@@ -37,21 +37,37 @@ fields:
     label: Start Date
     type: date
     width: 1/2
+    translate: false
   end_date:
     label: End Date
     type: date
     width: 1/2
+    translate: false
   fee:
     label: Fee (CHF)
     type: number
     min: 0
+    translate: false
   location:
     label: Location
     type: textarea
     buttons:
   show_buy_button:
     label: 'Purchase Now' button
-    help: will direct to PayPal payment gateway
     type: checkbox
     text: Show button?
+    help: (Will offer 2 options; PayPal/credit card OR bank transfer)
+    width: 1/2
+    translate: false
+  paypal_button_id:
+    label: Paypal Button ID
+    type: text
+    help: >
+      (Required for showing Paypal button; leave empty to hide)
+    width: 1/2
+    translate: false
+  bank_success_msg:
+    label: Bank transfer success message
+    type: textarea
+    buttons:
     

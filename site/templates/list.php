@@ -14,16 +14,16 @@
   ?>
   <section<?= $bg_image_style ?> class="section--listbg">
 
-  <div class="row row--internalpadding">
+    <div class="row row--internalpadding">
 
-    <div class="col-xs-12 col-sm-2">
-      <? snippet('logo') ?>
-    </div>
+      <div class="col-xs-12 col-sm-2">
+        <? snippet('logo') ?>
+      </div>
 
-    <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 col-md-5 u-pt7-sm u-pb2">
-      <?= $page->text()->kirbytext() ?>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 col-md-5 u-pt7-sm u-pb2">
+        <?= $page->text()->kirbytext() ?>
+      </div>
     </div>
-  </div>
 
   </section>
 

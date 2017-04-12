@@ -46,7 +46,7 @@
   <div id="cover_success" class="u-pin-cover u-z2 u-flex-center u-aligncenter <?= ($type === 'item') ? 'bg-greylighter c-dullblue' : 'bg-darkblue'; ?> u-hide">
     <div>
       <img src="<?= url('assets/images/check.svg') ?>" alt="" />
-      <div class="u-w20 u-mt1 c-white"><?= l::get('form_success_msg') ?></div>
+      <div class="u-w20 u-mt1"><?= (isset($success_msg) && strlen($success_msg) > 1) ? $success_msg : l::get('form_success_msg') ?></div>
     </div>
   </div>
 
