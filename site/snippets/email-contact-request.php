@@ -18,6 +18,9 @@
           return $i !== '';
         }));
       }
+      if(strlen($value) < 1) {
+        continue;
+      }
       ?>
         <tr>
           <td style="padding: 5px 10px; color: #909599;"><? echo ucfirst($field) ?></td>
