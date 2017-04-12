@@ -102,7 +102,7 @@ c::set('routes', [
             'to' => $form->data('email'),
             'from' => 'info@wine-art.co',
             'subject' => '[wine-art.co] Bank transfer info for your purchase',
-            'snippet' => 'email-contact-request'
+            'snippet' => 'email-bank-transfer'
           ]);
         }
 
