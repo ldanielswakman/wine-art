@@ -26,8 +26,13 @@
     </div>
 
     <input name="language" class="u-hide" type="text" value="<?= $site->language() ?>">
-
     <input name="source" class="u-hide" type="text" value="<?= ecco((strlen($source) > 1), $source, 'Footer') ?>">
+    <? if (isset($product)) : ?>
+      <input name="product" class="u-hide" type="text" value="<?= $product ?>">
+    <? endif ?>
+    <? if (isset($price)) : ?>
+      <input name="price" class="u-hide" type="text" value="<?= $price ?>">
+    <? endif ?>
 
     <?= csrf_field($token) ?>
     <?= honeypot_field() ?>

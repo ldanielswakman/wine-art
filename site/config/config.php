@@ -61,6 +61,8 @@ c::set('routes', [
         ],
         'language' => [],
         'source' => [],
+        'product' => [],
+        'price' => [],
       ]);
 
       // Perform validation and execute guards.
@@ -76,14 +78,33 @@ c::set('routes', [
 
       } else {
 
+        // Determine if form is a bank transfer request
+        $is_transfer = (strpos($form->data('source'), 'Bank transfer') !== false) ? true : false;
+
+        // Set subject
+        $subject = ($is_transfer === true) ? 'New purchase (bank transfer)' : 'Contact request';
+
         // If validation and guards passed, execute the action.
         $form->emailAction([
-          'to' => 'd.swakman@gmail.com',
+          'to' => 'hello@ldaniel.eu',
           'from' => 'contactform@wine-art.co',
           'replyTo' => 'info@wine-art.co',
-          'subject' => '[wine-art.co] Contact request',
+          'subject' => '[wine-art.co] ' . $subject,
           'snippet' => 'email-contact-request'
+        ])
+        ->logAction([
+          'file' => kirby()->roots()->site() . '/email.log',
         ]);
+
+        if ($is_transfer === true) {
+          // Send email with bank transfer info to customer
+          $form->emailAction([
+            'to' => $form->data('email'),
+            'from' => 'info@wine-art.co',
+            'subject' => '[wine-art.co] Bank transfer info for your purchase',
+            'snippet' => 'email-contact-request'
+          ]);
+        }
 
         if (!$form->success()) { $code = 500; }
 

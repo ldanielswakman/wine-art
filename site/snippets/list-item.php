@@ -170,7 +170,9 @@
               snippet('contact_form', [
                 'source' => $page->title() . '/ ' . $item->title() . ' (Bank transfer form)', 
                 'type' => 'item', 
-                'token' => $token, 
+                'token' => $token,
+                'product' => $item->title()->html(),
+                'price' => $price . ' CHF',
                 'success_msg' => '<div class="short">' . $item->bank_success_msg()->kirbytext() . '</div>'
               ]);
               ?>
