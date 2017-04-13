@@ -8,7 +8,7 @@
 
     <p style="text-align: center;">
       New message via the wine-art.co contact form:
-      <span style="display: block; margin-top: 0.25em; color: #cad1d9"></span>
+      <span style="display: block; margin-top: 0.25em; color: #cad1d9"><?= date('d M Y H:i:s') ?></span>
     </p>
     
     <table style="display: inline-block; margin-top: 1em; text-align: left; min-width: 290px;">
