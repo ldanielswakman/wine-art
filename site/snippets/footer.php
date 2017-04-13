@@ -19,6 +19,7 @@
 
       <a href="http://www.ldaniel.eu" target="_blank" class="footer__colophon-link">
           <em>Designed and built by ldaniel.eu</em>
+          <br><small style="opacity: 0.25;"><?= date('d M Y G:i:s')?></small>
       </a>
 
     </footer>
