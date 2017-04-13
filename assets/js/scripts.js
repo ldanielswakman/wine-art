@@ -25,8 +25,17 @@ $(document).ready(function() {
 
 
   // UI: list item click events
-  $('.list-item__card').click(function() {
+  $('.list-item__card').click(function(e) {
+    e.preventDefault();
     openCardDetail($(this));
+    target = $(this).attr('href');
+    setTimeout(function() { $.smoothScroll({
+      scrollTarget: target, 
+      speed: 800,
+      afterScroll: function() {
+        updateHash(target);
+      }
+    }); }, 310);
   });
   $('.list-item__detail-close').click(function() {
     closeCardDetail();
@@ -35,17 +44,16 @@ $(document).ready(function() {
     closeCardSecondaryDetail();
   });
   $('.list-item .list-item__action').click(function(e) {
-    openCardSecondaryDetail($(this));
-  });
-  $('.list-item [href="#item__bankform"]').click(function(e) {
     e.preventDefault();
-    $bankformbox = $(this).closest('.list-item').find('.list-item__bankform');
-    $bankformbox.removeClass('u-hide');
-    gridSpacer();
-
-    for (i=1; i < 20; i++) {
-      setTimeout(function() { gridSpacer(); }, i*25);
-    }
+    openCardSecondaryDetail($(this));
+    target = $(this).attr('href');
+    setTimeout(function() { $.smoothScroll({
+      scrollTarget: target, 
+      speed: 800,
+      afterScroll: function() {
+        updateHash(target);
+      }
+    }); }, 310);
   });
 
   if(window.location.hash) {
@@ -135,7 +143,6 @@ function openCardDetail(dest) {
 function openCardSecondaryDetail(dest) {
   if($(dest)) {
     $target = $($(dest).attr('href'));
-    console.log($target);
     $parent = $(dest).closest('.list-item');
     $('.list-item__child').removeClass('isExpanded');
     $target.addClass('isExpanded');

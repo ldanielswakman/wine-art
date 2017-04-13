@@ -30,11 +30,11 @@
     width: 100%;
     opacity: 0;
     pointer-events: none;
-    @include prefix(transition, all 0.5s ease);
+    @include prefix(transition, all 0.3s ease);
   }
   &.isExpanded .list-item__detail {
     opacity: 1;
-    max-height: 1200px;
+    max-height: 2000px;
     pointer-events: all;
   }
   @media only screen and (min-width: $vw_tablet) {

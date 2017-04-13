@@ -66,7 +66,7 @@
 
             <? // Contact us button ?>
             <? if($item->contact_button()->isNotEmpty()) : ?>
-              <a href="#<?= $item->uid() ?>-contact" class="link link--diagonal list-item__action"><?= $item->contact_button() ?></a>
+              <a href="#<?= $item->uid() ?>-contact" class="link link--diagonal list-item__action u-mb05"><?= $item->contact_button() ?></a>
             <? endif ?>
 
           </div>
@@ -74,7 +74,7 @@
 
             <? // Purchase button ?>
             <? if($item->show_buy_button() == '1') : ?>
-              <a href="#<?= $item->uid() ?>-purchase" class="link link--diagonal list-item__action">Purchase</a>
+              <a href="#<?= $item->uid() ?>-purchase" class="link link--diagonal list-item__action u-mb05">Purchase</a>
             <? endif ?>
 
           </div>
@@ -110,7 +110,7 @@
       <!-- Payment options -->
       <div id="<?= $item->uid() ?>-purchase" class="list-item__child list-item__payment">
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
 
             <h2><span style="font-weight: normal;">You are about to purchase</span> <?= $item->title()->html() ?></h2>
 
@@ -136,7 +136,7 @@
             <? endif ?>
 
             <div class="u-mv2">
-              <a href="#item__bankform" class="link">Pay via Bank transfer</a><br><br>
+              <a href="#<?= $item->uid() ?>-bankform" class="link link--diagonal list-item__action">Pay via Bank transfer</a><br><br>
             </div>
 
             <div class="list-item__child-arrow"></div>
@@ -149,9 +149,9 @@
       </div>
 
       <!-- Bank transfer contact form -->
-      <div class="list-item__child list-item__bankform">
+      <div id="<?= $item->uid() ?>-bankform" class="list-item__child list-item__bankform">
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
 
             <h2><span style="font-weight: normal;">Bank transfer for </span> <?= $item->title()->html() ?></h2>
 
@@ -164,8 +164,8 @@
             <? endif ?>
             </em>
 
-            <div class="list-item__bankform u-pb3 u-pt2 u-hide">
-              <p>Please fill out your name and email address here, and you will receive the bank account information.</p>
+            <div class="list-item__bankform u-pb3 u-pt2">
+              <p class="u-mb1">Please fill out your name and email address here, and you will receive the bank account information.</p>
               <? 
               snippet('contact_form', [
                 'source' => $page->title() . '/ ' . $item->title() . ' (Bank transfer form)', 
