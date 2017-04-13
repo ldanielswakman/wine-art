@@ -1,7 +1,7 @@
 <div style="font-family: Apercu, sans-serif;">
 
   <div style="padding: 50px 15px; text-align: center;">
-    <? snippet('email-logo-base64') ?>
+    <? snippet('email-partial-logo') ?>
   </div>
 
   <div style="padding: 30px 15px; text-align: center; background-color: #e8ebed;">
