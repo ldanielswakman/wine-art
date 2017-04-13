@@ -34,8 +34,7 @@ $(document).ready(function() {
   $('.list-item__child-close').click(function() {
     closeCardSecondaryDetail();
   });
-  $('.list-item [href*="#item__"]').click(function(e) {
-    e.preventDefault();
+  $('.list-item .list-item__action').click(function(e) {
     openCardSecondaryDetail($(this));
   });
   $('.list-item [href="#item__bankform"]').click(function(e) {
@@ -135,11 +134,12 @@ function openCardDetail(dest) {
 // UI: Open Card Secondary Detail
 function openCardSecondaryDetail(dest) {
   if($(dest)) {
-    target = '.list-' + $(dest).attr('href').replace('#', '');
+    $target = $($(dest).attr('href'));
+    console.log($target);
     $parent = $(dest).closest('.list-item');
     $('.list-item__child').removeClass('isExpanded');
-    $parent.find(target).addClass('isExpanded');
-    $(target).find('form .field').first().focus();
+    $target.addClass('isExpanded');
+    $target.find('form .field').first().focus();
 
     // re-align grid
     gridSpacer();

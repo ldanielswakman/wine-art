@@ -11,7 +11,7 @@
   pointer-events: none;
 
   @media screen and (max-width: $vw_mobile) {
-    position: absolute;
+    position: fixed;
   }
 }
 .nav-wrapper > * {

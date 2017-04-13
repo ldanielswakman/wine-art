@@ -66,7 +66,7 @@
 
             <? // Contact us button ?>
             <? if($item->contact_button()->isNotEmpty()) : ?>
-              <a href="#item__contact" class="link link--diagonal"><?= $item->contact_button() ?></a>
+              <a href="#<?= $item->uid() ?>-contact" class="link link--diagonal list-item__action"><?= $item->contact_button() ?></a>
             <? endif ?>
 
           </div>
@@ -74,7 +74,7 @@
 
             <? // Purchase button ?>
             <? if($item->show_buy_button() == '1') : ?>
-              <a href="#item__payment" class="link link--diagonal">Purchase</a>
+              <a href="#<?= $item->uid() ?>-purchase" class="link link--diagonal list-item__action">Purchase</a>
             <? endif ?>
 
           </div>
@@ -89,7 +89,7 @@
 
     <!-- Contact form -->
     <? if($item->contact_button()->isNotEmpty()) : ?>
-      <div class="list-item__child list-item__contact">
+      <div id="<?= $item->uid() ?>-contact" class="list-item__child list-item__contact">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
 
@@ -108,7 +108,7 @@
     <!-- Purchase form -->
     <? if($item->show_buy_button() == '1') : ?>
       <!-- Payment options -->
-      <div class="list-item__child list-item__payment">
+      <div id="<?= $item->uid() ?>-purchase" class="list-item__child list-item__payment">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
 
