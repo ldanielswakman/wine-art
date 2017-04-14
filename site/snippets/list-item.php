@@ -62,7 +62,7 @@
 
             <? // Purchase button ?>
             <? if($item->show_buy_button() == '1') : ?>
-              <a href="#<?= $item->uid() ?>-purchase" class="link link--diagonal list-item__action u-mb05">Purchase</a>
+              <a href="#<?= $item->uid() ?>-purchase" class="link link--diagonal list-item__action u-mb05"><?= l::get('purchase') ?></a>
             <? endif ?>
 
           </div>
@@ -80,7 +80,7 @@
     <? endif ?>
 
     <? if($item->show_buy_button() == '1') : ?>
-      <? snippet('list-item/list-item-purchase', array('item' => $item, 'price' => $price)) ?>
+      <? snippet('list-item/list-item-purchase', array('item' => $item)) ?>
       <? snippet('list-item/list-item-bank', array('item' => $item, 'price' => $price, 'token' => $token)) ?>
     <? endif ?>
 

@@ -3,19 +3,13 @@
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 u-relative u-mt1 u-pt4 u-pb3">
 
-      <h2><span style="font-weight: normal;">Bank transfer for </span> <?= $item->title()->html() ?></h2>
-
-      <em>
-      <? if($item->start_date()->isNotEmpty() && $item->end_date()->isNotEmpty()) : ?>
-        <?= $item->date('d M Y', 'start_date') ?>  —  <?= $item->date('d M Y', 'end_date') ?>
-      <? endif ?>,
-      <? if($item->fee()->isNotEmpty()) : ?>
-        <?= $price ?> CHF
-      <? endif ?>
-      </em>
+      <h2>
+        <span style="font-weight: normal;"><?= l::get('bank_transfer_for') ?> </span>
+        <?= $item->title()->html() ?>
+      </h2>
 
       <div class="list-item__bankform u-pb3 u-pt2">
-        <p class="u-mb1">Please fill out your name and email address here, and you will receive the bank account information.</p>
+        <p class="u-mb1"><?= l::get('bank_form_intro_msg') ?></p>
         <? 
         snippet('contact_form', [
           'source' => $page->title() . '/ ' . $item->title() . ' (Bank transfer form)', 
