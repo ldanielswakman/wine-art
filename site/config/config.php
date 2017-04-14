@@ -87,7 +87,7 @@ c::set('routes', [
         // If validation and guards passed, execute the action.
         $form->emailAction([
           'to' => 'hello@ldaniel.eu',
-          'from' => 'contactform@wine-art.co',
+          'from' => 'info@wine-art.co',
           'replyTo' => 'info@wine-art.co',
           'subject' => '[wine-art.co] ' . $subject,
           'snippet' => 'email-contact-request'
