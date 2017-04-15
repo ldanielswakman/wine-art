@@ -5,14 +5,14 @@ l::set('read_more', 'Weitere Informationen');
 l::set('course_duration', 'Kursdauer');
 l::set('course_fee', 'Gebühr');
 l::set('course_location', 'Ort');
-l::set('purchase', 'Purchase');
-l::set('about_to_purchase', 'You are about to purchase');
-l::set('choose_payment_method', 'Please choose your payment method');
-l::set('pay_w_paypal_creditcard', 'Pay with PayPal/credit card');
-l::set('pay_w_bank', 'Pay via Bank transfer');
-l::set('bank_transfer_for', 'Bank transfer for');
-l::set('redirect_paypal_page', 'This will direct you to the PayPal payment page');
-l::set('bank_form_intro_msg', 'Please fill out your name and email address here, and you will receive the bank account information.');
+l::set('purchase', 'Kaufen');
+l::set('about_to_purchase', 'Hier erwerben Sie');
+l::set('choose_payment_method', 'Bitte wählen Sie die gewünschte Zahlungsmethode');
+l::set('pay_w_paypal_creditcard', 'Zahlung mit PayPal/Kreditkarte');
+l::set('pay_w_bank', 'Zahlung via Banktraktransfer');
+l::set('bank_transfer_for', 'Banktraktransfer für');
+l::set('redirect_paypal_page', 'Hier werden Sie zu der PayPal Seite weitergeleitet');
+l::set('bank_form_intro_msg', 'Bitte geben Sie Ihren Namen und Adresse an, Sie werden in Kürze die Bankkonto Informationen erhalten.');
 
 
 // Team members
