@@ -14,7 +14,7 @@
     ?>
     
     <div style="text-align: center;">
-      <?= html_entity_decode($success_msg) ?>
+      <?= strip_tags(html_entity_decode($success_msg), '<br><b><i><em><strong><a>'); ?>
     </div>
 
     <table style="display: inline-block; text-align: left; min-width: 290px;">
@@ -28,7 +28,7 @@
       </tr>
       <tr>
         <td style="padding: 5px 10px; color: #909599; vertical-align: top;">Bank transfer info</td>
-        <td ><?= $bank_info ?></td>
+        <td ><?= strip_tags($bank_info, '<br><b><i><em><strong><a>'); ?></td>
       </tr>
     </table>
 
