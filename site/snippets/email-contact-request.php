@@ -29,7 +29,7 @@
         <? if ($field == 'name') : ?>
           <tr>
             <td style="padding: 5px 10px; color: #909599;">Email</td>
-            <td ><? echo $email ?></td>
+            <td ><? echo $options['params']['email'] ?></td>
           </tr>
         <? endif ?>
       <? endforeach ?>
