@@ -27,6 +27,12 @@
           <td style="padding: 5px 10px; color: #909599;"><? echo ucfirst($field) ?></td>
           <td ><? echo $value ?></td>
         </tr>
+        <? if ($value == 'name') : ?>
+          <tr>
+            <td style="padding: 5px 10px; color: #909599;">Email</td>
+            <td ><? echo $email ?></td>
+          </tr>
+        <? endif ?>
       <? endforeach ?>
     </table>
 
