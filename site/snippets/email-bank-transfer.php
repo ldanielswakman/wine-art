@@ -9,13 +9,14 @@
     <?
     $product = (isset($data['product'])) ? ucfirst($data['product']) : 'Unknown';
     $price = (isset($data['price'])) ? $data['price'] : 'Unknown';
-    $success_msg = (isset($data['success_msg'])) ? $data['success_msg'] : 'Thank you for your purchase at wine-art.co! In order to complete the purchase, please make a bank transfer with the following info:';
+    $success_msg = (isset($options['params']['success_msg'])) ? $options['params']['success_msg'] : 'Thank you for your purchase at wine-art.co! In order to complete the purchase, please make a bank transfer with the following info:';
     $bank_info = (isset($options['params']['bank_info'])) ? $options['params']['bank_info'] : 'Unknown';
     ?>
     
     <div style="text-align: center;">
-      <?= strip_tags(html_entity_decode($success_msg), '<br><b><i><em><strong><a>'); ?>
+      <?= $success_msg ?>
     </div>
+    <br>
 
     <table style="display: inline-block; text-align: left; min-width: 290px;">
       <tr>

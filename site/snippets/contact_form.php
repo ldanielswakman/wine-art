@@ -33,9 +33,6 @@
     <? if (isset($price)) : ?>
       <input name="price" class="u-hide" type="text" value="<?= $price ?>">
     <? endif ?>
-    <? if (isset($success_msg)) : ?>
-      <input name="success_msg" class="u-hide" type="text" value="<?= $success_msg ?>">
-    <? endif ?>
 
     <?= csrf_field($token) ?>
     <?= honeypot_field() ?>
@@ -57,7 +54,7 @@
 
       <? if (isset($success_msg) && strlen($success_msg) > 1) : ?>
         <div class="short u-mt1">
-          <?= $success_msg ?>
+          <p><?= $success_msg ?></p>
           <br>
           <?= $site->bank_info()->kirbytext() ?>
           <br><em><?= l::get('form_success_info_to_email') ?></em>

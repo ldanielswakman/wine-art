@@ -66,7 +66,4 @@ fields:
       (Required for showing Paypal button; leave empty to hide)
     width: 1/2
     translate: false
-  bank_success_msg:
-    label: Bank transfer success message
-    type: textarea
-    buttons:
+    

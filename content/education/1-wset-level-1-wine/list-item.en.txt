@@ -56,9 +56,3 @@ Contact-button: Inquire further
 
 Paypal-button-id: 394UA5Q9CV3LS
 
-----
-
-Bank-success-msg: 
-
-We have received your information.
-Please transfer the amount of **2 CHF** to the following bank account:

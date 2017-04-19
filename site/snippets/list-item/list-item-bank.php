@@ -17,7 +17,7 @@
           'token' => $token,
           'product' => $item->title()->html(),
           'price' => $price . ' CHF',
-          'success_msg' => $item->bank_success_msg()->kirbytext(),
+          'success_msg' => str_replace('{{price}}', $price . ' CHF',  l::get('bank_form_success_msg')),
         ]);
         ?>
       </div>

@@ -63,10 +63,3 @@ Contact-button: Inquire further
 ----
 
 Paypal-button-id: 
-
-----
-
-Bank-success-msg: 
-
-We have received your information.
-Please transfer the amount of **3000 CHF** to the following bank account:

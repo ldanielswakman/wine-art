@@ -63,7 +63,6 @@ c::set('routes', [
         'source' => [],
         'product' => [],
         'price' => [],
-        'success_msg' => [],
       ]);
 
       // Perform validation and execute guards.
@@ -117,6 +116,7 @@ c::set('routes', [
             'subject' => '[wine-art.co] Bank transfer info for your purchase',
             'snippet' => 'email-bank-transfer',
             'params' => [
+              'success_msg' => str_replace('{{price}}', $form->data('price'),  l::get('bank_form_success_msg')),
               'bank_info' => site()->bank_info()->kirbytext(),
             ]
           ]);

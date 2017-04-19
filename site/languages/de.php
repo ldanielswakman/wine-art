@@ -13,6 +13,7 @@ l::set('pay_w_bank', 'Zahlung via Banktraktransfer');
 l::set('bank_transfer_for', 'Banktraktransfer für');
 l::set('redirect_paypal_page', 'Hier werden Sie zu der PayPal Seite weitergeleitet');
 l::set('bank_form_intro_msg', 'Bitte geben Sie Ihren Namen und Adresse an, Sie werden in Kürze die Bankkonto Informationen erhalten.');
+l::set('bank_form_success_msg', 'Wir haben Ihre Daten erhalten.<br>Bitte überweisen Sie den Betrag von <b>{{price}}</b> auf dieses Bankkonto:');
 
 
 // Team members
