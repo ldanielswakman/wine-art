@@ -86,8 +86,8 @@ c::set('routes', [
 
         // If validation and guards passed, execute the action.
         $form->emailAction([
-          'to' => 'hello@ldaniel.eu',
-          'from' => 'info@wine-art.co',
+          'to' => 'info@wine-art.co',
+          'from' => 'contactform@wine-art.co',
           'replyTo' => 'info@wine-art.co',
           'subject' => '[wine-art.co] ' . $subject,
           'snippet' => 'email-contact-request'
@@ -95,6 +95,15 @@ c::set('routes', [
         ->logAction([
           'file' => kirby()->roots()->site() . '/email.log',
         ]);
+
+        // send a control email to admin
+        $form->emailAction([
+          'to' => 'hello@ldaniel.eu',
+          'from' => 'contactform@wine-art.co',
+          'replyTo' => 'info@wine-art.co',
+          'subject' => '[wine-art.co] ' . $subject . ' (Admin copy)',
+          'snippet' => 'email-contact-request'
+        ])
 
         if ($is_transfer === true) {
           // Send email with bank transfer info to customer
