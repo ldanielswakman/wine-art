@@ -19,9 +19,8 @@
           return $i !== '';
         }));
       }
-      if(strlen($value) < 1) {
-        continue;
-      }
+      if(strlen($value) < 1) { continue; }
+      if($field == 'success_msg') { continue; }
       ?>
         <tr>
           <td style="padding: 5px 10px; color: #909599;"><? echo ucfirst($field) ?></td>
