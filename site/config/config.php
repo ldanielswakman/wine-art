@@ -91,7 +91,10 @@ c::set('routes', [
           'from' => 'contactform@wine-art.co',
           'replyTo' => $form->data('email'),
           'subject' => '[wine-art.co] ' . $subject,
-          'snippet' => 'email-contact-request'
+          'snippet' => 'email-contact-request',
+          'params' => [
+            'email' => $form->data('email')
+          ]
         ])
         ->logAction([
           'file' => kirby()->roots()->site() . '/email.log',
