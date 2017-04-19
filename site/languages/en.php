@@ -27,6 +27,7 @@ l::set('form_message_placeholder', 'Hello wonderful people at wine•art, ...');
 l::set('form_email_placeholder', 'Your email');
 l::set('form_name_placeholder', 'Your name');
 l::set('form_success_msg', 'Thanks for reaching out to us! We will get back to you soon.');
+l::set('form_success_info_to_email', 'This info has also been sent to your email address.');
 l::set('form_email_error', 'Please enter a valid email address');
 
 

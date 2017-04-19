@@ -26,23 +26,7 @@ Symbol:
 
 ----
 
-Start-date: 2017-04-06
-
-----
-
-End-date: 2017-04-06
-
-----
-
-Fee: 2
-
-----
-
 Location: 
-
-----
-
-Show-buy-button: 1
 
 ----
 
@@ -51,10 +35,6 @@ Ratio: 3by2
 ----
 
 Contact-button: Inquire further
-
-----
-
-Paypal-button-id: 394UA5Q9CV3LS
 
 ----
 

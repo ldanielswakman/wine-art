@@ -88,7 +88,7 @@ c::set('routes', [
         $form->emailAction([
           'to' => 'info@wine-art.co',
           'from' => 'contactform@wine-art.co',
-          'replyTo' => 'info@wine-art.co',
+          'replyTo' => $form->data('email'),
           'subject' => '[wine-art.co] ' . $subject,
           'snippet' => 'email-contact-request'
         ])
@@ -100,10 +100,10 @@ c::set('routes', [
         $form->emailAction([
           'to' => 'hello@ldaniel.eu',
           'from' => 'contactform@wine-art.co',
-          'replyTo' => 'info@wine-art.co',
+          'replyTo' => $form->data('email'),
           'subject' => '[wine-art.co] ' . $subject . ' (Admin copy)',
           'snippet' => 'email-contact-request'
-        ])
+        ]);
 
         if ($is_transfer === true) {
           // Send email with bank transfer info to customer
@@ -111,7 +111,10 @@ c::set('routes', [
             'to' => $form->data('email'),
             'from' => 'info@wine-art.co',
             'subject' => '[wine-art.co] Bank transfer info for your purchase',
-            'snippet' => 'email-bank-transfer'
+            'snippet' => 'email-bank-transfer',
+            'params' => [
+              'bank_info' => site()->bank_info()->kirbytext()
+            ]
           ]);
         }
 

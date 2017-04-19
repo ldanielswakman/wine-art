@@ -26,22 +26,6 @@ Brandschenkestrasse 38
 
 ----
 
-Start-date: 2017-02-01
-
-----
-
-End-date: 2017-03-31
-
-----
-
-Show-buy-button: 1
-
-----
-
-Fee: 3000
-
-----
-
 Text: 
 
 ----
@@ -59,10 +43,6 @@ Ratio: 3by2
 ----
 
 Contact-button: Inquire further
-
-----
-
-Paypal-button-id: 
 
 ----
 

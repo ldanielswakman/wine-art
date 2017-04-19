@@ -27,6 +27,7 @@ l::set('form_message_placeholder', 'Hallo Ihr wunderbaren Leute bei wine•art, 
 l::set('form_email_placeholder', 'Ihre E-Mail-Adresse');
 l::set('form_name_placeholder', 'Ihre Nahme');
 l::set('form_success_msg', 'Danke für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.');
+l::set('form_success_info_to_email', 'Diese Info wurde auch an Ihre E-Mail-Adresse gesendet.');
 l::set('form_email_error', 'Geben Sie bitte eine gültige E-Mail-Adresse ein.');
 
 

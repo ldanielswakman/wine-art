@@ -43,6 +43,12 @@ fields:
     type: textarea
     buttons:
 
+  bank_info:
+    label: Bank account info
+    type: textarea
+    help: Appears when a customer wants to make a purchase via bank transfer (should contain at least name & IBAN)
+    buttons:
+
   meta_image:
     label: Meta image
     type: image

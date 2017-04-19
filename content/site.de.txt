@@ -37,3 +37,11 @@ Culmannstrasse 46, 8006 Zurich
 ----
 
 Logo-alt: logo_alt.svg
+
+----
+
+Bank-info: 
+
+WineArt Projects GmbH
+Culmannstrasse 46, 8006 Zurich
+IBAN: NL43ABNA0524664153

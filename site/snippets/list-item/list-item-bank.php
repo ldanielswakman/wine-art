@@ -17,7 +17,7 @@
           'token' => $token,
           'product' => $item->title()->html(),
           'price' => $price . ' CHF',
-          'success_msg' => '<div class="short">' . $item->bank_success_msg()->kirbytext() . '</div>'
+          'success_msg' => $item->bank_success_msg()->kirbytext(),
         ]);
         ?>
       </div>
