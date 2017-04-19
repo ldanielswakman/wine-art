@@ -14,7 +14,7 @@
     ?>
     
     <div style="text-align: center;">
-      <?= $success_msg ?>
+      <?= urldecode($success_msg) ?>
     </div>
 
     <table style="display: inline-block; text-align: left; min-width: 290px;">
