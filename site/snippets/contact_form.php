@@ -34,7 +34,7 @@
       <input name="price" class="u-hide" type="text" value="<?= $price ?>">
     <? endif ?>
     <? if (isset($success_msg)) : ?>
-      <input name="price" class="u-hide" type="text" value="<?= $success_msg ?>">
+      <input name="success_msg" class="u-hide" type="text" value="<?= $success_msg ?>">
     <? endif ?>
 
     <?= csrf_field($token) ?>
