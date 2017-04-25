@@ -87,7 +87,7 @@ c::set('routes', [
 
         // If validation and guards passed, execute the action.
         $form->emailAction([
-          'to' => 'info@wine-art.co',
+          'to' => 'hello@wine-art.co',
           'from' => 'contactform@wine-art.co',
           'replyTo' => $form->data('email'),
           'subject' => '[wine-art.co] ' . $subject,
@@ -116,7 +116,7 @@ c::set('routes', [
           // Send email with bank transfer info to customer
           $form->emailAction([
             'to' => $form->data('email'),
-            'from' => 'info@wine-art.co',
+            'from' => 'hello@wine-art.co',
             'subject' => '[wine-art.co] Bank transfer info for your purchase',
             'snippet' => 'email-bank-transfer',
             'params' => [
