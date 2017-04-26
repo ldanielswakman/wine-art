@@ -1,0 +1,17 @@
+Title: Education
+
+----
+
+Text: *Join our workshops and tasting sessions. We are excited to meet you! *
+
+----
+
+Items: 
+
+----
+
+List-type: 
+
+----
+
+Cover-image: 

@@ -1,0 +1,82 @@
+Title: Team usw.
+
+----
+
+Text: 
+
+wine•art ist eine Plattform, auf der wunderbare Menschen lernen, teilen und gemeinsam etwas schaffen können.
+
+> Wir wachsen an der gemeinsamen Arbeit und unserer Vielfalt.
+
+----
+
+Team-members: 
+
+- 
+  name: Şeyma Baş
+  role: 'DipWSET, Gründerin & Beraterin'
+  photo: seyma.jpg
+  descr: 'Şeyma Baş studierte Verfahrenstechnik an der Boğaziçi-Universität und hat einen MBA im Management von Luxusmarken für die Lebensmittel- und Weinindustrie von der INSEEC Business School in Bordeaux.'
+  descr_ext: |
+    Zwischen 2012 und 2016, arbeitete sie mit dem Cosimo Maria Masini Weingut, Suvla Wines und Chateau de Pommard fokussierend auf den internationalen Vertrieb und das Markenmanagement. Gegenwärtig bietet sie über ihr Unternehmen Wineart mit Sitz in Zürich, Markenberatungen und Weinausbildungen an. Ausserdem betreibt Sie internationale Vertriebsentwicklungsprojekte für Weingüter weltweit.
+    
+    Nach Abschluss des Diploma-Programms des Wine and Spirits Education Trust in London studiert Seyma nun auf einen der schwierigsten Titel in der Welt des Weins: den Master of Wine.
+    
+    Darüber hinaus schreibt sie über Wein und die Dynamik des Markts in ihrem Blog (link: http://www.dionysianimpulse.net text: Dionysian Impulse popup:yes), das 2016 mit dem Prädikat Best New Wine Blog ausgezeichnet wurde. Heute lebt sie in Zürich, arbeitet an Projekten für verschiedene Weinregionen, und freut sich jeden Tag über neue Geschmacksentdeckungen. Neben ihrer Passion für den Wein findet sie Spaß am Lindy Hop, ist Fan von Wim Wenders und schaut immer wieder gerne die TV-Serie Seinfeld.
+    
+    (email: seyma@wine-art.co popup:yes)
+- 
+  name: Cécile Richards
+  role: 'DipWSET, Wine Educator & Consultant'
+  photo: cecile.jpg
+  descr: >
+    Cécile Richards wuchs in der Grenzstadt
+    Basel auf – international bekannt als
+    Mekka der internationalen Kunstszene,
+    der Art Basel. Ihre Leidenschaft zum
+    Wein begann ganz romantisch auf einem
+    Weingut im kalifornischen Napa Valley.
+    Zurück am Zürichsee, wo sie seit der
+    Jahrtausendwende lebt, begann sie die
+    Weinwelt weiter zu erkunden, nahm als
+    Jurymitglied an Weinprämierungen teil
+    und meldete sich schliesslich für den
+    Ausbildungsweg WSET Diploma im
+    Rheingau/DE an.
+  descr_ext: |
+    2005 absolvierte sie erfolgreich das WSET Honours Diploma und erhielt die Auszeichnung Weinakademikerin. Damals noch als berufserfahrene Geschäftsführerin Pensionskasse tätig, begann sie als Redakteurin der Weinzeitschrift VINUM zu arbeiten. Alsbald wurde sie vom Deutschen Weininstitut (DWI) beauftragt, die Pressearbeit in der Schweiz zu lancieren.
+    
+    Heute schreibt sie freiberuflich für Weinzeitschriften. Als Weinberaterin ist sie in der Weihnachtszeit für Globus Schweiz tätig. Die Inhaberin der Zürcher (link: http://www.agenturfuerwein.ch text: Agentur für Wein popup:yes) bietet PR & Kommunikation sowie sozialrechtliche Beratung Gastronomen, Winzer und deren Mitarbeiter an.
+    
+    Begeistert ist sie zudem vom Lebensraum Wald, von schnurrenden Katzen und philosophischen Schriften.
+- 
+  name: Jörn Justiz
+  role: Wine Educator
+  photo: jorn2.jpg
+  descr: >
+    Jörn Justiz diplomierte in Physik an
+    der Freien Universität in Berlin und
+    promovierte an der Eidgenössischen
+    Technischen Hochschule in Lausanne. Er
+    ist jetzt Professor für Medizintechnik
+    an der Berner Fachhochschule in
+    Biel/Bienne.
+  descr_ext: |
+    Jörn entdeckte seine Liebe zum Wein während einer Radtour durch das Burgund und erkundet seitdem Weinregionen und ihre Weine auf der ganzen Welt (so in Neuseeland, Australien, USA und Kanada. In Europa verbindet er gern zwei seiner Leidenschaften und besucht Regionen wie die Mosel, den Rhein, das Südtirol oder das Loiretal per Fahrrad. Um sein Weinwissen systematisch zu erweitern, absolvierte er WSET Kurse bis zum Level 3 (mit Auszeichnung). Er organisiert zudem regelmässig private Degustationen.
+    
+    Neben seiner Arbeit und Wein interessiert sich Jörn für Ethik, insbesondere für Gerechtigkeitstheorien. An Wochenenden kocht er gern und lässt sich dabei von seinem Lieblingskoch Yotam Ottolenghi inspirieren.
+
+----
+
+Text-after: 
+
+# Möchten Sie mitmachen?
+Melden Sie sich bei uns unter  (email: hello@wine-art.co).
+<br>
+
+### Bildnachweise
+<p><small>Alle tollen Fotos auf dieser Website gehören (email: brunchonchestnut@gmail.com  text: Ashley Kane),  (email: ayca@mutfakmedia.com text: Ayça Yalçıner) und (email: info@nurisimsek.com text: Nuri Şimşek).</small></p>
+
+----
+
+Url-key: team-usw
