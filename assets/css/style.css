@@ -3895,12 +3895,11 @@ section .section__bg-image, .section .section__bg-image {
   height: 100%;
   background-position: center center;
   background-size: cover;
-  background-attachment: local;
   background-repeat: no-repeat;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.1s ease, -webkit-filter 1.5s ease;
-  -moz-transition: opacity 0.3s ease, -moz-transform 0.1s ease, -moz-filter 1.5s ease;
-  transition: opacity 0.3s ease, transform 0.1s ease, filter 1.5s ease;
+  -webkit-transition: opacity 0.3s ease, -webkit-filter 1.5s ease;
+  -moz-transition: opacity 0.3s ease, -moz-filter 1.5s ease;
+  transition: opacity 0.3s ease, filter 1.5s ease;
   -webkit-filter: blur(20px);
   -moz-filter: blur(20px);
   filter: blur(20px); }
