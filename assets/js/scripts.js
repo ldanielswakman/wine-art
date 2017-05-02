@@ -189,6 +189,10 @@ function closeCardSecondaryDetail() {
 
 // Scroll Actions
 function scrollActions() {
+
+  // check if iOS
+  ios = ( navigator.userAgent.toLowerCase().match(/(iPad|iPhone|iPod)/i) ? true : false );
+
   scroll = $(window).scrollTop();
   windowH = $(window).height();
 
@@ -196,7 +200,7 @@ function scrollActions() {
   allowMobileScroll = true;
   startingOffset = 20;
 
-  if (allowMobileScroll) {
+  if (allowMobileScroll && !iOS) {
     $('.section__bg').each(function() {
 
       thisTop = $(this).offset().top;
