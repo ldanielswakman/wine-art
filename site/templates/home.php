@@ -10,7 +10,9 @@
     <div class="col-xs-12 col-sm-6 col-sm-offset-6">
 
       <? if($logo = $site->logo()): ?>
-        <img src="<?= $site->image($logo)->url() ?>" class="header__logo" />
+        <a href="<?= $site->url() ?>">
+          <img src="<?= $site->image($logo)->url() ?>" class="header__logo" />
+        </a>
       <? endif ?>
 
     </div>
