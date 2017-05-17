@@ -200,7 +200,7 @@ function scrollActions() {
   allowMobileScroll = true;
   startingOffset = 20;
 
-  if (allowMobileScroll && !iOS) {
+  if (allowMobileScroll && !ios) {
     $('.section__bg').each(function() {
 
       thisTop = $(this).offset().top;
