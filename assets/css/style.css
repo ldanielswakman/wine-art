@@ -3791,7 +3791,8 @@ header, .header {
 main, .main {
   position: relative;
   z-index: 1;
-  background-color: #fafbfc; }
+  background-color: #fafbfc;
+  overflow: hidden; }
 
 .nav-wrapper {
   position: absolute;
