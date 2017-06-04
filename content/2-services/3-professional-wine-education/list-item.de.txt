@@ -12,23 +12,7 @@ Unsere Kurse behandeln Weingebiete rund um den Globus, Spirituosen, Herstellungs
 
 ----
 
-Start-date: 
-
-----
-
-End-date: 
-
-----
-
-Fee: 
-
-----
-
 Location: 
-
-----
-
-Show-buy-button: 0
 
 ----
 
@@ -41,3 +25,7 @@ Symbol: ƺ
 ----
 
 Ratio: 3by1
+
+----
+
+Contact-button: Senden Sie uns eine Email

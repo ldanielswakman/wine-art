@@ -10,23 +10,7 @@ Description: Wir freuen uns, mit Ihnen, egal ob privater oder geschäftlicher Ku
 
 ----
 
-Start-date: 
-
-----
-
-End-date: 
-
-----
-
-Fee: 
-
-----
-
 Location: 
-
-----
-
-Show-buy-button: 0
 
 ----
 
@@ -39,3 +23,7 @@ Symbol: ǂ
 ----
 
 Ratio: 3by1
+
+----
+
+Contact-button: Kontaktieren Sie uns

@@ -28,7 +28,7 @@ Team-members:
     international sales and brand
     management.
   descr_ext: |
-    Currently, she provides brand consultancy and wine education through her company wine•art based in Zürich. She also runs  international sales development projects for wineries throughout the world.
+    Currently, she provides brand consultancy and wine education through her company wine•art based in Zürich. She also runs  international sales development projects for wineries throughout the world. She has been focusing on emerging wine regions and has the joy of being a part of several innovative projects of Lenz Moser.
     
     In addition to her professional life, she holds the WSET Diploma and she continues her journey as a Master of Wine Student, which is known to be one of the hardest titles in the world of wine.
     
@@ -36,7 +36,7 @@ Team-members:
     
     Research interests: Climate Change, Environmental Sustainability in the Wine Industry
     
-    (email: seyma@wine-art.co popup:yes)
+    (email: seyma@wine-art.co)
 - 
   name: Cécile Richards
   role: 'DipWSET, Wine Educator & Consultant'

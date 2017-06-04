@@ -12,23 +12,7 @@ Wir unterstützen Sie unter Berücksichtigung Ihrer Markenidentität bei der Ent
 
 ----
 
-Start-date: 
-
-----
-
-End-date: 
-
-----
-
-Fee: 
-
-----
-
 Location: 
-
-----
-
-Show-buy-button: 0
 
 ----
 
@@ -44,4 +28,4 @@ Ratio: 3by1
 
 ----
 
-Contact-button: 
+Contact-button: Kontaktieren Sie uns

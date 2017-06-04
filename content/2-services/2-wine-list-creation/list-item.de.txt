@@ -14,23 +14,7 @@ Cover-image: illustration3.svg
 
 ----
 
-Start-date: 
-
-----
-
-End-date: 
-
-----
-
-Fee: 
-
-----
-
 Location: 
-
-----
-
-Show-buy-button: 0
 
 ----
 
@@ -39,3 +23,7 @@ Symbol: ¶
 ----
 
 Ratio: 3by1
+
+----
+
+Contact-button: Schreiben Sie uns
