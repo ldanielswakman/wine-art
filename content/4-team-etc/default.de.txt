@@ -75,7 +75,7 @@ Melden Sie sich bei uns unter  (email: hello@wine-art.co).
 <br>
 
 ### Bildnachweise
-<p><small>Alle tollen Fotos auf dieser Website gehören (email: brunchonchestnut@gmail.com  text: Ashley Kane),  (email: ayca@mutfakmedia.com text: Ayça Yalçıner) und (email: info@nurisimsek.com text: Nuri Şimşek).</small></p>
+<p><small>Alle tollen Fotos auf dieser Website gehören (email: brunchonchestnut@gmail.com  text: Ashley Kane popup:yes),  (email: ayca@mutfakmedia.com text: Ayça Yalçıner popup:yes) und (email: info@nurisimsek.com text: Nuri Şimşek popup:yes).</small></p>
 
 ----
 
